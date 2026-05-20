@@ -1,0 +1,391 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\geometry{left=1.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{setspace}
+
+% Impaginazione
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\setlist{nosep}
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\lhead{\small\itshape\leftmark}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+
+\title{\textbf{Statistica: scouting, match analysis ed elaborazione dati}}
+\author{Dispensa Universitaria}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\section{Statistica}
+La statistica è la disciplina che si occupa della raccolta, dell'organizzazione, dell'analisi, dell'interpretazione e della presentazione dei dati. Il suo obiettivo principale è trarre conclusioni utili da insiemi di dati, spesso incerti o parziali, per supportare decisioni o comprendere fenomeni.
+
+\subsection{Classificazioni e distribuzioni statistiche}
+L'oggetto della raccolta dati, detto \textit{rivelazione statistica}, sono le unità statistiche che compongono il collettivo o popolazione a cui il fenomeno è riferito. Queste unità possiedono una o più caratteristiche, dette \textit{caratteri}, connesse al fenomeno indagato.
+
+I caratteri si suddividono in:
+\begin{enumerate}
+    \item \textbf{Quantitativi} ($X, Y, \dots$):
+    \begin{itemize}
+        \item \textit{Discreti}: solo valori interi, utilizzati per conteggiare.
+        \item \textit{Continui}: infiniti valori nell'intervallo, utili per misurazioni.
+    \end{itemize}
+    \item \textbf{Qualitativi} ($A, B, \dots$): non possono essere espresse con numeri, ma con categorie o modalità. Si distinguono in:
+    \begin{itemize}
+        \item \textit{Ordinabili}: ordine logico, non numerico.
+        \item \textit{Sconnessi}: modalità senza un ordine naturale.
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Classificazione statistica}
+Processo mediante il quale si suddividono i dati raccolti in gruppi o categorie omogenee, in base a caratteristiche comuni, per renderli più comprensibili e analizzabili.
+
+\subsubsection{Frequenza}
+Indica quante volte si verifica una determinata modalità o un certo valore di un carattere in un insieme di dati osservati:
+\begin{enumerate}
+    \item \textbf{Frequenza assoluta} $[f_i]$: numero di volte che una modalità compare nel dataset.
+    \item \textbf{Frequenza relativa} $[f_i/n]$: rapporto tra frequenza assoluta e totale delle osservazioni.
+    \item \textbf{Frequenza percentuale} $[f_\%]$: frequenza relativa espressa in percentuale.
+\end{enumerate}
+
+\subsubsection{Distribuzione di frequenza}
+Metodo di rappresentazione che mostra la distribuzione dei dati rispetto ai valori che possono assumere, riassumendo l'intero dataset in base alla frequenza di ciascun valore.
+
+\subsubsection{Esempio}
+Indagine su 27 alunni a cui viene richiesta la squadra tifata. Risposte: Juve, Juve, Bologna, Juve, Inter, Milan, Bologna, Juve, Juve, Bologna, Milan, Inter, Juve, Bologna, Inter, Juve, Roma, Juve, Bologna, Roma, Inter, Fiorentina, Fiorentina, Juve, Juve, Bologna, Roma.
+
+\begin{enumerate}
+    \item Unità statistica: l'alunno. Unità totali: 27.
+    \item Carattere rilevato: squadra tifata (qualitativo sconnesso).
+    \item Distribuzione delle frequenze:
+    \begin{center}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Squadra} & $f_i$ & $f_i/n$ \\
+        \midrule
+        Juve & 10 & 0,37 \\
+        Bologna & 6 & 0,22 \\
+        Inter & 4 & 0,15 \\
+        Milan & 2 & 0,07 \\
+        Roma & 3 & 0,11 \\
+        Fiorentina & 2 & 0,07 \\
+        \midrule
+        \textbf{Totale} & \textbf{27} & \textbf{1,00} \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+    \item Modalità ``Juve'': $f_i = 10$, $f_i/n = 0,37$.
+    \item Somma frequenze assolute: $\sum_{i=1}^{6} f_i = 27$. Somma frequenze relative: $\sum_{i=1}^{6} f_i/n = 1$.
+\end{enumerate}
+
+\subsection{Le Medie}
+Le medie sono valori di sintesi di una distribuzione statistica che, secondo la condizione di Cauchy, sono sempre compresi tra il valore minimo e quello massimo osservato.
+
+\subsubsection{Medie di posizione}
+Descrivono la tendenza centrale di un insieme di dati ordinati:
+\begin{itemize}
+    \item \textbf{Moda}: modalità con maggiore frequenza. Per dati raggruppati in classi, la classe modale è quella con massima densità di frequenza: $d_i = \frac{n_i}{w_i}$ (dove $n_i$ è la frequenza e $w_i$ l'ampiezza). Può essere bimodale o plurimodale.
+    \item \textbf{Mediana}: valore centrale. Se $n$ dispari: $p = \frac{n+1}{2}$; se pari: media dei due valori centrali.
+    \item \textbf{Quantili}: dividono i dati ordinati in parti uguali.
+    \begin{center}
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Tipo} & \textbf{Parti} & \textbf{\% per gruppo} \\
+        \midrule
+        Quartile & 4 & 25\% \\
+        Decile & 10 & 10\% \\
+        Percentile & 100 & 1\% \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+\end{itemize}
+
+\subsubsection{Medie algebriche}
+\begin{itemize}
+    \item \textbf{Media aritmetica}: $\bar{x} = \frac{\sum x_i}{n}$
+    \item \textbf{Media geometrica}: $M_G = \sqrt[n]{x_1 \cdot x_2 \cdot \dots \cdot x_n}$ (solo per valori positivi e in termini di rapporti).
+\end{itemize}
+
+\subsection{Variabilità ed eterogeneità}
+Misurano quanto i dati si discostano dalla media. Si dividono in:
+\begin{enumerate}
+    \item \textbf{Indicatori assoluti} (stessa unità di misura): Intervallo di variazione, Differenza interquartile.
+    \item \textbf{Indicatori relativi} (adimensionali o percentuali): Varianza, Devianza, Scarto quadratico medio.
+\end{enumerate}
+
+\subsubsection{Intervallo di variazione (Range)}
+$IV = x_{\max} - x_{\min}$. Ampiezza totale tra valore massimo e minimo.
+
+\subsubsection{Differenza interquartile}
+$I_Q = Q_{3/4} - Q_{1/4}$. Indica l'intervallo che contiene il 50\% centrale dei dati, non influenzato dai valori estremi.
+
+\subsubsection{Varianza}
+Misura la dispersione rispetto alla media:
+\begin{itemize}
+    \item Popolazione: $\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2$
+    \item Campione: $s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2$
+\end{itemize}
+
+\subsubsection{Devianza}
+$Dev(x) = \sum_{i=1}^{n}(x_i - \bar{x})^2$. Somma degli scarti quadratici dalla media.
+
+\subsubsection{Scarto quadratico medio}
+$S(x) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2}$. Radice quadrata della varianza.
+
+\subsection{Coefficienti di variazione}
+Coefficiente adimensionale per confrontare variabilità di dataset con scale diverse:
+$CV(x) = \frac{S(x)}{\bar{x}}$ (esprimibile in \%).
+
+\subsubsection{Concentrazione (Indice di Gini)}
+Misura l'ineguaglianza nella distribuzione di un carattere quantitativo. Varia tra 0 (perfetta uguaglianza) e 1 (massima disuguaglianza).
+$R = \frac{\sum_{j=1}^{h-1}(P_j - q_j)}{\sum_{j=1}^{n-1} P_j}$
+dove $P_j = \frac{j}{n}$ (frazione cumulata unità) e $q_j = \frac{\sum_{i=1}^{j} x_i}{\sum_{i=1}^{n} x_i}$ (frazione cumulata carattere).
+
+\subsection{Indice di correlazione}
+Rappresenta coppie di valori in un grafico di dispersione. La retta di regressione modella la dipendenza funzionale.
+
+\subsubsection{Modello di dipendenza lineare}
+$y = a + bx + e$
+\begin{itemize}
+    \item $a$: intercetta ($y(0)$)
+    \item $b$: coefficiente angolare (intensità della dipendenza)
+    \item $e$: termine d'errore ($y_i - y^*$)
+\end{itemize}
+
+\subsubsection{Indice di correlazione di Pearson}
+$r_{xy} = \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n}(x_i - \bar{x})^2 \cdot \sum_{i=1}^{n}(y_i - \bar{y})^2}}$, con $-1 \leq r \leq 1$.
+\begin{itemize}
+    \item $r > 0$: correlazione positiva (debole $<0,3$; moderata $0,3\text{--}0,7$; forte $>0,7$)
+    \item $r = 0$: incorrelate
+    \item $r < 0$: correlazione negativa
+\end{itemize}
+
+\subsection{Rapporti statistici}
+Indicatori adimensionali ottenuti dal rapporto tra due grandezze legate logicamente.
+
+\begin{itemize}
+    \item \textbf{Composizione}: $f_i = \frac{n_i}{n}$ ($0 \leq f_i \leq 1$)
+    \item \textbf{Coesistenza}: $f_c = \frac{n_a}{n_b}$
+    \item \textbf{Frequenza}: $f = \frac{n_i}{n}$
+    \item \textbf{Derivazione}: rapporto tra una grandezza e il suo presupposto logico/temporale.
+    \item \textbf{Durata}: $\frac{\text{Stock medio}}{\text{Flusso medio}} = \frac{(C_0+C_1)/2}{(E+U)/2} \cdot \text{unità di tempo}$
+    \item \textbf{Ripetizione}: $\frac{\text{Flusso medio}}{\text{Stock medio}} = \frac{1}{\text{rapporto di durata}}$
+    \item \textbf{Numeri indici semplici}: $b|_t = \frac{q_t}{q_b} \cdot 100$ (a base fissa o mobile).
+\end{itemize}
+
+\subsection{Probabilità e rappresentazioni grafiche}
+\subsubsection{Concetti fondamentali}
+\begin{itemize}
+    \item \textbf{Prova/Esperimento aleatorio}: operazione ad esito incerto, ripetibile con risultati non prevedibili.
+    \item \textbf{Spazio campionario} $\Omega$: insieme di tutti gli esiti possibili (esaustivo e disgiuntivo).
+    \item \textbf{Evento aleatorio}: sottoinsieme $E \subseteq \Omega$.
+\end{itemize}
+
+\subsubsection{Operazioni tra eventi}
+\begin{itemize}
+    \item Unione $A \cup B$: si verifica almeno uno.
+    \item Intersezione $A \cap B$: si verificano entrambi.
+    \item Negazione $\bar{A}$: $A$ non si verifica.
+    \item Eventi disgiunti: $A \cap B = \emptyset$.
+\end{itemize}
+
+\subsubsection{Probabilità di un evento}
+Definizione classica: $P(E) = \frac{n_f}{n}$. \\
+Definizione frequentistica: $P(A) = \lim_{n \to \infty} \frac{n_A}{n}$.
+
+\subsubsection{Probabilità delle operazioni}
+\begin{itemize}
+    \item $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+    \item $P(A \setminus B) = P(A) - P(A \cap B)$
+    \item $P(A \cap B) = P(A|B)P(B) = P(B|A)P(A)$
+    \item Indipendenti: $P(A \cap B) = P(A) \cdot P(B)$ e $P(A|B) = P(A)$
+    \item Negazione: $P(\bar{A}) = 1 - P(A)$
+\end{itemize}
+
+\newpage
+\section{Osservatore}
+\subsection{La figura dell'osservatore}
+Colui che compie attività di osservazione, analisi, valutazione, archiviazione e scouting. Classificazione storica (Lucadello):
+\begin{enumerate}
+    \item \textbf{Poor}: nessuna metodologia né obiettivo.
+    \item \textbf{Picker}: evidenzia solo i difetti.
+    \item \textbf{Performance}: valuta solo la singola prestazione.
+    \item \textbf{Projector}: ideale, individua potenzialità e proietta sviluppo in 2-3 stagioni.
+\end{enumerate}
+
+\subsubsection{Metodo TIPS}
+Modello di scouting per giovani talenti (Cruyff, Ajax/Barcellona):
+\begin{itemize}
+    \item \textbf{T}ecnica: ricezione, trasmissione, dribbling, tiro.
+    \item \textbf{I}ntelligenza: posizionamento, decision-making, gioco senza palla.
+    \item \textbf{P}ersonalità: iniziativa sotto pressione, comunicazione, motivazione.
+    \item \textbf{S}peed: rapidità fisica/mentale, reattività, accelerazione.
+\end{itemize}
+
+\subsubsection{Tipi di osservatore}
+\begin{enumerate}
+    \item Prima squadra (tecnico)
+    \item Settore giovanile (tecnico)
+    \item Avversario (tattico)
+    \item Video analista (tattico)
+    \item Direttore sportivo prestiti
+\end{enumerate}
+\textbf{Osservatore avversario}: studio movimenti (possesso/non possesso), impostazione, soluzioni, palle inattive, punti di forza/debolezza. Copertura di 2/3 gare pre-scontro diretto.
+
+\subsubsection{Ruolo e competenze}
+Valutazione basata su:
+\begin{enumerate}
+    \item Prestazione (singola partita)
+    \item Valore assoluto/potenziale: $V(x) = \sum_{i=1}^{n} x_i$ (media ponderata sulle partite osservate)
+\end{enumerate}
+Competenze: raccolta dati, trasformazione/archiviazione digitale, conoscenza contrattuale/market.
+
+\subsubsection{Area scouting e Intelligence}
+Raccolta dati: storico infortuni, situazioni contrattuali, agenti, dinamiche di mercato, equilibri societari. Strumenti: piattaforme (Wyscout), software di scouting, sale video dedicate.
+
+\subsection{Ruolo del calciatore: posizione sul campo tattico}
+Campo tattico suddiviso in linee:
+\begin{itemize}
+    \item \textbf{Verticali} (dx $\to$ sx): fascia esterna dx, corridoio interno dx, asse centrale, corridoio interno sx, fascia esterna sx.
+    \item \textbf{Orizzontali} (alto $\to$ basso): linea fondo offensiva, attacco/trequarti, mediana alta, centrocampo, mediana bassa, difesa, porta.
+\end{itemize}
+
+\subsubsection{Attitudine del calciatore}
+\begin{enumerate}
+    \item \textbf{Regia}: dalla porta alla trequarti (passaggi).
+    \item \textbf{Attacco}: dalla trequarti alla porta avversaria (rifinitura $\to$ finalizzazione).
+    \item \textbf{Difesa}: a tutto campo post-perdita palla (tattica individuale/collettiva).
+\end{enumerate}
+
+\subsection{Analisi qualitativa del calciatore obiettivo}
+Parametri osservati: coordinativi, atletici, fisici, tecnici, tattici, comportamentali.
+
+\subsubsection{Parametri coordinativi}
+Anticipazione, combinazione, destrezza fine, differenziazione dinamica, equilibrio (statico/dinamico/in volo), orientamento spazio-tempo, reazione (semplice/complessa), ritmazione, trasformazione motoria. Definiscono la \textit{velocità di pensiero} (selezione, esecuzione, riprogrammazione).
+
+\subsubsection{Parametri atletici}
+\begin{enumerate}
+    \item \textbf{Forza}: massimale, esplosiva, resistente.
+    \item \textbf{Velocità/Rapidità}: velocità ($>30$m), rapidità ($<25$m).
+    \item \textbf{Resistenza}: capacità di sostenere sforzi prolungati.
+    \item \textbf{Flessibilità}: mobilità articolare, elasticità muscolare.
+\end{enumerate}
+
+\subsubsection{Parametri fisici}
+Sviluppo completo a 23 anni. Valutati tramite:
+\begin{itemize}
+    \item \textbf{Morfologia}: brevitipo, normotipo, longitipo.
+    \item \textbf{Somatipo}: endomorfo, mesomorfo, ectomorfo.
+    \item \textbf{Costituzione}: statura, struttura, peso.
+    \item \textbf{Muscolatura}: tono, volume, definizione, armonia. Fibre: rosse (lente), bianche (rapide), rosa (miste).
+    \item \textbf{Articolazioni/Piede/Postura}: biomeccanica della corsa, allineamento latero-laterale e antero-posteriore.
+\end{itemize}
+
+\subsubsection{Parametri tecnici e tattici}
+\begin{itemize}
+    \item \textbf{Tecnica di base}: dominio, guida, calcio, colpo di testa, contrasto, rimesse.
+    \item \textbf{Tecnica portiere}: presa, tuffo, uscite, deviazioni, rinvii, impostazione.
+    \item \textbf{Tattica}: tecnica applicata, tattica individuale (possesso/non possesso), tattica collettiva (pressing, transizioni).
+\end{itemize}
+
+\subsection{Ruoli di posizione}
+\begin{description}[leftmargin=*]
+    \item[\textbf{Difensori}] P, DED, DLD, DCD, DC, DCS, DLS, DES
+    \item[\textbf{Centrocampisti}] CC, CED, CID, CCD, CCS, CIS, CES, CLD, CLS, CTC, CTED, CTD, CTS, CTES
+    \item[\textbf{Attaccanti}] ATC, ATED, ATD, ATS, ATES, AED, AES, ALD, ALS, ACD, AC, ACS
+    \item[\textbf{Profili tattici}] Aa (Ala), MP (Mezza Punta), SP (Seconda Punta), PPM/PPP (Punta di Movimento)
+\end{description}
+
+\newpage
+\section{Match Analysis}
+Analisi oggettiva integrata con tecnologie moderne delle prestazioni di giocatori o squadre.
+
+\subsection{Storia della match analysis}
+\begin{enumerate}
+    \item \textbf{Charles Reep} (anni '50): prime statistiche (corner, passaggi), concetto di \textit{long ball}.
+    \item \textbf{Valerij Lobanovskij} (anni '70-'90): introduzione computer, campo suddiviso in zone.
+    \item \textbf{Arrigo Sacchi} (anni '80): uso metodico del video per analisi tattica.
+    \item \textbf{Anni '90}: rivoluzione tecnologica e trasmissione integrale delle partite.
+\end{enumerate}
+
+\subsubsection{Suddivisione e figura del video analista}
+\begin{itemize}
+    \item \textbf{Analisi video}: studio partite proprie/avversari/giocatori.
+    \item \textbf{Analisi statistica}: dati tecnico/tattici e fisico/atletici.
+\end{itemize}
+Il \textbf{video analista} (spesso ex allenatore) lavora in coordinazione con lo staff, cogliendo dettagli in ogni \textit{situazione di gioco} (sottoinsiemi limitati in tempo/spazio/giocatori).
+
+\subsection{Analisi della fase difensiva e offensiva}
+Compiti: \textit{match studio} (propria squadra), \textit{team studio} (avversario: 2+ partite), analisi tattiche, analisi giocatori. Si cercano \textit{costanti} tecniche e tattiche ripetute.
+
+\subsubsection{Fase offensiva}
+\begin{enumerate}
+    \item Costruzione dal basso
+    \item Gioco a centrocampo/laterale
+    \item Rifinitura (ingresso in zona)
+    \item Movimenti punte/attacco linea
+    \item \textit{Dato chiave}: passaggi chiave per individuare giocatori pericolosi.
+\end{enumerate}
+
+\subsubsection{Fase difensiva}
+\begin{enumerate}
+    \item Prima pressione (dove indirizza)
+    \item Recupero palla (anticipo, intercetto, contrasto)
+    \item Difesa fasce
+    \item Movimento linea difensiva
+    \item \textit{Dato chiave}: recupero palla (forte correlazione col risultato, specie in metà campo avversaria).
+\end{enumerate}
+
+\subsection{Analisi delle palle inattive}
+35\% dei gol deriva da situazioni standard. Analisi in 3 fasi:
+\begin{enumerate}
+    \item Divisione per tipologia (calci d'angolo, punizioni, rimesse, rigori)
+    \item Fase offensiva: lacune avversarie nei movimenti
+    \item Fase difensiva: giocatori pericolosi e schemi
+\end{enumerate}
+
+\subsection{Analisi del giocatore}
+\begin{itemize}
+    \item \textbf{Mercato}: video 15-20 min, evidenzia doti tecnico-tattiche su più partite.
+    \item \textbf{Avversario}: video 3-4 min, ordine clip: tecnico $\to$ tattico $\to$ posizionale.
+\end{itemize}
+Il ruolo non è la posizione ma la \textit{funzione} svolta.
+
+\subsection{Analisi statistica: l'utilizzo dei Big Data}
+\subsubsection{Dati fisico/atletici}
+Raccolta tramite \textbf{tracking} (GPS in allenamento, video-tracking in partita). Dati forniti da società esterne (Prozone, Amisco, SportTV).
+\begin{itemize}
+    \item Serie A: $\sim 10,6$ km/partita (Dif: 10,1; CC: 11,5; Att: 9,7)
+    \item Premier League: $\sim 11$ km/partita
+    \item \textit{Dato qualitativo}: distanza ad alta intensità ($V > 19$ km/h) $\sim 809$ m in Serie A.
+\end{itemize}
+
+\subsubsection{Dati tecnico/tattici}
+Raccolta tramite \textbf{scout} (manuale in tempo reale o video-analitico da provider esterni come Opta, DSP).
+
+\subsection{Esempi di dati tecnico/tattici}
+\begin{itemize}
+    \item \textbf{Passaggi chiave}: trasmissioni che sviluppano l'azione (verticalizzazioni, assist, third pass). Una squadra con più dribbling positivi ha $\sim 15\%$ in più di probabilità di vittoria.
+    \item \textbf{Indice di pericolosità}: supera il limite del risultato finale. Pondera 9 parametri (palla gol: 10 pt; azione da gol: 4 pt; tiri, cross, punizioni, corner). Utile per valutare under/overperformance.
+    \item \textbf{Expected Goals (xG)}: probabilità matematica ($0$--$1$) che un tiro diventi gol, basata su dati storici. Considera solo le conclusioni.
+    \item \textbf{Indice di dominio territoriale}: unisce possesso palla, baricentro e timeline della gara.
+    \item \textbf{Dati storici applicati}: es. Mondiali 1974 (Olanda prima per possesso 57\%, Cruyff scendeva tra i difensori); record dribbling (Maradona '86), tiri (Eusebio '66), passaggi (Xavi '10).
+\end{itemize}
+
+\end{document}
