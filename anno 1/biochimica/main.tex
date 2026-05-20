@@ -15,14 +15,15 @@
 \geometry{margin=1.5cm}
 \usepackage{hyperref}
 \hypersetup{
-colorlinks=true,
-linkcolor=blue,
-filecolor=magenta,
-urlcolor=cyan,
-pdfauthor={Dispensa Universitaria - Enrico Desideri},
-pdftitle={Biochimica}
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdfauthor={Dispensa Universitaria - Enrico Desideri},
+    pdftitle={Biochimica}
 }
-% Ambienti personalizzati per definizioni e teoremi
+
+% ✅ CORREZIONE FONDAMENTALE: ewtheorem -> \newtheorem
 \newtheorem{definizione}{Definizione}[section]
 \newtheorem{teorema}{Teorema}[section]
 \newtheorem{proposizione}{Proposizione}[section]
@@ -32,6 +33,7 @@ pdftitle={Biochimica}
 \begin{document}
 
 \title{\textbf{Biochimica}}
+\author{}
 \maketitle
 \tableofcontents
 \clearpage
@@ -327,7 +329,7 @@ Nonostante la diversità morfologica e funzionale, le cellule condividono compon
 Una cellula \textbf{eucariotica} è caratterizzata dalla presenza di un nucleo delimitato da membrana, contenente il materiale genetico organizzato in cromosomi lineari, e di organelli membranosi specializzati.
 \end{definizione}
 La distinzione fondamentale tra i due domini cellulari è sintetizzata nella Tabella~\ref{tab:procarioti-eucarioti}.
-\begin{table}[h!]
+\begin{table}[htbt]
 \centering
 \caption{Confronto tra cellule procariotiche ed eucariotiche}
 \label{tab:procarioti-eucarioti}
@@ -345,7 +347,7 @@ Organismi: batteri & Organismi: animali, piante, funghi \\
 
 \section{Composizione chimica della cellula}
 La maggior parte delle cellule presenta un contenuto idrico superiore al 70\%. Il \textbf{peso secco} (privato dell'acqua) è costituito principalmente da macromolecole biologiche, come riportato in Tabella~\ref{tab:composizione-cellula}.
-\begin{table}[h!]
+\begin{table}[htbp]
 \centering
 \caption{Composizione percentuale del peso secco cellulare}
 \label{tab:composizione-cellula}
@@ -422,11 +424,11 @@ Il \textbf{citoplasma} comprende tutto il contenuto cellulare escluso il nucleo 
     \item \textbf{Organelli}: strutture membranose specializzate;
     \item \textbf{Citoscheletro}: rete dinamica di filamenti proteici che conferisce forma, stabilità e capacità di movimento alla cellula.
 \end{itemize}
-\begin{table}[h!]
+\begin{table}[htbp]
 \centering
 \caption{Componenti del citoscheletro}
 \label{tab:citoscheletro}
-\begin{tabular}{p{0.25\textwidth} p{0.35\textwidth} p{0.35\textwidth}}
+\begin{tabular}{p{0.25\textwidth} p{0.33\textwidth} p{0.33\textwidth}}
 \hline
 \textbf{Tipo} & \textbf{Composizione} & \textbf{Funzioni principali} \\
 \hline
@@ -674,7 +676,7 @@ I legami di coordinazione del ferro sono sei:
 Un secondo residuo di \textbf{istidina distale} stabilizza il legame \(\mathrm{Fe-O_2}\) tramite un legame idrogeno, favorendo il posizionamento planare del ferro rispetto all'eme. Per prevenire l'ossidazione del ferro a \(\mathrm{Fe^{3+}}\) (che impedirebbe il legame con \(\mathrm{O_2}\)), il gruppo eme è alloggiato in una tasca idrofobica della proteina.
 
 \subsection{Differenze strutturali tra Hb e Mb}
-\begin{table}[h!]
+\begin{table}[htbp]
 \centering
 \caption{Confronto tra emoglobina e mioglobina}
 \label{tab:hb-mb}
@@ -815,7 +817,7 @@ Molte \textbf{vitamine} (specie del gruppo B) sono precursori essenziali di coen
 \section{Classificazione e nomenclatura enzimatica}
 Gli enzimi sono classificati in \textbf{6 classi principali} in base al tipo di reazione catalizzata. La maggior parte presenta il suffisso \textit{-asi}. Ogni enzima è identificato da un codice EC (Enzyme Commission) a 4 numeri (Classe.Sottoclasse.Sottosottoclasse.Seriale).
 
-\begin{table}[h!]
+\begin{table}[htbp]
 \centering
 \caption{Classificazione principale degli enzimi}
 \label{tab:enzimi-classi}
@@ -855,6 +857,461 @@ L'attività può essere compromessa da molecole inibitrici:
 
 % =========================================================
 % Fine Capitolo 6
+% =========================================================
+
+% =========================================================
+% CAPITOLO 7: Carboidrati
+% =========================================================
+
+\chapter{Carboidrati}
+
+\section{Introduzione e funzioni biologiche}
+I \textbf{carboidrati} (o \textit{glucidi}, \textit{zuccheri}, \textit{saccaridi}) sono macromolecole biologiche costituite da carbonio, idrogeno e ossigeno, con formula bruta generale \(\mathrm{C_n(H_2O)_n}\) (\(n \geq 3\)). Il ciclo energetico della biosfera si basa sulla loro interconversione: tramite la \textbf{fotosintesi}, gli organismi autotrofi fissano \(\mathrm{CO_2}\) e \(\mathrm{H_2O}\) utilizzando energia luminosa per sintetizzare glucosio e ossigeno; in assenza di luce, o negli organismi eterotrofi, queste molecole vengono ossidate per produrre energia sotto forma di \textbf{ATP}:
+\[
+\mathrm{C_n(H_2O)_n + nO_2 \rightarrow nCO_2 + nH_2O + Energia (ATP)}
+\]
+Oltre alla produzione energetica, i carboidrati svolgono funzioni fondamentali:
+\begin{itemize}
+    \item \textbf{Riserva energetica}: amido (vegetali, cloroplasti/amiloplasti) e glicogeno (animali, fegato e muscolo);
+    \item \textbf{Strutturale}: cellulosa (pareti vegetali), chitina (esoscheletri), peptidoglicani (batteri);
+    \item \textbf{Informazionale e di riconoscimento}: glicoproteine e glicolipidi di membrana, coinvolti nella segnalazione cellulare e nel riconoscimento immunitario.
+\end{itemize}
+In ambito fisiologico, i carboidrati rappresentano il substrato preferenziale per la contrazione muscolare ad alta intensità. Le riserve di glicogeno muscolare si esauriscono in tempi inversamente proporzionali all'intensità dell'esercizio (\(\% \mathrm{VO_2max}\)), e la loro disponibilità è strettamente correlata alla performance aerobica prolungata.
+
+\section{Struttura e classificazione dei monosaccaridi}
+I \textbf{monosaccaridi} sono le unità fondamentali dei carboidrati. La loro struttura consiste in una catena carboniosa (3--7 atomi di C) contenente un gruppo \textbf{carbonilico} (\(\mathrm{C=O}\)):
+\begin{itemize}
+    \item Se il carbonile è terminale (gruppo aldeidico, \(-\mathrm{CHO}\)), il monosaccaride è un \textbf{aldoso};
+    \item Se il carbonile è interno (gruppo chetonico, \(\mathrm{C=O}\)), è un \textbf{chetoso}.
+\end{itemize}
+I carboni rimanenti legano gruppi idrossilici (\(-\mathrm{OH}\)) e idrogeno. In base al numero di atomi di carbonio si distinguono: triosi (\(\mathrm{C_3H_6O_3}\), es. gliceraldeide), tetrosi, pentosi ed esosi (\(\mathrm{C_6H_{12}O_6}\), es. glucosio).
+
+\subsection{Stereoisomeria e serie D/L}
+I monosaccaridi presentano \textbf{centri chirali} (carboni legati a 4 gruppi diversi), eccetto il diidrossiacetone. Ciò genera stereoisomeri non sovrapponibili, detti \textbf{enantiomeri}. La serie di appartenenza (\textbf{D} o \textbf{L}) si determina confrontando la configurazione del carbonio chirale più lontano dal gruppo carbonilico con quella della gliceraldeide. In natura, i monosaccaridi sono quasi esclusivamente della serie \textbf{D}.
+Quando due stereoisomeri differiscono per la configurazione di un solo centro chirale, sono detti \textbf{epimeri} (es. glucosio e galattosio sono epimeri al C4).
+
+\subsection{Forma ciclica e anomeria}
+In soluzione acquosa, i monosaccaridi con 5 o più atomi di carbonio ciclizzano spontaneamente tramite reazione intramolecolare tra il gruppo carbonilico e un gruppo \(-\mathrm{OH}\), formando un \textbf{emiacetale} o \textbf{emichetale}. Si ottengono:
+\begin{itemize}
+    \item \textbf{Forme piranosiche}: anello a 6 atomi (simile al pirano);
+    \item \textbf{Forme furanosiche}: anello a 5 atomi (simile al furano).
+\end{itemize}
+Il carbonio che diventa chirale durante la ciclizzazione è detto \textbf{carbonio anomerico} (C1 negli aldoesosi). Può assumere due configurazioni spaziali:
+\begin{itemize}
+    \item \(\boldsymbol{\alpha}\)-anomero: il gruppo \(-\mathrm{OH}\) anomerico è orientato \textit{sotto} il piano dell'anello;
+    \item \(\boldsymbol{\beta}\)-anomero: il gruppo \(-\mathrm{OH}\) anomerico è orientato \textit{sopra} il piano.
+\end{itemize}
+Le due forme sono in equilibrio dinamico con la forma lineare (mutarotazione). Per il D-glucosio, in soluzione prevale la forma \(\beta\) (\(\approx 64\%\)), seguita dalla \(\alpha\) (\(\approx 36\%\)) e da una quota minima della forma aperta (\(<1\%\)).
+
+\section{Derivati dei monosaccaridi}
+I monosaccaridi possono subire modificazioni strutturali che ne ampliano le funzioni biologiche:
+\begin{itemize}
+    \item \textbf{Deossizuccheri}: sostituzione di un \(-\mathrm{OH}\) con un \(-\mathrm{H}\). Il \textbf{2-deossiribosio} è il componente dello scheletro del DNA, prodotto dalla riduzione del ribosio catalizzata dalla ribonucleotide reduttasi.
+    \item \textbf{Derivati ridotti (polioli)}: riduzione del gruppo carbonilico a gruppo \(-\mathrm{OH}\). Esempio: \textbf{glicerolo}, precursore dei trigliceridi. I polioli sono utilizzati come dolcificanti a basso indice glicemico e ridotta cariogenicità.
+    \item \textbf{Derivati amminici (amminozuccheri)}: sostituzione di un \(-\mathrm{OH}\) con un gruppo amminico (\(-\mathrm{NH_2}\)). Sono costituenti strutturali di glicolipidi, glicoproteine e polisaccaridi batterici.
+\end{itemize}
+
+\section{Oligosaccaridi e legame glicosidico}
+Due o più monosaccaridi si uniscono tramite un \textbf{legame glicosidico}, formatosi per \textbf{condensazione} tra il carbonio anomerico di uno zucchero e un carbonio idrossilico di un altro, con rilascio di una molecola d'acqua. La natura del legame dipende dalla configurazione anomerica del primo residuo:
+\begin{itemize}
+    \item \(\boldsymbol{\alpha}\)-\textbf{glicosidico}: se il C1 è in conformazione \(\alpha\);
+    \item \(\boldsymbol{\beta}\)-\textbf{glicosidico}: se il C1 è in conformazione \(\beta\).
+\end{itemize}
+Il legame più comune è il \((1\to4)\), ma nei polisaccaridi ramificati è fondamentale il \((1\to6)\).
+
+\subsection{Disaccaridi principali}
+\begin{itemize}
+    \item \textbf{Maltosio}: glucosio + glucosio, legame \(\alpha(1\to4)\).
+    \item \textbf{Cellobiosio}: glucosio + glucosio, legame \(\beta(1\to4)\). Unità ripetitiva della cellulosa.
+    \item \textbf{Lattosio}: galattosio + glucosio, legame \(\beta(1\to4)\). Presente nel latte.
+    \item \textbf{Saccarosio}: glucosio + fruttosio, legame \(\alpha(1\to2)\beta\). Zucchero da tavola.
+\end{itemize}
+La specificità enzimatica digestiva è legata alla configurazione del legame glicosidico. Gli enzimi umani (es. amilasi, maltasi) idrolizzano i legami \(\alpha\), ma non i legami \(\beta\) della cellulosa. Il lattosio viene idrolizzato dalla \textbf{lattasi} (\(\beta\)-galattosidasi). La \textbf{persistenza della lattasi} in età adulta è un adattamento genetico presente in alcune popolazioni; la sua assenza causa \textbf{intolleranza al lattosio}, con fermentazione batterica intestinale e produzione di gas (\(\mathrm{H_2}\), \(\mathrm{CH_4}\), \(\mathrm{CO_2}\)).
+
+\section{Polisaccaridi}
+I polisaccaridi sono polimeri di monosaccaridi legati da legami glicosidici. Si classificano in:
+\begin{itemize}
+    \item \textbf{Omopolisaccaridi}: costituiti da un solo tipo di monomero (es. amido, glicogeno, cellulosa);
+    \item \textbf{Eteropolisaccaridi}: costituiti da due o più tipi di monomeri (es. glicosamminoglicani).
+\end{itemize}
+
+\subsection{Omopolisaccaridi del glucosio}
+\begin{itemize}
+    \item \textbf{Amido} (riserva vegetale): composto da \textbf{amilosio} (catena lineare, legami \(\alpha(1\to4)\), \(\approx 20\%\)) e \textbf{amilopectina} (catena ramificata, legami \(\alpha(1\to4)\) e ramificazioni \(\alpha(1\to6)\) ogni 24--30 residui, \(\approx 80\%\)). Si organizza in granuli compatti e insolubili; la cottura ne aumenta la digeribilità.
+    \item \textbf{Cellulosa} (strutturale vegetale): polimero lineare non ramificato con legami \(\beta(1\to4)\). La configurazione \(\beta\) induce una conformazione estesa e lineare, favorendo la formazione di microfibrille resistenti tramite legami idrogeno intercatena. Indigeribile dall'uomo, ma fermentata dalla flora batterica dei ruminanti.
+    \item \textbf{Glicogeno} (riserva animale): struttura simile all'amilopectina, ma con ramificazioni \(\alpha(1\to6)\) molto più frequenti (ogni 8--10 residui). Questa elevata ramificazione aumenta la solubilità e fornisce numerosi siti terminali per l'attacco simultaneo degli enzimi glicogenolitici, garantendo un rilascio rapido di glucosio. Accumulato in granuli citoplasmatici, nel fegato mantiene la glicemia, mentre nel muscolo fornisce energia locale. Deficit enzimatici nel suo metabolismo causano \textbf{glicogenosi}.
+\end{itemize}
+
+\subsection{Eteropolisaccaridi e matrice extracellulare}
+Gli eteropolisaccaridi sono componenti fondamentali della \textbf{matrice extracellulare} (MEC), un reticolo idratato che circonda le cellule, fornendo supporto strutturale, idratazione e vie di diffusione per nutrienti e segnali. La MEC è costituita da fibre proteiche (collagene, elastina, fibronectina, laminina) e da una rete polisaccaridica di \textbf{glicosamminoglicani (GAG)}.
+
+I GAG sono polimeri lineari di disaccaridi ripetuti, spesso solforati o carichi negativamente, che legano grandi quantità di acqua, conferendo turgore e proprietà lubrificanti alla MEC. Sono spesso legati covalentemente a proteine core formando \textbf{proteoglicani}.
+
+\begin{esempio}[Acido ialuronico]
+Il più noto GAG, costituito dalla ripetizione di acido glucuronico e N-acetilglucosammina legati da legami \(\beta(1\to3)\) e \(\beta(1\to4)\). Non è solforato, non è legato covalentemente a proteine e può raggiungere lunghezze elevate (\(\approx 50.000\) unità). Abbondante in cartilagini, tendini, liquido sinoviale e umor vitreo, svolge funzioni di ammortizzazione meccanica, lubrificazione articolare e mantenimento dell'idratazione tissutale. La sua degradazione con l'età contribuisce alla comparsa di rughe e artrosi.
+\end{esempio}
+
+% =========================================================
+% Fine Capitolo 7
+% =========================================================
+
+% =========================================================
+% CAPITOLO 8: Lipidi
+% =========================================================
+
+\chapter{Lipidi}
+
+\section{Introduzione e classificazione}
+I \textbf{lipidi} costituiscono una classe eterogenea di composti organici caratterizzati da una marcata \textbf{idrofobicità} e insolubilità in acqua. La loro struttura è prevalentemente costituita da idrocarburi, ovvero catene contenenti solo atomi di carbonio e idrogeno. Nell'organismo umano, i lipidi rappresentano circa il \textbf{17\% del peso corporeo} e svolgono funzioni diversificate, classificabili in tre categorie principali:
+\begin{itemize}
+    \item \textbf{Lipidi di riserva}: trigliceridi (grassi e oli), deputati all'immagazzinamento di energia chimica;
+    \item \textbf{Lipidi strutturali}: fosfolipidi, sfingolipidi e steroli, componenti fondamentali delle membrane biologiche;
+    \item \textbf{Lipidi regolatori}: presenti in piccole quantità, fungono da precursori di vitamine liposolubili, ormoni steroidei e molecole di segnalazione (es. eicosanoidi).
+\end{itemize}
+
+\subsection{Ruolo metabolico nell'esercizio fisico}
+A differenza dei carboidrati, i lipidi non possono essere utilizzati come fonte energetica primaria durante esercizi ad alta intensità, poiché il loro catabolismo ossidativo richiede necessariamente ossigeno e tempi di attivazione più lunghi. Tuttavia, rappresentano la fonte energetica predominante durante:
+\begin{itemize}
+    \item Esercizi aerobici prolungati a bassa-moderata intensità;
+    \item Fasi di recupero tra sessioni di allenamento;
+    \item Condizioni di digiuno o deplezione glicogenica.
+\end{itemize}
+Il concetto di \textbf{crossover point} descrive l'intensità di esercizio alla quale il contributo energetico dei carboidrati eguaglia quello dei lipidi: aumentando l'intensità, la quota lipidica diminuisce progressivamente a favore dei glucidi. L'allenamento aerobico cronico induce adattamenti metabolici che spostano il crossover point verso intensità maggiori, migliorando l'efficienza nell'ossidazione lipidica.
+
+\section{Lipidi semplici: acilgliceroli e cere}
+\subsection{Struttura degli acilgliceroli}
+Gli \textbf{acilgliceroli} sono esteri formati dalla condensazione tra una molecola di \textbf{glicerolo} (un triolo derivato metabolicamente dai carboidrati) e uno o più \textbf{acidi grassi}. In base al numero di acidi grassi esterificati, si distinguono:
+\begin{itemize}
+    \item \textbf{Monoacilgliceroli}: un solo acido grasso legato al glicerolo;
+    \item \textbf{Diacilgliceroli}: due acidi grassi legati;
+    \item \textbf{Triacilgliceroli (TAG) o trigliceridi}: tre acidi grassi legati, forma principale di deposito lipidico nell'organismo.
+\end{itemize}
+
+\begin{definizione}[Trigliceridi]
+I \textbf{trigliceridi} sono esteri del glicerolo con tre acidi grassi. Rappresentano la forma di immagazzinamento energetico più efficiente, grazie all'elevato contenuto di legami C-H ridotti e all'assenza di acqua di idratazione.
+\end{definizione}
+
+\subsection{Immagazzinamento e mobilizzazione}
+I trigliceridi sono conservati sotto forma di \textbf{gocce lipidiche} nel citosol cellulare:
+\begin{itemize}
+    \item \textbf{Adipociti}: cellule specializzate del tessuto adiposo, contenenti una singola grande goccia lipidica che occupa la maggior parte del volume cellulare;
+    \item \textbf{Fibre muscolari scheletriche}: contengono gocce lipidiche più piccole e numerose, posizionate strategicamente vicino ai mitocondri per un rapido accesso energetico durante l'esercizio.
+\end{itemize}
+Per essere utilizzati a scopo energetico, gli acidi grassi devono essere liberati dal glicerolo tramite il processo di \textbf{lipolisi}, catalizzato da enzimi specifici detti \textbf{lipasi} (es. lipasi ormone-sensibile, HSL). Gli acidi grassi liberi (FFA) vengono quindi trasportati nel sangue legati all'\textbf{albumina} (fino a 7 molecole di FFA per molecola di albumina) e captati dai tessuti target tramite trasportatori di membrana specifici (es. FAT/CD36, FABPpm).
+
+\begin{nota}[Lipotossicità]
+Un eccesso cronico di acidi grassi liberi circolanti può indurre \textbf{lipotossicità}, con accumulo di intermedi lipidici (diacilgliceroli, ceramidi) in tessuti non adiposi (fegato, muscolo, pancreas), compromettendo la segnalazione insulinica e la funzione cellulare.
+\end{nota}
+
+\section{Acidi grassi: struttura, nomenclatura e proprietà}
+\subsection{Struttura chimica}
+Gli \textbf{acidi grassi} sono acidi carbossilici a catena alifatica lineare, caratterizzati da:
+\begin{itemize}
+    \item Un \textbf{gruppo carbossilico} terminale (\(-\mathrm{COOH}\)), polare e ionizzabile;
+    \item Una \textbf{catena idrocarburica} apolare, generalmente composta da 4 a 36 atomi di carbonio (più comunemente 12--24).
+\end{itemize}
+La maggior parte degli acidi grassi naturali presenta un numero \textbf{pari} di atomi di carbonio, conseguenza del meccanismo biosintetico che aggiunge unità bicarboniose (acetil-CoA).
+
+\subsection{Nomenclatura}
+La nomenclatura standard degli acidi grassi segue il formato:
+\[
+\text{C:X } \Delta^{\text{posizioni}}
+\]
+dove:
+\begin{itemize}
+    \item \textbf{C} = numero di atomi di carbonio;
+    \item \textbf{X} = numero di doppi legami;
+    \item \textbf{\(\Delta^{\text{posizioni}}\)} = posizione dei doppi legami, contando dal carbonio carbossilico (C1).
+\end{itemize}
+
+\begin{esempio}[Esempi di nomenclatura]
+\begin{itemize}
+    \item \textbf{Acido stearico}: \(18:0\) (saturo, 18 C, nessun doppio legame);
+    \item \textbf{Acido oleico}: \(18:1\,\Delta^9\) (monoinsaturo, doppio legame in posizione 9);
+    \item \textbf{Acido \(\alpha\)-linolenico (ALA)}: \(18:3\,\Delta^{9,12,15}\) (polinsaturo omega-3).
+\end{itemize}
+\end{esempio}
+
+\subsection{Saturazione e isomeria geometrica}
+In base alla presenza di doppi legami nella catena idrocarburica, gli acidi grassi si classificano in:
+\begin{itemize}
+    \item \textbf{Saturi}: assenza di doppi legami (es. acido palmitico \(16:0\), acido stearico \(18:0\));
+    \item \textbf{Monoinsaturi}: un solo doppio legame (es. acido oleico \(18:1\));
+    \item \textbf{Polinsaturi}: due o più doppi legami (es. acido linoleico \(18:2\), acido arachidonico \(20:4\)).
+\end{itemize}
+Il doppio legame introduce rigidità conformazionale e genera \textbf{isomeria geometrica cis-trans}:
+\begin{itemize}
+    \item \textbf{Isomero \textit{cis}}: gli atomi di carbonio adiacenti al doppio legame si trovano dallo \textit{stesso lato}; la catena presenta una \textbf{piega} che impedisce l'impaccamento compatto. La maggior parte degli acidi grassi insaturi naturali è in configurazione \textit{cis}.
+    \item \textbf{Isomero \textit{trans}}: gli atomi di carbonio si trovano da \textit{lati opposti}; la catena mantiene una conformazione lineare simile ai saturi.
+\end{itemize}
+
+\begin{definizione}[Acidi grassi essenziali]
+L'organismo umano non possiede gli enzimi (desaturasi) per introdurre doppi legami oltre il carbonio 9 (contando dal carbossile). Pertanto, gli acidi grassi con insaturazioni in posizioni \(\omega\)-3 e \(\omega\)-6 devono essere assunti con la dieta e sono definiti \textbf{essenziali}:
+\begin{itemize}
+    \item \textbf{Omega-3}: primo doppio legame al carbonio 3 dall'estremità metilica (\(\omega\)); es. acido \(\alpha\)-linolenico (ALA, \(18:3\,\omega\)-3);
+    \item \textbf{Omega-6}: primo doppio legame al carbonio 6 dall'estremità \(\omega\); es. acido linoleico (LA, \(18:2\,\omega\)-6).
+\end{itemize}
+\end{definizione}
+
+\subsection{Proprietà fisico-chimiche}
+Le caratteristiche strutturali degli acidi grassi influenzano direttamente le loro proprietà:
+\begin{itemize}
+    \item \textbf{Punto di fusione}: gli acidi grassi saturi e \textit{trans}, potendo impaccarsi in strutture ordinate, presentano punti di fusione più elevati (solidi a temperatura ambiente, es. burro). Gli insaturi \textit{cis}, con catene piegate, hanno punti di fusione più bassi (liquidi, es. oli vegetali).
+    \item \textbf{Lunghezza della catena}: catene più lunghe aumentano le interazioni idrofobiche e il punto di fusione (es. grasso di bue vs. burro).
+    \item \textbf{Solubilità}: il gruppo carbossilico conferisce una modesta idrofilicità, ma la predominanza della catena apolare rende gli acidi grassi a catena lunga (\(>10\) C) praticamente insolubili in acqua. Solo gli acidi a catena molto corta (4--6 C) mostrano una limitata solubilità acquosa.
+\end{itemize}
+
+\subsection{Idrogenazione e acidi grassi trans}
+Il processo industriale di \textbf{idrogenazione} aggiunge idrogeno ai doppi legami degli acidi grassi insaturi:
+\begin{itemize}
+    \item \textbf{Idrogenazione totale}: saturazione completa, conversione in acidi grassi saturi;
+    \item \textbf{Idrogenazione parziale}: saturazione incompleta, con isomerizzazione \textit{cis} \(\rightarrow\) \textit{trans} di alcuni doppi legami residui.
+\end{itemize}
+L'idrogenazione parziale è utilizzata per aumentare la stabilità ossidativa e la consistenza solida degli oli vegetali (es. margarine). Tuttavia, gli \textbf{acidi grassi trans} industriali sono associati a un aumentato rischio cardiovascolare, poiché elevano il colesterolo LDL ("cattivo") e riducono l'HDL ("buono"), con effetti più marcati rispetto ai grassi saturi.
+
+\section{Lipoproteine e trasporto plasmatico dei lipidi}
+I lipidi, essendo insolubili in ambiente acquoso, richiedono sistemi di trasporto specializzati nel plasma. Le \textbf{lipoproteine} sono complessi supramolecolari costituiti da:
+\begin{itemize}
+    \item \textbf{Lipidi}: trigliceridi, colesterolo esterificato, fosfolipidi, colesterolo libero;
+    \item \textbf{Apolipoproteine}: componenti proteiche con funzioni strutturali, di riconoscimento recettoriale e di attivazione enzimatica.
+\end{itemize}
+Le interazioni tra i componenti sono prevalentemente non covalenti (idrofobiche, elettrostatiche).
+
+\begin{table}[h!]
+\centering
+\caption{Classificazione delle principali lipoproteine}
+\label{tab:lipoproteine}
+\begin{tabular}{p{0.25\textwidth} p{0.70\textwidth}}
+\hline
+\textbf{Lipoproteina} & \textbf{Origine e funzione principale} \\
+\hline
+\textbf{Chilomicroni} & Sintetizzati dall'enterocita intestinale; trasportano trigliceridi alimentari ai tessuti periferici (muscolo, adiposo) \\
+\textbf{VLDL} (Very Low Density Lipoprotein) & Prodotte dal fegato; veicolano trigliceridi endogeni ai tessuti extraepatici \\
+\textbf{LDL} (Low Density Lipoprotein) & Derivano dal catabolismo delle VLDL; trasportano colesterolo esterificato ai tessuti periferici (elevati livelli associati a rischio cardiovascolare) \\
+\textbf{HDL} (High Density Lipoprotein) & Prodotte da fegato e intestino; mediano il \textit{trasporto inverso del colesterolo} dai tessuti periferici al fegato per l'eliminazione (effetto protettivo) \\
+\hline
+\end{tabular}
+\end{table}
+
+La densità delle lipoproteine è inversamente proporzionale al contenuto lipidico: i chilomicroni sono i meno densi (più ricchi di trigliceridi), le HDL le più dense (più ricche di proteine). Le LDL, pur non essendo le più dense, contengono la maggiore percentuale di colesterolo e sono comunemente indicate come "colesterolo cattivo" per il loro ruolo nell'aterogenesi.
+
+\section{Funzioni biologiche dei trigliceridi}
+\begin{enumerate}
+    \item \textbf{Riserva energetica}: l'ossidazione completa degli acidi grassi produce circa \(9\,\mathrm{kcal/g}\), più del doppio rispetto a carboidrati e proteine (\(\approx 4\,\mathrm{kcal/g}\)), grazie allo stato di riduzione più elevato degli atomi di carbonio nella catena idrocarburica.
+    \item \textbf{Efficienza di stoccaggio}: l'idrofobicità dei trigliceridi permette un accumulo anidro, occupando un volume cellulare minimo rispetto al glicogeno (che lega \(\approx 2\,\mathrm{g}\) di acqua per grammo).
+    \item \textbf{Isolamento termico}: il tessuto adiposo sottocutaneo funge da barriera termica, riducendo la dispersione di calore corporeo.
+    \item \textbf{Protezione meccanica}: i cuscinetti adiposi proteggono organi vitali (reni, cuore) da traumi fisici.
+\end{enumerate}
+
+\section{Cere}
+Le \textbf{cere} sono lipidi semplici non polari costituiti dall'esterificazione di un acido grasso a catena lunga con un alcol a catena lunga (non glicerolo). Grazie alla loro elevata idrofobicità, svolgono funzioni protettive di \textbf{impermeabilizzazione} in:
+\begin{itemize}
+    \item Cuticole vegetali (foglie, frutti);
+    \item Piume e piumini degli uccelli;
+    \item Esoscheletri di insetti e artropodi;
+    \item Cera d'api (produzione dell'alveare).
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 8: Lipidi semplici e trasporto
+% =========================================================
+
+% =========================================================
+% CAPITOLO 9: Nucleotidi
+% =========================================================
+
+\chapter{Nucleotidi}
+
+\section{Introduzione e funzioni biologiche}
+I \textbf{nucleotidi} costituiscono una classe eterogenea di molecole organiche con struttura simile ma funzioni estremamente diversificate. Nel metabolismo cellulare svolgono ruoli fondamentali:
+\begin{itemize}
+    \item \textbf{Costituenti degli acidi nucleici}: monomeri di DNA e RNA;
+    \item \textbf{Trasportatori di energia chimica}: ATP, GTP, CTP, UTP;
+    \item \textbf{Secondi messaggeri}: AMP ciclico (cAMP), GMP ciclico (cGMP);
+    \item \textbf{Trasferimento di elettroni}: coenzimi redox (NAD$^+$, NADP$^+$, FAD);
+    \item \textbf{Gruppi prostetici e cofattori}: Coenzima A (CoA).
+\end{itemize}
+
+\section{Struttura generale dei nucleotidi}
+Un nucleotide è composto da tre componenti fondamentali:
+\begin{enumerate}
+    \item \textbf{Base azotata}: molecola eterociclica aromatica contenente azoto;
+    \item \textbf{Pentoso}: zucchero a 5 atomi di carbonio (ribosio o desossiribosio);
+    \item \textbf{Gruppo fosfato}: uno o più residui fosforici legati al C5' del pentoso.
+\end{enumerate}
+
+\begin{definizione}[Nucleoside vs Nucleotide]
+Un \textbf{nucleoside} è formato esclusivamente dalla base azotata legata al pentoso tramite legame \textbf{$\beta$-N-glicosidico}. L'aggiunta di uno o più gruppi fosfato al C5' del nucleoside genera il \textbf{nucleotide}.
+\end{definizione}
+
+\subsection{Le basi azotate}
+Le basi azotate si classificano in due famiglie strutturali:
+\begin{itemize}
+    \item \textbf{Purine} (struttura a doppio anello):
+    \begin{itemize}
+        \item \textbf{Adenina (A)}: 6-amminopurina;
+        \item \textbf{Guanina (G)}: 2-ammino-6-ossipurina.
+    \end{itemize}
+    \item \textbf{Pirimidine} (struttura ad anello singolo):
+    \begin{itemize}
+        \item \textbf{Citosina (C)}: 2-ossi-4-amminopirimidina;
+        \item \textbf{Timina (T)}: 2,4-diossi-5-metilpirimidina (presente solo nel DNA);
+        \item \textbf{Uracile (U)}: 2,4-diossipirimidina (presente solo nell'RNA).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Il pentoso e il legame N-glicosidico}
+Lo zucchero presente nei nucleotidi è un aldopentoso:
+\begin{itemize}
+    \item \textbf{Ribosio}: presente nell'RNA e nei nucleotidi energetici/regolatori;
+    \item \textbf{2-Desossiribosio}: presente nel DNA, ottenuto per riduzione del ribosio a livello del C2'.
+\end{itemize}
+
+La base azotata si lega al C1' del pentoso tramite un legame \textbf{$\beta$-N-glicosidico}:
+\begin{itemize}
+    \item Per le purine: legame con l'azoto in posizione N9;
+    \item Per le pirimidine: legame con l'azoto in posizione N1.
+\end{itemize}
+
+I nucleosidi derivati sono: adenosina, guanosina, citidina, uridina (RNA) e deossiadenosina, deossiguanosina, deossicitidina, deossitimidina (DNA).
+
+\subsection{I gruppi fosfato}
+I nucleotidi contengono uno o più gruppi fosfato legati all'ossidrile del C5' del pentoso:
+\begin{itemize}
+    \item \textbf{Nucleoside monofosfato (NMP)}: un gruppo fosfato legato tramite legame \textbf{fosfoestereo};
+    \item \textbf{Nucleoside difosfato (NDP)}: due gruppi fosfato, il secondo legato tramite legame \textbf{fosfoanidridico};
+    \item \textbf{Nucleoside trifosfato (NTP)}: tre gruppi fosfato, con due legami fosfoanidridici.
+\end{itemize}
+
+\begin{nota}[Energia dei legami fosfoanidridici]
+L'idrolisi dei legami fosfoanidridici (tra i gruppi fosfato) rilascia una quantità significativa di energia ($\approx 30\,\mathrm{kJ/mol}$ per legame), rendendo i nucleotidi trifosfato eccellenti donatori di energia per le reazioni endoergoniche cellulari.
+\end{nota}
+
+\section{Nucleotidi modificati: desossinucleotidi}
+I desossinucleotidi, precursori del DNA, derivano dalla riduzione del ribosio a livello del C2':
+\[
+\text{Ribonucleoside difosfato (NDP)} \xrightarrow{\text{Ribonucleotide reduttasi}} \text{Desossiribonucleoside difosfato (dNDP)}
+\]
+
+Questa reazione, catalizzata dall'enzima \textbf{ribonucleotide reduttasi}, è essenziale per la sintesi del DNA e strettamente regolata per mantenere l'equilibrio tra i pool di nucleotidi ribo- e desossiribo-.
+
+\section{Acidi nucleici: DNA e RNA}
+I nucleotidi si polimerizzano per formare gli acidi nucleici tramite legami \textbf{fosfodiesterici} tra il gruppo fosfato in posizione 5' di un nucleotide e l'ossidrile in posizione 3' del nucleotide successivo.
+
+\begin{definizione}[Polarità degli acidi nucleici]
+La catena polinucleotidica presenta polarità direzionale: un'estremità libera con gruppo fosfato 5' e un'estremità libera con ossidrile 3'. Per convenzione, le sequenze si scrivono in direzione \textbf{5' $\rightarrow$ 3'}.
+\end{definizione}
+
+\subsection{Acido desossiribonucleico (DNA)}
+\begin{itemize}
+    \item Struttura a \textbf{doppia elica} formata da due filamenti antiparalleli;
+    \item Zucchero: \textbf{2-desossiribosio};
+    \item Basi: A, G, C, T (desossinucleotidi);
+    \item I due filamenti sono tenuti insieme da \textbf{legami idrogeno} tra basi complementari:
+    \[
+    \mathrm{A \equiv T} \quad (2\ \text{legami H}); \qquad \mathrm{G \equiv C} \quad (3\ \text{legami H})
+    \]
+    \item La sequenza nucleotidica codifica l'informazione genetica per la sintesi proteica.
+\end{itemize}
+
+\subsection{Acido ribonucleico (RNA)}
+\begin{itemize}
+    \item Generalmente a \textbf{filamento singolo}, ma può formare strutture secondarie locali (stem-loop) stabilizzate da appaiamenti intramolecolari;
+    \item Zucchero: \textbf{ribosio};
+    \item Basi: A, G, C, U (ribonucleotidi);
+    \item Funzioni diversificate: mRNA (trasporto dell'informazione), tRNA (adattatore nella traduzione), rRNA (componente strutturale dei ribosomi), RNA regolatori.
+\end{itemize}
+
+\section{Nucleotidi come trasportatori di energia}
+\subsection{ATP: la moneta energetica}
+L'\textbf{adenosina trifosfato (ATP)} è il principale vettore di energia chimica nella cellula. L'idrolisi dei suoi legami fosfoanidridici:
+\[
+\mathrm{ATP + H_2O \rightarrow ADP + P_i} \quad \Delta G^\circ \approx -30\,\mathrm{kJ/mol}
+\]
+fornisce l'energia necessaria per:
+\begin{itemize}
+    \item Lavoro meccanico (contrazione muscolare);
+    \item Trasporto attivo attraverso le membrane;
+    \item Sintesi di macromolecole (reazioni endoergoniche accoppiate).
+\end{itemize}
+
+\begin{esempio}[Accoppiamento energetico]
+La sintesi del glucosio-6-fosfato nella prima tappa della glicolisi è endoergonica:
+\[
+\text{Glucosio} + \mathrm{P_i} \rightarrow \text{Glucosio-6-fosfato} \quad \Delta G^\circ > 0
+\]
+L'accoppiamento con l'idrolisi dell'ATP rende la reazione complessiva esoergonica:
+\[
+\text{Glucosio} + \mathrm{ATP} \rightarrow \text{Glucosio-6-fosfato} + \mathrm{ADP} \quad \Delta G^\circ < 0
+\]
+\end{esempio}
+
+\subsection{Altri nucleotidi energetici}
+\begin{itemize}
+    \item \textbf{GTP}: energia equivalente all'ATP, ma utilizzato preferenzialmente in vie di segnalazione (proteine G), sintesi proteica e gluconeogenesi;
+    \item \textbf{UTP}: attivatore del glucosio nella sintesi del glicogeno (formazione di UDP-glucosio);
+    \item \textbf{CTP}: coinvolto nella sintesi dei fosfolipidi di membrana.
+\end{itemize}
+
+\section{Nucleotidi come secondi messaggeri}
+\subsection{AMP ciclico (cAMP)}
+L'\textbf{adenosina 3',5'-monofosfato ciclico (cAMP)} è un nucleotide modificato che funge da \textbf{secondo messaggero} in numerose vie di segnalazione ormonale (es. adrenalina, glucagone).
+
+\begin{itemize}
+    \item Sintetizzato dall'\textbf{adenilato ciclasi} a partire dall'ATP, con rimozione dei fosfati $\beta$ e $\gamma$ e ciclizzazione del fosfato $\alpha$ con il C3' del ribosio;
+    \item Attiva la \textbf{protein chinasi A (PKA)}, che fosforila proteine bersaglio modulandone l'attività;
+    \item Degradato dalla \textbf{fosfodiesterasi} ad AMP, terminando il segnale.
+\end{itemize}
+
+\subsection{GMP ciclico (cGMP)}
+Strutturalmente analogo al cAMP, il \textbf{cGMP} (sintetizzato dalla guanilato ciclasi) media segnali come quelli dell'ossido nitrico (NO) nella vasodilatazione e nella fototrasduzione retinica.
+
+\section{Nucleotidi come trasportatori di elettroni}
+\subsection{Coenzimi nicotinammidici: NAD$^+$ e NADP$^+$}
+La \textbf{nicotinammide adenina dinucleotide (NAD$^+$)} e la sua forma fosforilata \textbf{NADP$^+$} derivano dalla vitamina B3 (niacina) e fungono da accettori/donatori di elettroni nelle reazioni redox.
+
+\begin{definizione}[Reazioni redox mediate da NAD(P)$^+$]
+\[
+\mathrm{NAD^+ + 2H^+ + 2e^- \rightleftharpoons NADH + H^+}
+\]
+\begin{itemize}
+    \item \textbf{NADH}: prodotto nel catabolismo (glicolisi, ciclo di Krebs), dona elettroni alla catena respiratoria mitocondriale per la sintesi di ATP;
+    \item \textbf{NADPH}: generato principalmente dalla via dei pentoso-fosfati, fornisce potere riducente per le biosintesi (es. acidi grassi) e per i sistemi antiossidanti (glutatione ridotto).
+\end{itemize}
+\end{definizione}
+
+\subsection{Coenzimi flavinici: FAD e FMN}
+La \textbf{flavina adenina dinucleotide (FAD)} e la \textbf{flavina mononucleotide (FMN)} derivano dalla vitamina B2 (riboflavina) e partecipano a reazioni redox come cofattori di flavoproteine.
+
+\[
+\mathrm{FAD + 2H^+ + 2e^- \rightleftharpoons FADH_2}
+\]
+
+Il \textbf{FADH$_2$} prodotto nel ciclo di Krebs e nella $\beta$-ossidazione degli acidi grassi dona elettroni alla catena respiratoria (complesso II), contribuendo alla sintesi di ATP.
+
+\section{Coenzima A (CoA)}
+Il \textbf{Coenzima A} è un derivato della vitamina B5 (acido pantotenico) e svolge un ruolo centrale nel metabolismo intermedio.
+
+\begin{itemize}
+    \item Struttura: 3'-fosfoadenosina difosfato + acido pantotenico + $\beta$-mercaptoetilamina;
+    \item Il gruppo tiolico ($-\mathrm{SH}$) terminale forma legami \textbf{tioesterici} ad alta energia con gruppi acilici;
+    \item \textbf{Acetil-CoA}: intermedio chiave che connette il catabolismo di glucidi, lipidi e amminoacidi con il ciclo di Krebs e le vie biosintetiche.
+\end{itemize}
+
+\[
+\text{Acetato} + \mathrm{CoA-SH} + \mathrm{ATP} \rightarrow \text{Acetil-CoA} + \mathrm{AMP} + \mathrm{PP_i}
+\]
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item I nucleotidi sono molecole versatili: costituenti degli acidi nucleici, trasportatori di energia e elettroni, messaggeri intracellulari e cofattori enzimatici;
+    \item La struttura di base (base + pentoso + fosfato) è modulata per adattarsi a funzioni specifiche;
+    \item Molti nucleotidi derivano da vitamine del gruppo B: carenze vitaminiche compromettono il metabolismo energetico e la sintesi di DNA/RNA;
+    \item La regolazione del pool nucleotidico è essenziale per l'omeostasi cellulare, la proliferazione e la risposta agli stimoli.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 9
 % =========================================================
 
 \end{document}
