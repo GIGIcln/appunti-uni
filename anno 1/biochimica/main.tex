@@ -15,12 +15,12 @@
 \geometry{margin=1.5cm}
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdfauthor={Dispensa Universitaria - Enrico Desideri},
-    pdftitle={Biochimica}
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=cyan,
+pdfauthor={Dispensa Universitaria - Enrico Desideri},
+pdftitle={Biochimica}
 }
 % Ambienti personalizzati per definizioni e teoremi
 \newtheorem{definizione}{Definizione}[section]
@@ -461,9 +461,7 @@ I \textbf{lisosomi} sono vescicole membranose contenenti \textbf{enzimi idroliti
 % =========================================================
 % CAPITOLO 3: Amminoacidi
 % =========================================================
-
 \chapter{Amminoacidi}
-
 \section{Struttura generale e proprietà chimiche}
 Gli \textbf{amminoacidi} sono molecole organiche caratterizzate dalla presenza di almeno due gruppi funzionali specifici: un \textbf{gruppo carbossilico} (\(-\mathrm{COOH}\)) e un \textbf{gruppo amminico} (\(-\mathrm{NH_2}\)). Negli amminoacidi costituenti le proteine, entrambi i gruppi sono legati allo stesso atomo di carbonio, denominato \(\alpha\)-carbonio (\(\alpha\)-C). Per questa ragione vengono definiti \(\alpha\)-amminoacidi.
 Oltre al gruppo carbossilico e amminico, il \(\alpha\)-C è sempre legato a un atomo di idrogeno (\(\mathrm{H}\)) e a un gruppo variabile indicato con \(\mathrm{R}\), detto \textbf{catena laterale}. La composizione, la dimensione e la carica del gruppo \(\mathrm{R}\) differiscono per ciascun amminoacido e ne determinano le proprietà fisico-chimiche distintive, come la solubilità in acqua o la reattività.
@@ -556,6 +554,307 @@ Oltre ai 20-21 amminoacidi proteinogenici, esistono derivati e modificazioni pos
 
 % =========================================================
 % Fine Capitolo 3
+% =========================================================
+
+% =========================================================
+% CAPITOLO 4: Le Proteine
+% =========================================================
+\chapter{Le Proteine}
+\section{Introduzione e legame peptidico}
+Le \textbf{proteine} sono macromolecole biologiche di dimensioni altamente variabili, comprese tra pochi kilodalton (kDa) e alcuni megadalton (MDa). Sono mediamente più estese di lipidi e carboidrati e le loro unità monomeriche sono i 20 amminoacidi proteinogenici.
+Gli amminoacidi all'interno di una proteina sono uniti tramite il \textbf{legame peptidico}, un legame covalente che si forma tra il gruppo carbossilico (\(-\mathrm{COOH}\)) di un amminoacido e il gruppo amminico (\(-\mathrm{NH_2}\)) del successivo. La reazione libera una molecola di acqua e rappresenta quindi una \textbf{reazione di condensazione}. Il legame peptidico non coinvolge le catene laterali (\(\mathrm{R}\)).
+Due amminoacidi uniti formano un \textbf{dipeptide}; tre formano un \textbf{tripeptide}. Per catene più lunghe si utilizzano le seguenti convenzioni:
+\begin{itemize}
+    \item \(< 20\) amminoacidi: \textbf{oligopeptide}
+    \item \(20\text{--}100\) amminoacidi: \textbf{polipeptide}
+    \item \(> 100\) amminoacidi: \textbf{proteina}
+\end{itemize}
+Nella rappresentazione lineare della sequenza, si adotta la convenzione di scrivere il gruppo amminico libero a sinistra e il gruppo carbossilico libero a destra. Il primo residuo è definito \textbf{N-terminale}, l'ultimo \textbf{C-terminale}. Poiché solo le estremità mantengono i gruppi funzionali liberi, le proprietà idrofiliche/idrofobiche della molecola dipendono principalmente dalla natura delle catene laterali.
+
+\section{Struttura delle proteine}
+La conformazione proteica viene descritta a quattro livelli gerarchici.
+
+\subsection{Struttura primaria}
+Rappresenta la sequenza lineare di amminoacidi, determinata univocamente dall'informazione genetica contenuta nel DNA. Il numero e l'ordine dei residui definiscono la funzione della proteina; anche una singola sostituzione (mutazione) può comprometterne l'attività o renderla patologica. La sequenza primaria contiene le informazioni necessarie per il ripiegamento tridimensionale, sebbene la previsione computazionale della struttura finale rimanga complessa.
+
+\subsection{Struttura secondaria}
+Corrisponde ai ripiegamenti locali ricorrenti della catena polipeptidica, stabilizzati da \textbf{legami idrogeno} regolari tra i gruppi ammidici e carbonilici dello scheletro peptidico. Le due conformazioni più comuni sono:
+\begin{itemize}
+    \item \textbf{\(\alpha\)-elica}: struttura a spirale stabilizzata da legami idrogeno intra-catena.
+    \item \textbf{Foglietto \(\beta\) ripiegato}: disposizione planare di segmenti polipeptidici adiacenti, collegati da legami idrogeno inter-catena o intra-catena.
+\end{itemize}
+Combinazioni di \(\alpha\)-eliche e foglietti \(\beta\) formano \textbf{motivi strutturali} (strutture supersecondarie).
+
+\subsection{Struttura terziaria}
+È la conformazione tridimensionale complessiva della singola catena polipeptidica, ovvero la disposizione spaziale di tutti gli atomi. A differenza della struttura secondaria, la stabilità terziaria è garantita da interazioni tra catene laterali:
+\begin{itemize}
+    \item \textbf{Ponti disolfuro} (\(-\mathrm{S-S-}\)): legami covalenti tra residui di cisteina, molto stabili.
+    \item \textbf{Interazioni idrofobiche}: i residui apolari si ripiegano verso l'interno della proteina per evitare il contatto con l'acqua, mentre i residui polari si dispongono sulla superficie.
+    \item \textbf{Legami idrogeno} e \textbf{interazioni ioniche} tra gruppi carichi.
+\end{itemize}
+Una proteina funzionale assume la sua \textbf{conformazione nativa}; la perdita di tale struttura è definita \textbf{denaturazione}.
+Le catene polipeptidiche lunghe (\(>200\) residui) si organizzano spesso in \textbf{domini strutturali}: unità globulari compatte, indipendenti dal punto di vista strutturale e funzionale, collegate da regioni flessibili.
+
+\subsection{Struttura quaternaria}
+Presente nelle proteine multimeriche, descrive l'associazione di due o più catene polipeptidiche (\textbf{subunità}). Le subunità possono essere identiche (\textbf{omomultimeriche}, es. omodimero) o diverse (\textbf{eteromultimeriche}, es. eterodimero). Le interazioni tra subunità sono dello stesso tipo di quelle che stabilizzano la struttura terziaria. Esempi noti sono l'\textbf{emoglobina} (tetramero: \(2\alpha + 2\beta\)) e la \textbf{miosina} (esamero: 2 catene pesanti + 4 leggere).
+
+\section{Classificazione e proteine coniugate}
+\subsection{Forma e solubilità}
+\begin{itemize}
+    \item \textbf{Proteine fibrose}: una dimensione prevale sulle altre. Presentano spesso un unico tipo di struttura secondaria ripetuta, sono insolubili in acqua e svolgono ruoli strutturali o di supporto (es. cheratine, collageno, elastina, seta).
+    \item \textbf{Proteine globulari}: le tre dimensioni sono comparabili, assumendo forma compatta. Sono generalmente solubili e svolgono funzioni dinamiche (enzimi, trasportatori, ormoni, anticorpi).
+\end{itemize}
+
+\subsection{Proteine coniugate}
+Molte proteine contengono \textbf{gruppi prostetici} non amminoacidici, essenziali per la funzione. Possono essere legati covalentemente (es. carboidrati nelle glicoproteine, fosfati nelle fosfoproteine), associati strettamente in tasche idrofobiche (es. gruppo \textbf{eme} nell'emoglobina) o legati tramite interazioni ioniche (metalli nelle metalloproteine).
+
+\section{Modifiche post-traduzionali}
+Dopo la sintesi, le proteine possono subire modificazioni chimiche che ne regolano attività, localizzazione o stabilità:
+\begin{itemize}
+    \item \textbf{Fosforilazione}: aggiunta di un gruppo fosfato (da ATP) a residui di Serina, Treonina o Tirosina. Modifica conformazione e attività; è un meccanismo reversibile di regolazione enzimatica (es. attivazione della glicogeno fosforilasi in risposta al glucagone).
+    \item \textbf{Acetilazione}: aggiunta di un gruppo acetile (\(-\mathrm{COCH_3}\)) a residui di Lisina.
+    \item \textbf{Glicosilazione}: aggiunta di catene oligosaccaridiche. La N-glicosilazione avviene sull'Asparagina, la O-glicosilazione su Serina/Treonina. Cruciale per il targeting e la funzione delle proteine di membrana.
+\end{itemize}
+
+\section{Sintesi, turnover e degradazione}
+\subsection{Sintesi proteica}
+L'informazione fluisce dal DNA all'mRNA (\textbf{trascrizione}), che viene esportato nel citosol e tradotto dai ribosomi in catena polipeptidica (\textbf{traduzione}). Il codice genetico è letto in triplette (\textbf{codoni}); 61 codoni specificano amminoacidi (codice degenerato), 3 sono codoni di stop. La traduzione inizia generalmente dal codone AUG (Metionina). Il folding avviene spontaneamente o con l'assistenza di \textbf{chaperoni}. Il processo è energeticamente costoso e regolato finemente, ad esempio dalla proteina \textbf{mTOR}, attivata in condizioni di abbondanza nutrizionale e promotrice dell'ipertrofia muscolare.
+
+\subsection{Turnover e degradazione}
+Le proteine sono soggette a continuo \textbf{turnover} (sintesi + degradazione), che consuma fino al 20\% del metabolismo basale. Ogni proteina ha un'\textbf{emivita} variabile (minuti per enzimi epatici, settimane per proteine muscolari). La degradazione avviene principalmente tramite:
+\begin{itemize}
+    \item \textbf{Lisosomi}: degradano proteine extracellulari (endocitosi) o intracellulari/organelli (autofagia) in condizioni di digiuno o stress. Processo generalmente non selettivo, ottimale a pH acido.
+    \item \textbf{Proteasoma}: complesso citosolico che degrada proteine intracellulari marcate con \textbf{ubiquitina} (ubiquitinazione). Processo ATP-dipendente e selettivo.
+    \item \textbf{Digestione proteica}: scissione delle proteine alimentari in amminoacidi assorbibili tramite proteasi gastrointestinali.
+\end{itemize}
+
+\section{Funzioni biologiche}
+Le proteine svolgono una vasta gamma di ruoli fisiologici:
+\begin{enumerate}
+    \item \textbf{Strutturale e contrattile}: Actina e miosina (contrazione muscolare), collageno e cheratina (supporto tissutale), distrofina (ancoraggio miofibrille al sarcolemma).
+    \item \textbf{Trasporto e deposito}: Proteine di membrana (canali, trasportatori GLUT), emoglobina (trasporto \(\mathrm{O_2}\) tramite gruppo eme).
+    \item \textbf{Ormonale}: Insulina, glucagone, GH (regolazione metabolica e crescita).
+    \item \textbf{Segnalazione}: Recettori di membrana e cascate di chinasi intracellulari che trasducono stimoli esterni in risposte cellulari.
+    \item \textbf{Immunitaria}: Immunoglobuline (anticorpi) che riconoscono e neutralizzano antigeni.
+    \item \textbf{Regolazione}: Fattori di trascrizione (es. PGC-1\(\alpha\)) che modulano l'espressione genica in risposta a stimoli come l'esercizio.
+    \item \textbf{Catalitica}: Enzimi (es. esochinasi) che accelerano le reazioni metaboliche abbassando l'energia di attivazione.
+\end{enumerate}
+
+\section{Stabilità e denaturazione}
+La funzione proteica è strettamente legata alla conformazione nativa. Fattori come variazioni di pH, aumento di temperatura o stress ossidativo possono rompere i legami deboli che stabilizzano la struttura, portando a \textbf{denaturazione} (spesso irreversibile, come nella cottura dell'uovo). Una proteina denaturata perde la sua funzione e può risultare tossica, venendo quindi degradata.
+Durante l'esercizio intenso, l'ambiente intracellulare diventa acido (\(\mathrm{pH} \approx 6.5\)) e ipertermico (\(\approx 40^\circ\mathrm{C}\)). Per contrastare questi effetti, le cellule esprimono \textbf{Heat Shock Proteins (HSPs)}: chaperoni molecolari che riconoscono le proteine misfolded, ne facilitano il refolding e promuovono una risposta adattativa che aumenta la resilienza cellulare a stress futuri.
+
+% =========================================================
+% Fine Capitolo 4
+% =========================================================
+
+% =========================================================
+% CAPITOLO 5: Trasporto e utilizzo dell'ossigeno
+% =========================================================
+\chapter{Trasporto e utilizzo dell'ossigeno}
+\section{Introduzione: emoglobina e mioglobina}
+L'\textbf{ossigeno} (\(\mathrm{O_2}\)) è l'elemento più abbondante nel nostro organismo, principalmente incorporato nell'acqua. Costituisce inoltre il 21\% dell'atmosfera terrestre. L'\(\mathrm{O_2}\) inspirato nei polmoni deve essere trasportato ai tessuti per sostenere il metabolismo ossidativo mitocondriale.
+Nel corpo umano, due proteine specializzate legano reversibilmente l'ossigeno:
+\begin{itemize}
+    \item \textbf{Emoglobina (Hb)}: proteina tetramerica presente negli eritrociti (globuli rossi), deputata al trasporto di \(\mathrm{O_2}\) dai polmoni ai tessuti e di \(\mathrm{CO_2}\) dai tessuti ai polmoni.
+    \item \textbf{Mioglobina (Mb)}: proteina monomerica localizzata nelle cellule muscolari, funge da riserva di \(\mathrm{O_2}\) rilasciandolo in condizioni di ipossia per mantenere attivo il metabolismo aerobico.
+\end{itemize}
+
+\section{Struttura delle emoproteine}
+Sia l'emoglobina che la mioglobina sono \textbf{emoproteine}, ovvero contengono un gruppo prostetico \textbf{eme} legato non covalentemente alla catena polipeptidica. L'eme contiene un atomo di ferro nello stato di ossidazione ferroso (\(\mathrm{Fe^{2+}}\)), responsabile del legame reversibile con l'\(\mathrm{O_2}\).
+
+\subsection{Il gruppo eme}
+L'eme è una protoporfirina IX, struttura planare derivante dalla porfirina, caratterizzata da quattro anelli pirrolici con atomi di azoto all'apice. Al centro della protoporfirina è coordinato un singolo atomo di \(\mathrm{Fe^{2+}}\).
+I legami di coordinazione del ferro sono sei:
+\begin{itemize}
+    \item Quattro legami giacciono sul piano dell'anello porfirinico e coinvolgono gli atomi di azoto dei pirroli;
+    \item Il quinto legame è occupato dall'azoto dell'anello imidazolico di un residuo di \textbf{istidina prossimale};
+    \item Il sesto legame, perpendicolare al piano, è disponibile per il legame con l'\(\mathrm{O_2}\).
+\end{itemize}
+Un secondo residuo di \textbf{istidina distale} stabilizza il legame \(\mathrm{Fe-O_2}\) tramite un legame idrogeno, favorendo il posizionamento planare del ferro rispetto all'eme. Per prevenire l'ossidazione del ferro a \(\mathrm{Fe^{3+}}\) (che impedirebbe il legame con \(\mathrm{O_2}\)), il gruppo eme è alloggiato in una tasca idrofobica della proteina.
+
+\subsection{Differenze strutturali tra Hb e Mb}
+\begin{table}[h!]
+\centering
+\caption{Confronto tra emoglobina e mioglobina}
+\label{tab:hb-mb}
+\begin{tabular}{p{0.45\textwidth} p{0.45\textwidth}}
+\hline
+\textbf{Emoglobina} & \textbf{Mioglobina} \\
+\hline
+Tetramero (\(2\alpha + 2\beta\) nell'adulto) & Monomero (singola catena) \\
+4 gruppi eme, lega fino a 4 \(\mathrm{O_2}\) & 1 gruppo eme, lega 1 \(\mathrm{O_2}\) \\
+Curva di saturazione sigmoide (cooperatività) & Curva di saturazione iperbolica \\
+Bassa affinità a bassa \(p\mathrm{O_2}\) & Alta affinità anche a bassa \(p\mathrm{O_2}\) \\
+Trasporto sistemico di \(\mathrm{O_2}\) & Riserva intramuscolare di \(\mathrm{O_2}\) \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Legame dell'ossigeno e cooperatività}
+La mioglobina lega l'\(\mathrm{O_2}\) con alta affinità anche a pressioni parziali (\(p\mathrm{O_2}\)) relativamente basse, mostrando una curva di saturazione \textbf{iperbolica}. Ciò la rende ideale per immagazzinare \(\mathrm{O_2}\) nel muscolo.
+L'emoglobina, invece, presenta una curva di saturazione \textbf{sigmoide}, riflettente il legame cooperativo tra le sue quattro subunità. Questo comportamento è spiegato dal modello degli stati conformazionali:
+\begin{itemize}
+    \item \textbf{Stato T (teso)}: conformazione a bassa affinità per \(\mathrm{O_2}\), predominante in condizioni di bassa \(p\mathrm{O_2}\) (tessuti);
+    \item \textbf{Stato R (rilassato)}: conformazione ad alta affinità, favorita dal legame dell'\(\mathrm{O_2}\) e predominante nei polmoni.
+\end{itemize}
+Il legame dell'\(\mathrm{O_2}\) a una subunità induce un cambiamento conformazionale che facilita il legame alle subunità adiacenti (\textbf{cooperatività omotropica}). Nei polmoni (alta \(p\mathrm{O_2}\)), l'Hb si satura rapidamente; nei tessuti (bassa \(p\mathrm{O_2}\)), il rilascio è favorito dalla transizione allo stato T.
+
+\section{Regolazione allosterica dell'affinità per l'ossigeno}
+L'affinità dell'emoglobina per l'\(\mathrm{O_2}\) è modulata da fattori allosterici eterotropici che agiscono su siti distinti dal sito di legame dell'\(\mathrm{O_2}\):
+
+\subsection{Effetto Bohr (pH)}
+L'aumento della concentrazione di ioni \(\mathrm{H^+}\) (diminuzione del pH) riduce l'affinità dell'Hb per l'\(\mathrm{O_2}\), favorendone il rilascio nei tessuti metabolicamente attivi. Durante l'esercizio intenso, la produzione di acido lattico e di \(\mathrm{CO_2}\) abbassa il pH tissutale:
+\[
+\mathrm{CO_2 + H_2O \rightleftharpoons H_2CO_3 \rightleftharpoons HCO_3^- + H^+}
+\]
+Gli ioni \(\mathrm{H^+}\) protonano residui di istidina, stabilizzando lo stato T e promuovendo il rilascio di \(\mathrm{O_2}\). Nei polmoni, l'eliminazione di \(\mathrm{CO_2}\) e l'aumento del pH favoriscono il ricarico di \(\mathrm{O_2}\).
+
+\subsection{Anidride carbonica (\(\mathrm{CO_2}\))}
+Oltre all'effetto indiretto tramite il pH, la \(\mathrm{CO_2}\) lega direttamente l'N-terminale delle catene dell'Hb formando \textbf{carbammati}, stabilizzando lo stato T e riducendo l'affinità per l'\(\mathrm{O_2}\). Circa il 20\% della \(\mathrm{CO_2}\) prodotta dai tessuti è trasportata dall'Hb sotto questa forma.
+\begin{nota}[Monossido di carbonio]
+Il monossido di carbonio (\(\mathrm{CO}\)) lega il ferro dell'eme con affinità ~200 volte superiore all'\(\mathrm{O_2}\), formando carbossiemoglobina stabile e impedendo il trasporto di ossigeno (ipossia anemica).
+\end{nota}
+
+\subsection{Temperatura}
+L'aumento della temperatura riduce l'affinità dell'Hb per l'\(\mathrm{O_2}\). Durante l'esercizio intenso, la temperatura muscolare può raggiungere i 40°C, favorendo il rilascio di \(\mathrm{O_2}\) a livello capillare per sostenere il metabolismo ossidativo.
+
+\subsection{2,3-Bisfosfoglicerato (2,3-BPG)}
+Il \textbf{2,3-BPG} è un metabolita glicolitico prodotto dagli eritrociti che lega esclusivamente la deossiemoglobina in una cavità centrale tra le quattro subunità, stabilizzando lo stato T e riducendo l'affinità per l'\(\mathrm{O_2}\).
+\begin{itemize}
+    \item In condizioni di ipossia (alta quota), la sintesi di 2,3-BPG aumenta, facilitando il rilascio tissutale di \(\mathrm{O_2}\) (adattamento a breve termine).
+    \item L'emoglobina fetale (\(\mathrm{HbF} = \alpha_2\gamma_2\)) ha minore affinità per il 2,3-BPG rispetto all'Hb adulta, garantendo un'affinità maggiore per l'\(\mathrm{O_2}\) e permettendo il trasferimento di ossigeno dal sangue materno a quello fetale.
+\end{itemize}
+
+\section{Adattamenti all'ipossia e considerazioni cliniche}
+\subsection{Adattamenti fisiologici}
+Oltre all'aumento di 2,3-BPG, l'esposizione prolungata all'ipossia stimola la produzione renale di \textbf{eritropoietina (EPO)}, un ormone glicoproteico che promuove l'eritropoiesi nel midollo osseo, aumentando la capacità di trasporto di \(\mathrm{O_2}\) del sangue (adattamento a lungo termine).
+
+\subsection{Beta-talassemia (anemia mediterranea)}
+La \textbf{beta-talassemia} è una malattia genetica causata da mutazioni che riducono o aboliscono la sintesi delle catene \(\beta\) dell'emoglobina. Il risultato è la produzione di globuli rossi difettosi, anemia emolitica e necessità di trasfusioni frequenti. La comprensione della regolazione dell'Hb ha implicazioni terapeutiche per queste patologie.
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item Emoglobina e mioglobina sono emoproteine essenziali per il trasporto e lo stoccaggio dell'\(\mathrm{O_2}\).
+    \item La struttura tetramerica dell'Hb e la cooperatività omotropica consentono un rilascio efficiente di \(\mathrm{O_2}\) nei tessuti.
+    \item Fattori allosterici eterotropici (pH, \(\mathrm{CO_2}\), temperatura, 2,3-BPG) modulano finemente l'affinità dell'Hb per l'\(\mathrm{O_2}\) in risposta alle esigenze metaboliche.
+    \item Adattamenti fisiologici (2,3-BPG, EPO) e patologie (talassemia) illustrano l'importanza clinica della regolazione del trasporto di ossigeno.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 5
+% =========================================================
+
+% =========================================================
+% CAPITOLO 6: Enzimi
+% =========================================================
+
+\chapter{Enzimi}
+
+\section{Introduzione e ruolo catalitico}
+Gli \textbf{enzimi} sono proteine (con rare eccezioni rappresentate da RNA catalitici detti \textbf{ribozimi}) che svolgono la funzione di \textbf{catalizzatori biologici}. La loro presenza è indispensabile per accelerare le reazioni chimiche cellulari che, in condizioni fisiologiche, avverrebbero a velocità incompatibili con la vita.
+Gli enzimi presentano tre caratteristiche fondamentali:
+\begin{itemize}
+    \item \textbf{Non vengono consumati} durante la reazione e possono quindi catalizzare numerosi cicli catalitici.
+    \item \textbf{Non alterano l'equilibrio} della reazione: non influenzano la direzione termodinamica, ma accelerano il raggiungimento dell'equilibrio.
+    \item \textbf{Aumentano la velocità} sia della reazione diretta che di quella inversa, fino a un fattore di \(10^{10}\) volte o superiore.
+\end{itemize}
+Un esempio classico è la reazione catalizzata dalla lattato deidrogenasi (LDH):
+\[
+\text{Piruvato} + \text{NADH} \rightleftharpoons \text{Lattato} + \text{NAD}^+
+\]
+
+\section{Energia di attivazione e meccanismo d'azione}
+Una reazione esoergonica (\(\Delta G < 0\)) è termodinamicamente favorita, ma ciò non garantisce che avvenga rapidamente. Per procedere, i reagenti devono superare una barriera energetica, raggiungendo uno \textbf{stato di transizione} ad alta energia. L'energia necessaria per raggiungere questo stato è definita \textbf{energia di attivazione} (\(E_a\)).
+È possibile immaginare l'\(E_a\) come l'energia necessaria per spingere un masso (reagenti) sulla sommità di una collina (stato di transizione), prima che rotoli a valle (prodotti). Più alta è la \(E_a\), minore è la probabilità che i reagenti si orientino casualmente in modo favorevole alla reazione, risultando in una cinetica estremamente lenta.
+La funzione esclusiva degli enzimi è \textbf{abbassare l'energia di attivazione}, stabilizzando lo stato di transizione e permettendo alla reazione di procedere a velocità fisiologicamente rilevanti, senza alterare il \(\Delta G\) complessivo.
+\begin{esempio}[Fosforilazione del glucosio]
+La prima tappa della glicolisi (glucosio \(\rightarrow\) glucosio-6-fosfato) ha un \(\Delta G\) negativo, ma un'elevata \(E_a\). In assenza di catalisi, la reazione sarebbe trascurabile. L'enzima \textbf{esochinasi} abbassa la \(E_a\) favorendo l'interazione tra glucosio e ATP, consentendo la rapida formazione dei prodotti.
+\end{esempio}
+
+\section{Specificità e modelli di riconoscimento del substrato}
+Per abbassare l'\(E_a\), gli enzimi legano reversibilmente i substrati formando un \textbf{complesso enzima-substrato (ES)}. Il legame avviene in una regione specifica della proteina detta \textbf{sito attivo}, composta da residui amminoacidici coinvolti sia nel riconoscimento del substrato sia nella catalisi. Durante il processo si formano intermedi transitori (ES ed EP) prima del rilascio del prodotto.
+
+\subsection{Modelli di interazione}
+Storicamente, il \textbf{modello chiave-serratura} ipotizzava una complementarità geometrica rigida e preformata tra enzima e substrato. Tuttavia, un legame eccessivamente stabile impedirebbe il successivo rilascio del prodotto.
+Il modello attualmente accettato è quello dell'\textbf{adattamento indotto}: il sito attivo non è perfettamente complementare al substrato nello stato libero. L'interazione iniziale (mediata da legami deboli e transitori) induce un cambiamento conformazionale nell'enzima che ottimizza il posizionamento del substrato, favorisce la catalisi e agevola il successivo distacco del prodotto. Un esempio è la chiusura conformazionale dell'esochinasi attorno al glucosio dopo il legame.
+
+\subsection{Stereospecificità}
+Oltre alla specificità chimica, gli enzimi sono altamente \textbf{stereospecifici}. Poiché le proteine sono sintetizzate esclusivamente da L-amminoacidi, i siti attivi presentano un'architettura chirale asimmetrica. Di conseguenza, riconoscono e trasformano selettivamente uno specifico stereoisomero, e rilasciano prodotti con configurazione spaziale definita. Esempio: la lattato deidrogenasi muscolare è specifica per l'\textbf{L-lattato}.
+
+\section{Cinetica enzimatica e fattori di modulazione}
+L'attività enzimatica è finemente modulata dalla cellula per adattare il flusso metabolico alle richieste energetiche. I principali fattori che influenzano la velocità di reazione sono: concentrazione del substrato, pH, temperatura e concentrazione dell'enzima.
+
+\subsection{Concentrazione del substrato e costante di Michaelis}
+In una reazione non catalizzata, la velocità aumenta linearmente con la concentrazione del substrato \([S]\). Nelle reazioni enzimatiche, la velocità aumenta linearmente solo a basse concentrazioni; oltre una certa soglia, la curva diventa \textbf{iperbolica} fino a raggiungere un plateau, la \textbf{velocità massima} (\(V_{\max}\)), quando tutti i siti attivi sono saturi.
+La relazione è descritta dalla \textbf{costante di Michaelis} (\(K_M\)), definita come la concentrazione di substrato alla quale la velocità di reazione è pari a \(V_{\max}/2\).
+\begin{itemize}
+    \item \(K_M\) \textbf{bassa} \(\rightarrow\) alta affinità enzima-substrato.
+    \item \(K_M\) è specifica per ogni coppia enzima-substrato.
+    \item In condizioni fisiologiche, \([S]\) è generalmente \(< K_M\), collocando l'enzima nella zona lineare della curva: piccole variazioni di substrato si traducono in ampie variazioni della velocità di reazione, garantendo una risposta metabolica sensibile.
+\end{itemize}
+
+\subsection{Effetto del pH e della temperatura}
+\begin{itemize}
+    \item \textbf{pH}: La maggior parte degli enzimi presenta un optimum attorno a pH 7. Eccezioni includono enzimi digestivi gastrici (pH 1--2) e lisosomiali (pH 4,5--5). Deviazioni dal pH ottimale alterano lo stato di ionizzazione dei residui del sito attivo, riducendo l'efficienza catalitica. Durante esercizio intenso, il pH muscolare può scendere a 6,5, inibendo enzimi metabolici e contribuendo all'insorgenza della fatica.
+    \item \textbf{Temperatura}: L'aumento termico incrementa l'energia cinetica e la frequenza delle collisioni molecolari, accelerando la reazione fino a \(\approx 50^\circ\mathrm{C}\). Oltre questa soglia, i legami deboli che stabilizzano la struttura terziaria si rompono, causando \textbf{denaturazione} e perdita irreversibile dell'attività. Il riscaldamento pre-esercizio sfrutta questo principio per ottimizzare l'efficienza enzimatica muscolare.
+\end{itemize}
+
+\subsection{Concentrazione dell'enzima}
+Quando l'enzima opera in condizioni di saturazione (\([S] \gg K_M\)), la velocità di reazione è direttamente proporzionale alla concentrazione dell'enzima \([E]\), mentre la \(K_M\) rimane invariata. La capacità delle cellule di aumentare l'espressione proteica enzimatica è il fondamento degli \textbf{adattamenti metabolici all'allenamento}, in particolare di tipo aerobico.
+
+\section{Cofattori, coenzimi e vitamine}
+Molti enzimi richiedono molecole non proteiche per esercitare la loro funzione catalitica:
+\begin{itemize}
+    \item \textbf{Cofattori}: ioni inorganici essenziali (es. \(\mathrm{Cu^{2+}}, \mathrm{K^+}, \mathrm{Fe^{2+}}, \mathrm{Mg^{2+}}, \mathrm{Mn^{2+}}, \mathrm{Zn^{2+}}\)).
+    \item \textbf{Coenzimi}: molecole organiche che partecipano direttamente alla reazione, spesso subendo modificazioni temporanee (agendo come secondi substrati). Esempio: \(\mathrm{NAD^+}\) nella lattato deidrogenasi.
+    \item \textbf{Gruppo prostetico}: cofattore o coenzima legato stabilmente (spesso covalentemente) all'enzima (es. gruppo eme nell'emoglobina).
+\end{itemize}
+Molte \textbf{vitamine} (specie del gruppo B) sono precursori essenziali di coenzimi. Carenze vitaminiche compromettono l'attività enzimatica e causano patologie metaboliche. I coenzimi \(\mathrm{NAD^+}\) e \(\mathrm{FAD}\) sono fondamentali come accettori/donatori di elettroni nelle reazioni redox mediate dalle deidrogenasi.
+
+\section{Classificazione e nomenclatura enzimatica}
+Gli enzimi sono classificati in \textbf{6 classi principali} in base al tipo di reazione catalizzata. La maggior parte presenta il suffisso \textit{-asi}. Ogni enzima è identificato da un codice EC (Enzyme Commission) a 4 numeri (Classe.Sottoclasse.Sottosottoclasse.Seriale).
+
+\begin{table}[h!]
+\centering
+\caption{Classificazione principale degli enzimi}
+\label{tab:enzimi-classi}
+\begin{tabular}{p{0.25\textwidth} p{0.70\textwidth}}
+\hline
+\textbf{Classe} & \textbf{Tipo di reazione} \\
+\hline
+1. Ossidoreduttasi & Reazioni redox, trasferimento di atomi di idrogeno/elettroni \\
+2. Transferasi & Trasferimento di gruppi funzionali (es. chinasi: trasferiscono fosfato) \\
+3. Idrolasi & Rottura di legami per aggiunta di \(\mathrm{H_2O}\) (idrolisi) \\
+4. Liasi & Eliminazione di gruppi per formare doppi legami, o addizione inversa \\
+5. Isomerasi & Riarrangiamento intramolecolare (isomerizzazione) \\
+6. Ligasi & Formazione di nuovi legami (C-C, C-O, C-N) accoppiata a idrolisi di ATP \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Regolazione e inibizione dell'attività enzimatica}
+Oltre a pH e temperatura, l'attività enzimatica è regolata finemente attraverso due meccanismi principali: modificazioni covalenti e regolazione allosterica.
+
+\subsection{Modificazioni covalenti}
+Consistono nell'aggiunta o rimozione reversibile di gruppi funzionali che alterano la conformazione e l'attività dell'enzima. Il meccanismo più comune è la \textbf{fosforilazione}: l'aggiunta di un gruppo fosfato (donato dall'ATP) a residui di Serina, Treonina o Tirosina, catalizzata da \textbf{chinasi}. La rimozione è operata da \textbf{fosfatasi} (defosforilazione). Sebbene la fosforilazione spesso attivi l'enzima, esistono eccezioni (es. inibizione della glicogeno sintasi).
+
+\subsection{Regolazione allosterica}
+Molecole chiamate \textbf{effettori allosterici} si legano a siti regolatori distinti dal sito attivo, inducendo cambiamenti conformazionali o elettrostatici che modulano l'affinità per il substrato. Gli effettori possono essere \textbf{positivi} (attivatori) o \textbf{negativi} (inibitori). Questo meccanismo è cruciale per il controllo fine della produzione di energia e biomolecole.
+
+\subsection{Inibizione enzimatica}
+L'attività può essere compromessa da molecole inibitrici:
+\begin{itemize}
+    \item \textbf{Inibizione irreversibile}: legame covalente o estremamente stabile che inattiva permanentemente l'enzima (tipica di farmaci o tossine).
+    \item \textbf{Inibizione reversibile}: legame non covalente transitorio, fondamentale per la regolazione fisiologica.
+    \begin{itemize}
+        \item \textit{Competitiva}: l'inibitore compete con il substrato per il sito attivo (strutturalmente simile), riducendo l'efficienza senza alterare \(V_{\max}\) (superabile aumentando \([S]\)).
+        \item \textit{Non competitiva}: l'inibitore si lega a un sito alternativo, alterando la conformazione e riducendo \(V_{\max}\) senza influenzare \(K_M\).
+    \end{itemize}
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 6
 % =========================================================
 
 \end{document}
