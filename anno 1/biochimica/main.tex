@@ -1869,5 +1869,1146 @@ Oltre alla sintesi proteica, gli amminoacidi sono precursori di molecole biologi
 % Fine Capitolo 14
 % =========================================================
 
+% =========================================================
+% CAPITOLO 15: Principi di regolazione del metabolismo
+% =========================================================
+
+\chapter{Principi di regolazione del metabolismo}
+
+\section{Introduzione e omeostasi metabolica}
+I processi metabolici cellulari devono essere costantemente regolati per mantenere l'equilibrio dinamico (\textbf{omeostasi}) tra la produzione di energia (catabolismo) e la sintesi di macromolecole (anabolismo). Tale regolazione è essenziale per permettere le normali funzioni fisiologiche e gli adattamenti a stimoli esterni come variazioni termiche, disponibilità di nutrienti o attività fisica. Sbilanciamenti protratti in questi meccanismi possono portare all'insorgenza di disordini metabolici sistemici.
+
+\section{Ormoni: classificazione e meccanismi d'azione}
+La regolazione metabolica avviene a più livelli: dalla modulazione fine dell'attività enzimatica tramite effettori allosterici, alla regolazione sistemica mediata da \textbf{ormoni}. Gli ormoni sono molecole segnale secrete da ghiandole endocrine, trasportate tramite il circolo sanguigno fino a raggiungere cellule bersaglio dotate di recettori specifici.
+
+In base alla natura chimica, si distinguono due classi principali:
+\begin{itemize}
+    \item \textbf{Ormoni peptidici o derivati da amminoacidi} (es. insulina, adrenalina, glucagone, GH): molecole idrofiliche che \textbf{non} attraversano la membrana plasmatica. Agiscono legandosi a recettori di superficie, attivando cascate di segnalazione intracellulare che modificano rapidamente l'attività di enzimi esistenti.
+    \item \textbf{Ormoni steroidei} (es. cortisolo, testosterone, estrogeni): derivati dal colesterolo, sono lipofilici e \textbf{attraversano} facilmente la membrana. Si legano a recettori citoplasmatici o nucleari, modulando la \textbf{trascrizione genica} e quindi la sintesi \textit{de novo} di enzimi metabolici (effetto più lento ma duraturo).
+\end{itemize}
+
+\section{Regolazione metabolica durante l'esercizio fisico}
+Durante un'attività fisica sostenuta (es. 70\% $\mathrm{VO_2max}$), si osserva una netta modificazione del profilo ormonale:
+\begin{itemize}
+    \item \textbf{Diminuisce l'insulina} (ormone anabolico).
+    \item \textbf{Aumentano adrenalina e glucagone} (ormoni catabolici).
+\end{itemize}
+Questa modificazione stimola la mobilizzazione dei substrati energetici: aumento della glicogenolisi e glicolisi (con produzione di lattato) e aumento della lipolisi (rilascio di glicerolo e acidi grassi liberi). L'obiettivo finale è il \textbf{mantenimento della glicemia} e il rifornimento continuo di ATP ai muscoli attivi. Al termine dell'esercizio, il profilo ormonale si inverte per favorire il recupero (risintesi di glicogeno e incorporazione dei nutrienti).
+
+\section{Cascate di segnalazione ormonale}
+\subsection{Adrenalina e glucagone: attivazione del catabolismo}
+L'adrenalina (secretata dalla midollare del surrene) e il glucagone (dal pancreas) agiscono tramite recettori accoppiati a \textbf{proteine G}. Il legame ormone-recettore attiva la proteina G, che stimola l'\textbf{adenilato ciclasi} a convertire ATP in \textbf{AMP ciclico (cAMP)}. Il cAMP attiva a sua volta la \textbf{Proteina Chinasi A (PKA)}, che fosforila enzimi bersaglio:
+\begin{itemize}
+    \item \textbf{Glicogenolisi}: la PKA fosforila e attiva la glicogeno fosforilasi chinasi, che a sua volta attiva la \textbf{glicogeno fosforilasi}, enzima chiave della degradazione del glicogeno.
+    \item \textbf{Lipolisi}: la PKA fosforila la \textbf{lipasi ormone-sensibile (HSL)}, promuovendo il distacco di acidi grassi dal diacilglicerolo.
+\end{itemize}
+Al termine dello stimolo, l'azione delle fosfatasi defosforila questi enzimi, spegnendo la risposta.
+
+\subsection{Insulina e IGF-1: attivazione dell'anabolismo}
+L'insulina si lega a un recettore con attività \textbf{tirosina-chinasica} intrinseca. L'attivazione innesca una cascata che coinvolge IRS e la chinasi \textbf{AKT}:
+\begin{itemize}
+    \item \textbf{Glicogenosintesi}: AKT fosforila e inattiva la \textbf{GSK3} (glicogeno sintasi chinasi 3). Poiché GSK3 inattiva normalmente la glicogeno sintasi, la sua inibizione da parte di AKT \textbf{promuove la sintesi di glicogeno}.
+    \item \textbf{Inibizione della lipolisi}: AKT attiva la \textbf{fosfodiesterasi 3 (PDE3)}, che degrada il cAMP in AMP. La riduzione di cAMP inattiva la PKA e, di conseguenza, la HSL, bloccando la degradazione dei trigliceridi.
+    \item \textbf{Sintesi proteica}: AKT attiva \textbf{mTOR}, un regolatore centrale che promuove la traduzione proteica e la trascrizione genica (via S6K1 e 4EBP), fondamentale per l'ipertrofia muscolare. Lo stesso pathway è attivato dall'\textbf{IGF-1}.
+\end{itemize}
+
+\begin{nota}[mTOR e insulino-resistenza]
+mTOR è attivato non solo da insulina/IGF-1, ma anche da amminoacidi (leucina) e lipidi. Tuttavia, tramite un feedback negativo (via S6K1 che inibisce IRS1), un'attivazione cronica di mTOR per eccesso nutrizionale riduce la sensibilità cellulare all'insulina, contribuendo all'insulino-resistenza.
+\end{nota}
+
+\subsection{Glucocorticoidi (cortisolo)}
+Il cortisolo, secreto dalla corteccia surrenale, ha effetti catabolici più lenti (via genomica). Nel fegato stimola gli enzimi della gluconeogenesi. Nel muscolo inibisce la sintesi di glicogeno e proteica (attivando la miostatina, inibitore di mTOR), favorendo il catabolismo per fornire substrati al fegato e inducendo insulino-resistenza periferica.
+
+\section{Regolazione allosterica e sensori energetici}
+Mentre gli ormoni agiscono in minuti o ore, la cellula risponde a cambiamenti energetici immediati tramite \textbf{effettori allosterici}: molecole (substrati, prodotti, ATP, AMP, $\mathrm{Ca^{2+}}$) che si legano a siti regolatori degli enzimi, modificandone l'attività in pochi secondi.
+
+\subsection{Regolazione di enzimi chiave}
+\begin{itemize}
+    \item \textbf{Glicogeno fosforilasi}: attivata direttamente dal $\mathrm{Ca^{2+}}$ rilasciato dal reticolo sarcoplasmatico durante la contrazione e dall'AMP (indicatore di deficit energetico). Questo meccanismo anticipa l'arrivo dell'adrenalina.
+    \item \textbf{Piruvato deidrogenasi (PDH)}: controlla l'ingresso del piruvato nel ciclo di Krebs. È inattivata da acetil-CoA e NADH (segnali di abbondanza) e attivata da piruvato, $\mathrm{Ca^{2+}}$ e $\mathrm{Mg^{2+}}$ (segnali di contrazione/richiesta).
+    \item \textbf{Fosfofruttochinasi-1 (PFK-1)}: principale punto di controllo della glicolisi. Inibita da ATP e citrato; attivata da ADP e AMP.
+\end{itemize}
+
+\subsection{Il ruolo dell'AMP e dell'AMPK}
+Quando l'ATP viene consumato rapidamente, l'enzima \textbf{adenilato chinasi} (o miochinasi) converte 2 ADP in 1 ATP + 1 \textbf{AMP}. L'aumento di AMP è il segnale più sensibile di carenza energetica.
+
+L'AMP attiva la \textbf{Proteina Chinasi attivata dall'AMP (AMPK)}, il principale sensore energetico cellulare:
+\begin{itemize}
+    \item \textbf{Promuove il catabolismo}: aumenta la captazione di glucosio (GLUT4) e acidi grassi (CD36), stimola il trasporto mitocondriale (CPT1) e il metabolismo ossidativo.
+    \item \textbf{Inibisce l'anabolismo}: blocca le vie biosintetiche e agisce come \textbf{antagonista fisiologico di mTOR}.
+\end{itemize}
+Questa regolazione garantisce che, in condizioni di stress energetico, la cellula priorizzi la produzione di ATP a scapito della crescita e della sintesi.
+
+% =========================================================
+% Fine Capitolo 15
+% =========================================================
+
+% =========================================================
+% CAPITOLO 16: Il muscolo scheletrico e la contrazione muscolare
+% =========================================================
+
+\chapter{Il muscolo scheletrico e la contrazione muscolare}
+
+\section{Introduzione al tessuto muscolare}
+Il tessuto muscolare rappresenta circa il \textbf{40\% della massa corporea totale} ed è deputato alla conversione di energia chimica (ATP) in energia meccanica (movimento). Nell'organismo umano si distinguono tre tipi di muscolo:
+\begin{itemize}
+    \item \textbf{Muscolo scheletrico}: striato e volontario, responsabile della locomozione e del movimento consapevole;
+    \item \textbf{Muscolo cardiaco}: striato e involontario, specializzato nella contrazione ritmica del cuore;
+    \item \textbf{Muscolo liscio}: non striato e involontario, presente nelle pareti di organi cavi e vasi sanguigni.
+\end{itemize}
+Oltre alla funzione motoria, il muscolo scheletrico funge da \textbf{riserva proteica} mobilizzabile in condizioni di digiuno prolungato o stress metabolico.
+
+\section{Struttura della fibra muscolare}
+Le cellule del muscolo scheletrico, dette \textbf{miociti} o \textbf{fibre muscolari}, presentano caratteristiche peculiari:
+\begin{itemize}
+    \item Forma allungata e cilindrica, con lunghezza variabile da pochi millimetri a diversi centimetri;
+    \item \textbf{Multinucleazione}: derivano dalla fusione di numerosi mioblasti durante lo sviluppo;
+    \item \textbf{Postmitoticità}: non si dividono dopo la differenziazione; il numero di fibre è determinato geneticamente prima della nascita.
+\end{itemize}
+
+\begin{definizione}[Unità motoria]
+Un \textbf{motoneurone} innerva un gruppo variabile di fibre muscolari (da poche unità nei muscoli oculari a migliaia nei muscoli degli arti), formando un'\textbf{unità motoria}. Tutte le fibre di un'unità motoria si contraggono in modo coordinato.
+\end{definizione}
+
+\subsection{Organizzazione subcellulare}
+La fibra muscolare è delimitata dalla membrana plasmatica, detta \textbf{sarcolemma}, che presenta invaginazioni perpendicolari chiamate \textbf{tubuli T}. Questi permettono al potenziale d'azione di propagarsi rapidamente all'interno della fibra.
+Il citoplasma (\textbf{sarcoplasma}) è occupato quasi interamente dalle \textbf{miofibrille}, strutture cilindriche parallele che rappresentano l'apparato contrattile. Nel sarcoplasma sono inoltre presenti:
+\begin{itemize}
+    \item \textbf{Mioglobina}: proteina di deposito dell'ossigeno;
+    \item \textbf{Mitocondri}: suddivisi in subsarcolemmatici (SS, sotto la membrana) e intramiofibrillari (IMF, a contatto con le miofibrille);
+    \item \textbf{Gocce lipidiche e granuli di glicogeno}: riserve energetiche locali;
+    \item \textbf{Reticolo sarcoplasmatico (RS)}: rete di canali membranosi derivata dal reticolo endoplasmatico, specializzata nell'immagazzinamento e nel rilascio di ioni \(\mathrm{Ca^{2+}}\).
+\end{itemize}
+
+\begin{nota}[Triade]
+In corrispondenza dei tubuli T, il RS si espande a formare le \textbf{cisterne terminali}. L'insieme di un tubulo T flanched da due cisterne terminali costituisce la \textbf{triade}, struttura fondamentale per l'accoppiamento eccitazione-contrazione.
+\end{nota}
+
+\section{Le miofibrille e il sarcomero}
+Le miofibrille sono composte principalmente da due proteine contrattili:
+\begin{itemize}
+    \item \textbf{Miosina}: forma i \textbf{filamenti spessi}. Ogni molecola presenta una coda ad elica e una testa globulare con attività ATPasica, capace di legare l'actina (ponte trasversale).
+    \item \textbf{Actina}: polimerizza a formare l'\textbf{actina F} (filamentosa), struttura base dei \textbf{filamenti sottili}.
+\end{itemize}
+I filamenti sottili contengono anche proteine regolatrici:
+\begin{itemize}
+    \item \textbf{Tropomiosina}: proteina allungata che avvolge il filamento di actina, mascherando i siti di legame per la miosina a riposo;
+    \item \textbf{Troponina}: complesso ternario (TnI, TnT, TnC) che ancora la tropomiosina e media la regolazione calcio-dipendente.
+\end{itemize}
+
+\subsection{Architettura del sarcomero}
+Il \textbf{sarcomero} è l'unità funzionale ripetuta delle miofibrille, delimitata dalle \textbf{linee Z} e con una lunghezza a riposo di circa \(2{,}0\text{--}2{,}5\,\mu\mathrm{m}\). La sua struttura presenta bande caratteristiche:
+\begin{itemize}
+    \item \textbf{Banda A} (scura): regione di sovrapposizione tra filamenti spessi e sottili;
+    \item \textbf{Banda I} (chiara): contiene solo filamenti sottili;
+    \item \textbf{Linea M}: centro del sarcomero, dove le code di miosina sono ancorate dalla miomesina;
+    \item \textbf{Linea Z}: punto di ancoraggio dei filamenti sottili, composta da \(\alpha\)-actinina, nebulina e desmina.
+\end{itemize}
+La proteina \textbf{titina} (la più grande del proteoma umano) connette la linea Z alla linea M, stabilizzando i filamenti spessi e conferendo elasticità passiva al sarcomero.
+
+\section{Accoppiamento eccitazione-contrazione}
+La contrazione muscolare è innescata da un segnale nervoso trasmesso attraverso la \textbf{giunzione neuromuscolare}.
+
+\subsection{Trasmissione sinaptica}
+Il motoneurone rilascia il neurotrasmettitore \textbf{acetilcolina (ACh)} nella fessura sinaptica. Il legame dell'ACh ai recettori nicotinici del sarcolemma causa un flusso ionico che depolarizza la membrana, generando un \textbf{potenziale d'azione}. Questo si propaga lungo il sarcolemma e nei tubuli T.
+
+\subsection{Rilascio del calcio}
+La depolarizzazione dei tubuli T attiva il \textbf{recettore della rianodina} (canale del \(\mathrm{Ca^{2+}}\) del RS), provocando il rilascio massivo di ioni \(\mathrm{Ca^{2+}}\) nel sarcoplasma. La concentrazione citosolica di \(\mathrm{Ca^{2+}}\) aumenta da \(\approx 10^{-7}\,\mathrm{M}\) a \(\approx 10^{-5}\,\mathrm{M}\).
+
+\subsection{Meccanismo molecolare della contrazione}
+\begin{enumerate}
+    \item Il \(\mathrm{Ca^{2+}}\) si lega alla \textbf{troponina C}, inducendo un cambiamento conformazionale nel complesso troponina-tropomiosina.
+    \item La tropomiosina si sposta, esponendo i siti di legame per la miosina sull'actina.
+    \item Inizia il \textbf{ciclo dei ponti trasversali}:
+    \begin{itemize}
+        \item \textbf{Distacco}: il legame dell'ATP alla testa di miosina ne causa il distacco dall'actina;
+        \item \textbf{Idrolisi}: l'ATP è idrolizzato ad ADP + \(\mathrm{P_i}\); l'energia rilasciata "carica" la testa di miosina in una conformazione ad alta energia;
+        \item \textbf{Legame}: la testa di miosina si lega a un nuovo sito sull'actina (se esposto);
+        \item \textbf{Colpo di forza}: il rilascio di \(\mathrm{P_i}\) innesca il movimento della testa di miosina, che trascina il filamento sottile verso il centro del sarcomero;
+        \item \textbf{Rigor}: dopo il rilascio dell'ADP, la miosina rimane saldamente legata all'actina fino al legame di un nuovo ATP.
+    \end{itemize}
+\end{enumerate}
+
+\begin{nota}[Rigor mortis]
+In assenza di ATP (es. dopo la morte), actina e miosina rimangono permanentemente legate, causando la rigidità cadaverica.
+\end{nota}
+
+\subsection{Rilassamento}
+La contrazione termina quando:
+\begin{itemize}
+    \item L'acetilcolina è degradata dall'\textbf{acetilcolinesterasi}, interrompendo lo stimolo nervoso;
+    \item La pompa \textbf{SERCA} (\(\mathrm{Ca^{2+}}\)-ATPasi del reticolo sarcoplasmatico) riassorbe attivamente il \(\mathrm{Ca^{2+}}\) nel RS, consumando ATP;
+    \item La diminuzione del \(\mathrm{Ca^{2+}}\) citosolico permette alla tropomiosina di mascherare nuovamente i siti di legame sull'actina.
+\end{itemize}
+
+\section{Ruoli dell'ATP nella contrazione}
+L'ATP svolge tre funzioni essenziali:
+\begin{enumerate}
+    \item \textbf{Distacco della miosina}: necessario per interrompere il legame actina-miosina;
+    \item \textbf{Energia meccanica}: l'idrolisi dell'ATP fornisce l'energia per il colpo di forza;
+    \item \textbf{Trasporto attivo}: alimenta la pompa SERCA per il riassorbimento del \(\mathrm{Ca^{2+}}\).
+\end{enumerate}
+Nonostante l'elevato consumo durante l'esercizio, i livelli di ATP nel muscolo sono mantenuti pressoché costanti (\(\approx 5\,\mathrm{mmol/kg}\)) grazie a sistemi di rigenerazione rapidi (fosfocreatina, glicolisi, fosforilazione ossidativa).
+
+\section{Proprietà meccaniche della contrazione}
+\subsection{Contrazione rapida e tetanica}
+Un singolo impulso nervoso (1--2 ms) genera una \textbf{contrazione rapida} (twitch) della durata di 20--200 ms, preceduta da un breve periodo di latenza necessario per la segnalazione del \(\mathrm{Ca^{2+}}\).
+Durante un'attività sostenuta, impulsi ripetuti a frequenza elevata causano la \textbf{sommazione} delle contrazioni. Se la frequenza è sufficiente a impedire il rilassamento completo, si ottiene un \textbf{tetano fuso}, con tensione massima continua.
+
+\subsection{Relazione forza-lunghezza}
+La forza generata da una fibra dipende dalla lunghezza iniziale del sarcomero:
+\begin{itemize}
+    \item A \(2{,}2\,\mu\mathrm{m}\) (lunghezza ottimale) la sovrapposizione actina-miosina è massima, così come la forza;
+    \item A lunghezze minori o maggiori, la ridotta sovrapposizione o l'interferenza sterica diminuiscono il numero di ponti trasversali possibili.
+\end{itemize}
+
+\subsection{Relazione forza-velocità}
+Esiste un compromesso inverso tra forza e velocità di contrazione:
+\begin{itemize}
+    \item Carichi elevati \(\rightarrow\) contrazione lenta, forza massima;
+    \item Carichi nulli \(\rightarrow\) contrazione veloce, forza nulla.
+\end{itemize}
+La \textbf{potenza} (lavoro per unità di tempo, misurata in Watt) è data dal prodotto forza \(\times\) velocità e raggiunge il massimo a circa \(1/3\) della velocità massima (\(V_{\max}\)).
+
+\section{Classificazione delle fibre muscolari}
+Le fibre scheletriche si classificano in base alle proprietà contrattili e metaboliche:
+
+\begin{table}[h!]
+\centering
+\caption{Caratteristiche delle fibre muscolari scheletriche}
+\label{tab:fibre-muscolari}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{@{} p{0.2\textwidth} p{0.38\textwidth} p{0.38\textwidth} @{}}
+\hline
+\textbf{Tipo} & \textbf{Proprietà contrattili} & \textbf{Metabolismo energetico} \\
+\hline
+\begin{tabular}[t]{@{}l@{}}\textbf{Tipo I}\\(lente, rosse, ossidative)\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Miosina-ATPasi lenta\\
+\textbullet{} Contrazione lenta, forza ridotta\\
+\textbullet{} Alta resistenza alla fatica
+\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Molti mitocondri, alta mioglobina\\
+\textbullet{} Fosforilazione ossidativa predominante\\
+\textbullet{} Utilizzo preferenziale di lipidi e carboidrati\\
+\textbullet{} Ideali per endurance
+\end{tabular} \\
+\hline
+\begin{tabular}[t]{@{}l@{}}\textbf{Tipo IIx}\\(rapide, bianche, glicolitiche)\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Miosina-ATPasi veloce\\
+\textbullet{} Contrazione rapida, forza elevata\\
+\textbullet{} Bassa resistenza alla fatica
+\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Pochi mitocondri, poca mioglobina\\
+\textbullet{} Glicolisi anaerobica e fosfocreatina\\
+\textbullet{} Ideali per sprint e sollevamento pesi\\
+\textbullet{} Tendenza all'ipertrofia
+\end{tabular} \\
+\hline
+\begin{tabular}[t]{@{}l@{}}\textbf{Tipo IIa}\\(rapide, ossidative)\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Proprietà intermedie\\
+\textbullet{} Resistenza moderata alla fatica
+\end{tabular} &
+\begin{tabular}[t]{@{}l@{}}
+\textbullet{} Metabolismo misto (aerobico + anaerobico)\\
+\textbullet{} Reclutate a intensità sub-massimali
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{definizione}[Distribuzione delle fibre]
+La percentuale di ciascun tipo di fibra varia geneticamente tra individui e muscoli. Atleti di endurance presentano una predominanza di fibre di tipo I (65--75\%), mentre velocisti mostrano una prevalenza di tipo II (70--80\%). L'allenamento può indurre adattamenti fenotipici (es. transizione IIx \(\rightarrow\) IIa) ma non cambia il numero totale di fibre.
+\end{definizione}
+
+\section{Reclutamento delle unità motorie}
+Il sistema nervoso regola la forza muscolare tramite due meccanismi:
+\begin{enumerate}
+    \item \textbf{Codifica di frequenza}: aumento della frequenza di scarica dei motoneuroni per potenziare la contrazione delle fibre già attive;
+    \item \textbf{Reclutamento ordinato}: attivazione sequenziale delle unità motorie in base alla soglia di eccitazione.
+\end{enumerate}
+Secondo il \textbf{principio di Henneman}, le unità motorie di tipo I (piccole, bassa soglia) sono reclutate per prime durante attività a bassa intensità. All'aumentare della richiesta di forza, vengono progressivamente reclutate le unità di tipo IIa e infine IIx (grandi, alta soglia).
+
+\begin{esempio}[Applicazione pratica]
+Durante una corsa a bassa intensità, sono attivate principalmente le fibre di tipo I. In uno sprint finale o in un sollevamento massimale, il reclutamento si estende alle fibre rapide di tipo II, garantendo la massima potenza in tempi brevi.
+\end{esempio}
+
+% =========================================================
+% Fine Capitolo 16
+% =========================================================
+
+% =========================================================
+% CAPITOLO 17: Biochimica dell'esercizio fisico ad alta intensità
+% =========================================================
+
+\chapter{Biochimica dell'esercizio fisico ad alta intensità}
+
+\section{Introduzione: VO\textsubscript{2}max e deficit di ossigeno}
+Un parametro fondamentale per quantificare l'intensità di un esercizio è il \textbf{VO\textsubscript{2}}, ovvero il volume di ossigeno consumato per minuto. All'aumentare dell'intensità, aumenta il consumo di ossigeno fino al raggiungimento del \textbf{massimo consumo di ossigeno (VO\textsubscript{2}max)}, valore individuale dipendente da fattori genetici e dal grado di allenamento. Da un punto di vista metabolico, il VO\textsubscript{2}max rappresenta la massima quantità di ATP ottenibile dal muscolo tramite metabolismo ossidativo.
+
+\begin{definizione}[Deficit di ossigeno]
+Nelle fasi iniziali di un esercizio a intensità costante ($\leq$ VO\textsubscript{2}max), il consumo effettivo di ossigeno è inferiore al fabbisogno teorico per la produzione di ATP richiesta. Questa differenza è nota come \textbf{deficit di ossigeno}. In questa fase, l'energia proviene da meccanismi anaerobici (fosfocreatina, glicolisi) che compensano l'incapacità del sistema cardiovascolare di fornire immediatamente l'ossigeno necessario e di attivare completamente la piruvato deidrogenasi (PDH).
+\end{definizione}
+
+In esercizi ad alta intensità, lo stato stazionario non viene mai raggiunto: parte del fabbisogno energetico è \textbf{sovramassimale} (>100\% VO\textsubscript{2}max) e il deficit si accumula. La differenza totale tra fabbisogno teorico e consumo effettivo è definita \textbf{MAOD} (Maximal Accumulated Oxygen Deficit) ed è un indicatore della capacità anaerobica dell'atleta.
+
+\section{EPOC: il debito di ossigeno post-esercizio}
+Al termine dell'esercizio, il consumo di ossigeno rimane elevato rispetto al valore basale per un periodo variabile. Questo consumo extra è definito \textbf{EPOC} (Excess Post-exercise Oxygen Consumption) e serve a:
+\begin{itemize}
+    \item Rigenerare le scorte di \textbf{fosfocreatina (PCr)};
+    \item Smaltire il \textbf{lattato} accumulato (riconversione in glucosio o ossidazione);
+    \item Ripristinare le riserve di ossigeno legate a emoglobina e mioglobina;
+    \item Sostenere l'aumento di temperatura corporea e la ventilazione.
+\end{itemize}
+La durata e l'entità dell'EPOC dipendono dall'intensità e dalla durata dello sforzo.
+
+\section{Caratteristiche dell'esercizio ad alta intensità (HIE)}
+Un esercizio ad alta intensità (\textbf{HIE}, High-Intensity Exercise) è caratterizzato da:
+\begin{itemize}
+    \item \textbf{Breve durata}: da pochi secondi (salto, lancio) fino a circa 1 minuto (sprint 60--200 m);
+    \item \textbf{Produzione energetica anaerobica}: l'ATP è fornito principalmente da fosforilazione diretta (PCr) e glicolisi anaerobica;
+    \item \textbf{Reclutamento massivo delle fibre di tipo IIx}: fibre rapide, glicolitiche, ad alta potenza ma bassa resistenza.
+\end{itemize}
+I processi aerobici contribuiscono in misura significativa solo per durate superiori ai 30 s.
+
+\subsection{Variazioni dei metaboliti durante HIE}
+Studi su sprint di 30 s hanno mostrato variazioni rapide dei metaboliti muscolari:
+\begin{itemize}
+    \item \textbf{PCr}: si riduce a $\approx 34\%$ del valore basale già dopo 6 s;
+    \item \textbf{Glicogeno}: diminuisce significativamente ($\approx 70\%$ del valore iniziale);
+    \item \textbf{ATP}: rimane stabile o scende lievemente ($>50\text{--}60\%$), poiché la sua deplezione totale è incompatibile con la vita cellulare (rigor mortis).
+\end{itemize}
+Il contributo relativo della glicolisi anaerobica aumenta con la durata dell'esercizio, mentre quello della PCr diminuisce progressivamente.
+
+\section{Produzione e ruolo del lattato}
+Durante un HIE, la glicolisi produce grandi quantità di piruvato che, in carenza di ossigeno sufficiente, non può essere convertito in acetil-CoA. Viene quindi ridotto a \textbf{lattato} dalla lattato deidrogenasi (LDH), rigenerando il NAD\textsuperscript{+} necessario per continuare la glicolisi.
+
+\begin{definizione}[Soglia del lattato]
+L'intensità alla quale le concentrazioni di lattato iniziano ad aumentare esponenzialmente è detta \textbf{soglia anaerobica} o soglia del lattato. Oltre questa soglia, l'accumulo di lattato e ioni H\textsuperscript{+} abbassa il pH intracellulare, inibendo enzimi chiave (ATPasi miosinica, SERCA) e contribuendo all'insorgenza della fatica.
+\end{definizione}
+
+Il lattato non è un semplice prodotto di scarto:
+\begin{enumerate}
+    \item \textbf{Navetta del lattato}: può essere rilasciato dalle fibre di tipo IIx, captato dalle fibre ossidative (tipo I) o dal fegato e riconvertito in piruvato per l'ossidazione o in glucosio tramite gluconeogenesi (\textbf{Ciclo di Cori}).
+    \item \textbf{Effetto Bohr}: il co-trasporto di lattato e H\textsuperscript{+} tramite i trasportatori MCT-1/MCT-4 acidifica lo spazio extracellulare, riducendo l'affinità dell'emoglobina per l'O\textsubscript{2} e favorendone il rilascio ai tessuti attivi.
+\end{enumerate}
+
+\section{Contributo del metabolismo aerobico}
+Anche in esercizi anaerobici, il metabolismo ossidativo contribuisce alla produzione di ATP:
+\begin{itemize}
+    \item Nei primi 10 s di uno sprint: $\approx 3\%$ del totale;
+    \item Media nei 30 s (test di Wingate): $15\text{--}30\%$.
+\end{itemize}
+Le riserve di ossigeno legate a emoglobina e mioglobina possono sostenere temporaneamente il metabolismo aerobico anche in assenza di apporto esterno. Con l'aumentare della durata dell'HIE, il contributo aerobico cresce, ma la \textbf{velocità di produzione di ATP} (turnover) diminuisce, causando un calo progressivo della potenza meccanica.
+
+\section{Regolazione metabolica durante HIE}
+La necessità di generare ATP in pochi secondi è incompatibile con la regolazione ormonale (troppo lenta). La modulazione avviene tramite \textbf{effettori allosterici} che rispondono istantaneamente alle variazioni cellulari.
+
+\subsection{Ruolo dell'AMP e dell'AMPK}
+L'idrolisi massiva di ATP durante uno sforzo intenso aumenta i livelli di ADP. L'enzima \textbf{adenilato chinasi} (o miochinasi) catalizza:
+\[
+\mathrm{2\,ADP \rightleftharpoons ATP + AMP}
+\]
+L'\textbf{AMP}, normalmente presente a concentrazioni bassissime, aumenta rapidamente e funge da potente attivatore allosterico di:
+\begin{itemize}
+    \item \textbf{Glicogeno fosforilasi} (glicogenolisi);
+    \item \textbf{Fosfofruttochinasi-1 (PFK-1)} (glicolisi);
+    \item \textbf{AMPK} (Proteina Chinasi attivata dall'AMP).
+\end{itemize}
+
+\begin{definizione}[AMPK]
+L'\textbf{AMPK} è il principale sensore di carenza energetica cellulare. La sua attivazione:
+\begin{itemize}
+    \item \textbf{Promuove il catabolismo}: aumenta la captazione di glucosio (GLUT4) e acidi grassi (CD36), stimola il trasporto mitocondriale degli acidi grassi (CPT1) e il metabolismo ossidativo;
+    \item \textbf{Inibisce l'anabolismo}: blocca le vie biosintetiche e agisce come antagonista fisiologico di mTOR.
+\end{itemize}
+Questa regolazione garantisce che, in condizioni di stress energetico, la cellula priorizzi la produzione immediata di ATP.
+\end{definizione}
+
+\subsection{Altri effettori allosterici}
+\begin{itemize}
+    \item \textbf{Ca\textsuperscript{2+}}: rilasciato dal reticolo sarcoplasmatico durante la contrazione, attiva direttamente la glicogeno fosforilasi chinasi e la piruvato deidrogenasi fosfatasi, anticipando la risposta ormonale.
+    \item \textbf{ATP/ADP}: alti livelli di ATP inibiscono la PFK-1 (feedback negativo), mentre l'ADP la attiva.
+\end{itemize}
+
+\section{Metabolismo delle purine e soglia dell'ammoniaca}
+L'AMP accumulato viene smaltito tramite il \textbf{ciclo dei nucleotidi purinici (PNC)}:
+\[
+\mathrm{AMP \xrightarrow{\text{AMP deaminasi}} IMP + NH_4^+}
+\]
+L'ammoniaca (\(\mathrm{NH_3}\)/\(\mathrm{NH_4^+}\)) prodotta diffonde nel plasma. Ad intensità superiori al 100\% del VO\textsubscript{2}max, si osserva un aumento esponenziale dell'ammoniaca plasmatica, definibile come \textbf{soglia dell'ammoniaca}. L'iperammoniemia contribuisce all'insorgenza della fatica centrale e periferica, interferendo con la trasmissione neuromuscolare e il ciclo di Krebs.
+
+\section{Effetti dello stato nutrizionale}
+In un HIE di breve durata (30 s), le scorte di glicogeno si riducono del 25--35\%, rendendo l'impatto dello stato nutrizionale meno evidente rispetto a esercizi prolungati. Tuttavia:
+\begin{itemize}
+    \item Il glicogeno diminuisce più rapidamente nelle fibre di tipo IIx rispetto alle tipo I;
+    \item Una dieta povera di carboidrati anticipa l'insorgenza della fatica;
+    \item I benefici di una dieta iper-glucidica rispetto a una normo-glucidica sono meno chiari per sforzi molto brevi, ma diventano significativi per ripetizioni multiple o recuperi incompleti.
+\end{itemize}
+
+\section{Supporti nutrizionali ergogenici nell'HIE}
+Un supporto ergogenico è una sostanza in grado di migliorare la performance. Per l'HIE, le evidenze più solide supportano:
+
+\begin{itemize}
+    \item \textbf{Creatina}: aumenta le scorte muscolari di fosfocreatina, migliorando la performance in sforzi ripetuti ad alta intensità e potenzialmente la risposta ipertrofica all'allenamento.
+    \item \textbf{Alcalinizzatori} (bicarbonato, citrato di sodio): tamponano l'acidosi metabolica indotta dal lattato, ritardando la fatica in sforzi di 1--7 minuti.
+    \item \textbf{Caffeina}: aumenta la disponibilità di Ca\textsuperscript{2+} per la contrazione e modula la percezione dello sforzo; gli effetti sono significativi ma variabili in base al genotype metabolico individuale.
+    \item \textbf{\(\beta\)-alanina}: precursore della carnosina, principale tampone intracellulare contro l'acidità; l'integrazione cronica aumenta la capacità tampone muscolare e migliora la performance in HIE.
+\end{itemize}
+
+\begin{nota}[Individualità della risposta]
+L'efficacia degli integratori ergogenici dipende da fattori individuali (genetica, stato di allenamento, dieta). La caffeina, ad esempio, mostra risposte variabili in base alla velocità di metabolizzazione (genotipo CYP1A2).
+\end{nota}
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item L'HIE (1 s -- 2 min) crea un deficit di ossigeno non compensato dal metabolismo aerobico;
+    \item Recluta preferenzialmente fibre di tipo IIx, ad alta potenza ma bassa resistenza;
+    \item L'energia proviene da ATP, PCr, glicogenolisi e glicolisi anaerobica; il metabolismo aerobico contribuisce significativamente solo oltre i 30 s;
+    \item La regolazione metabolica è mediata da effettori allosterici (AMP, Ca\textsuperscript{2+}, ATP/ADP) e dall'AMPK, non da ormoni;
+    \item L'accumulo di lattato e ammoniaca contribuisce alla fatica;
+    \item Integratori come creatina, alcalinizzanti, caffeina e \(\beta\)-alanina possono migliorare la performance in HIE se utilizzati correttamente.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 17
+% =========================================================
+
+% =========================================================
+% CAPITOLO 18: Biochimica dell'esercizio fisico di endurance
+% =========================================================
+
+\chapter{Biochimica dell'esercizio fisico di endurance}
+
+\section{Definizione e caratteristiche dell'endurance}
+Un esercizio di \textbf{endurance} (o aerobico) è un'attività fisica costante di durata variabile da pochi minuti a diverse ore. Sono inclusi sia esercizi sulla media distanza (mezzofondo, nuoto) che sulla lunga distanza (maratona, ciclismo). Esercizi superiori alle 4--6 ore sono definiti di \textbf{ultra-endurance}.
+L'obiettivo è mantenere la massima potenza possibile per periodi prolungati, con intensità considerata stazionaria (al netto di cambi di ritmo strategici).
+
+Molti studi utilizzano il ciclismo come modello sperimentale per:
+\begin{itemize}
+    \item Facilità di misurazione della spesa energetica e dell'intensità;
+    \item Posizione stabile delle braccia, utile per prelievi ematici durante l'esercizio;
+    \item Reclutamento specifico del muscolo vasto laterale, facilmente campionabile tramite biopsia.
+\end{itemize}
+
+\begin{nota}[Reclutamento delle fibre]
+Negli esercizi di endurance vengono reclutate principalmente le fibre muscolari di \textbf{tipo I} (lente, ossidative) e \textbf{tipo IIa} (rapide, ossidative), poiché non è richiesta la produzione di ATP alla velocità massima tipica delle fibre IIx glicolitiche.
+\end{nota}
+
+\section{Fonti energetiche nell'endurance}
+La produzione di ATP per la contrazione muscolare è sostenuta principalmente dal \textbf{metabolismo ossidativo} di lipidi e carboidrati. Le fonti possono essere extramuscolari o intramuscolari:
+
+\begin{table}[h!]
+\centering
+\caption{Fonti energetiche nell'esercizio di endurance}
+\label{tab:fonti-endurance}
+\begin{tabular}{p{0.45\textwidth} p{0.45\textwidth}}
+\hline
+\textbf{Fonti extramuscolari} & \textbf{Fonti intramuscolari} \\
+\hline
+\textbullet{} Acidi grassi liberi (FFA) plasmatici, mobilizzati dai TAG del tessuto adiposo & \textbullet{} Glucosio prodotto dal glicogeno muscolare \\
+\textbullet{} Glucosio plasmatico, fornito dal glicogeno epatico & \textbullet{} Acidi grassi ricavati dai TAG intramuscolari \\
+\hline
+\end{tabular}
+\end{table}
+
+Le proteine svolgono un ruolo marginale nella sintesi di ATP durante l'endurance, diventando significative solo in condizioni di digiuno prolungato o deplezione glicogenica estrema.
+
+\section{Regolazione metabolica}
+Il metabolismo ossidativo è più complesso di quello anaerobico e presenta molteplici punti di controllo per bilanciare l'utilizzo di carboidrati e lipidi. La regolazione avviene a più livelli:
+
+\begin{itemize}
+    \item \textbf{Regolazione ormonale}: catecolammine (adrenalina, noradrenalina) e insulina modulano l'attività enzimatica tramite cascate di segnalazione (es. via cAMP-PKA).
+    \item \textbf{Effettori allosterici}: ADP, AMP, Ca\textsuperscript{2+}, Pi rispondono istantaneamente alle variazioni del bilancio energetico cellulare.
+    \item \textbf{Regolazione a lungo termine}: l'espressione genica degli enzimi metabolici viene modulata dall'allenamento cronico (adattamenti trascrizionali).
+\end{itemize}
+
+I principali fattori che influenzano il bilanciamento dei substrati sono:
+\begin{enumerate}
+    \item Intensità dell'esercizio;
+    \item Durata dell'esercizio;
+    \item Stato nutrizionale (disponibilità di glicogeno, assunzione di carboidrati);
+    \item Livello di allenamento (adattamenti metabolici).
+\end{enumerate}
+
+\section{Effetto dell'intensità sull'utilizzo dei substrati}
+Studi tramite calorimetria indiretta, traccianti isotopici e biopsie muscolari hanno quantificato il contributo delle varie fonti energetiche in funzione dell'intensità.
+
+\begin{definizione}[Relazione intensità-s substrati]
+All'aumentare dell'intensità dell'esercizio:
+\begin{itemize}
+    \item Aumenta la spesa energetica totale;
+    \item Aumenta il contributo dei \textbf{carboidrati} alla produzione di ATP;
+    \item Diminuisce il contributo dei \textbf{lipidi}.
+\end{itemize}
+\end{definizione}
+
+Con l'aumentare dell'intensità, inizia ad aumentare la produzione di lattato (\textbf{soglia aerobica}). La produzione di lattato cresce lentamente in funzione dell'utilizzo di glucosio, fino al raggiungimento della \textbf{soglia anaerobica} (o soglia del lattato), oltre la quale si osserva un aumento esponenziale dei livelli di lattato dovuto al reclutamento progressivo delle fibre di tipo IIx.
+Per questo motivo, negli sport di endurance è fondamentale mantenersi \textbf{sotto la soglia anaerobica}, dove l'ATP resta a carico del catabolismo ossidativo e l'accumulo di lattato è minimo.
+
+\subsection{Metabolismo dei carboidrati: glicogenolisi}
+Con l'aumentare dell'intensità aumenta la degradazione del glicogeno muscolare. Curiosamente, questo non sembra dovuto all'aumento della forma attiva fosforilata (a) della glicogeno fosforilasi, che anzi può diminuire ad alta intensità, probabilmente a causa della riduzione del pH associata all'esercizio intenso.
+
+Un ruolo preponderante sembra averlo l'accumulo di \textbf{fosfato inorganico (Pi)} che si libera in seguito all'idrolisi dell'ATP in ADP. Il Pi è un substrato della glicogeno fosforilasi, che quindi può lavorare più velocemente. Anche l'ADP e l'AMP liberi, che aumentano durante l'esercizio, sono regolatori allosterici dell'enzima attivo e contribuiscono alla glicogenolisi.
+
+\subsection{Metabolismo dei carboidrati: assorbimento e utilizzo del glucosio}
+Aumentando l'intensità, aumenta anche l'assorbimento del glucosio ematico a causa di:
+\begin{itemize}
+    \item Aumento del flusso sanguigno muscolare;
+    \item Reclutamento di un numero maggiore di fibre.
+\end{itemize}
+All'interno della cellula, l'accumulo di ADP, AMP e Pi attiva la \textbf{PFK-1} (fosfofruttochinasi-1), accelerando la glicolisi e l'utilizzo del glucosio.
+L'esercizio aumenta anche la traslocazione del trasportatore \textbf{GLUT4} sulla membrana plasmatica. Tuttavia, questa traslocazione non sembra proporzionale all'intensità, suggerendo che GLUT4 non sia il principale responsabile dell'aumento dell'uptake glucidico in funzione dell'intensità.
+
+\subsection{Metabolismo dei carboidrati: ossidazione del piruvato}
+Il piruvato prodotto dalla glicolisi, per essere ossidato nei mitocondri, deve essere prima convertito in \textbf{acetil-CoA} dalla \textbf{piruvato deidrogenasi (PDH)}.
+All'aumentare dell'intensità, l'attività della PDH aumenta, grazie:
+\begin{itemize}
+    \item All'aumento del suo substrato, il piruvato;
+    \item All'aumento del Ca\textsuperscript{2+} citosolico, che attiva la PDH fosfatasi (defosforilazione attivante).
+\end{itemize}
+
+\subsection{Metabolismo dei lipidi: disponibilità di acidi grassi}
+Il contributo dei lipidi alla produzione di ATP diminuisce con l'aumentare dell'intensità, in particolare sopra il 65\% del VO\textsubscript{2}max.
+Un esercizio al 65\% fa aumentare la concentrazione ematica sia degli acidi grassi liberi (FFA) che del glicerolo, prodotti della lipolisi. Aumentando ulteriormente l'intensità (es. 85\% VO\textsubscript{2}max), il glicerolo continua ad aumentare (indice che la lipolisi non è rallentata), ma i FFA diminuiscono.
+La riduzione di FFA non è quindi dovuta a una riduzione della lipolisi, ma più probabilmente a un \textbf{ridotto afflusso di sangue al tessuto adiposo}, che limita la disponibilità di albumina per il trasporto degli acidi grassi. In queste condizioni, gli acidi grassi possono rimanere intrappolati negli adipociti.
+
+\subsection{Metabolismo dei lipidi: ingresso mitocondriale}
+La ridotta disponibilità di FFA nel sangue contribuisce solo in parte alla ridotta ossidazione lipidica, perché la concentrazione plasmatica rimane comunque superiore alla velocità di ossidazione. Questo suggerisce alterazioni anche nell'ingresso degli FFA nelle cellule e nella loro ossidazione.
+Aumentando l'intensità, diminuisce l'assorbimento degli acidi grassi a catena lunga (LCFA, es. oleato) ma non di quelli a catena media (MCFA, es. octanoato).
+\begin{itemize}
+    \item I LCFA necessitano del legame con la \textbf{carnitina} e del trasportatore \textbf{CPT1} per entrare nel mitocondrio.
+    \item I MCFA possono entrare direttamente nel mitocondrio senza carnitina.
+\end{itemize}
+L'elemento limitante non è quindi l'ingresso nella cellula (mediato da CD36, FATP, FABP), ma l'\textbf{ingresso nel mitocondrio} tramite CPT1.
+
+\subsection{Disponibilità di carnitina e accumulo di acetil-CoA}
+Il piruvato prodotto dalla glicolisi attiva la PDH, che trasforma il piruvato in acetil-CoA. Se l'acetil-CoA viene prodotto più velocemente di quanto possa essere smaltito dal ciclo di Krebs, si accumula e inibisce la PDH (feedback negativo), bloccando il metabolismo ossidativo e aumentando la produzione di lattato.
+Per evitare questo, la \textbf{carnitina} può legare l'acetil-CoA e formare \textbf{acetil-carnitina}:
+\[
+\text{Acetil-CoA} + \text{Carnitina} \rightleftharpoons \text{Acetil-carnitina} + \text{CoA}
+\]
+Questo meccanismo tampona l'acetil-CoA in eccesso e permette di proseguire l'esercizio ad intensità elevata.
+
+\begin{nota}[Effetto sulla beta-ossidazione]
+Il lato negativo di questo processo è la diminuzione della disponibilità di \textbf{carnitina libera}, necessaria per il trasporto degli acidi grassi a catena lunga nel mitocondrio tramite CPT1. Il risultato finale è un minore ingresso degli acidi grassi e una ridotta ossidazione lipidica ad alta intensità.
+\end{nota}
+
+L'assunzione cronica di carnitina (es. 2 g/giorno per 12--24 settimane) è in grado di aumentarne i livelli muscolari e di ridurre la produzione di lattato negli esercizi ad intensità elevata, con un conseguente miglioramento delle performance.
+
+\subsection{Effetto del pH su CPT1}
+Un esercizio ad intensità elevata causa un abbassamento del pH muscolare. L'enzima \textbf{CPT1} è sensibile a variazioni di pH e un suo abbassamento ne può ridurre l'attività, contribuendo ulteriormente a limitare l'ingresso degli acidi grassi nei mitocondri e quindi la loro ossidazione.
+
+\section{Effetti della durata dell'esercizio}
+Al contrario rispetto all'intensità, l'aumento della \textbf{durata} di un esercizio ad intensità costante e moderata (60\% VO\textsubscript{2}max) provoca:
+\begin{itemize}
+    \item Un \textbf{aumento} dell'ossidazione dei lipidi;
+    \item Una \textbf{diminuzione} dell'ossidazione dei carboidrati.
+\end{itemize}
+Nello specifico, aumenta l'utilizzo degli acidi grassi plasmatici a scapito del glicogeno muscolare (e anche dei trigliceridi intramuscolari).
+
+La ridotta disponibilità di glicogeno riduce la quantità di piruvato prodotta dalla glicolisi. La riduzione del piruvato inattiva la PDH (promuovendo l'attivazione della piruvato deidrogenasi chinasi, PDK), portando a una ridotta ossidazione dei carboidrati e favorendo indirettamente l'ossidazione lipidica.
+
+\section{Effetti dello stato nutrizionale}
+\subsection{Carico di carboidrati}
+Bassi livelli di glicogeno promuovono la produzione di adrenalina, che stimola la lipolisi e l'ossidazione lipidica.
+Aumentare le scorte di glicogeno muscolare con una dieta ricca di carboidrati:
+\begin{itemize}
+    \item Aumenta la glicogenolisi e l'utilizzo del glicogeno, indipendentemente dall'intensità;
+    \item Non interferisce con la captazione del glucosio ematico;
+    \item Stimola sia l'attività della glicogeno fosforilasi (substrato) sia la piruvato deidrogenasi, aumentando l'ossidazione dei carboidrati a scapito dei lipidi.
+\end{itemize}
+Alte concentrazioni di glicogeno prima di un esercizio aumentano la produzione di acetil-CoA dal piruvato, che viene legato dalla carnitina, riducendo ulteriormente la disponibilità di carnitina libera per il trasporto degli acidi grassi.
+
+\subsection{Assunzione di carboidrati pre-esercizio}
+L'assunzione di carboidrati poco prima di un allenamento induce un aumento delle prestazioni rispetto a una condizione di digiuno, grazie alla maggiore disponibilità di glucosio.
+Tuttavia, in un'ottica di perdita di massa grassa, l'assunzione di carboidrati pre-esercizio limita fortemente la lipolisi e l'ossidazione dei lipidi, in parte dovuta all'azione anti-lipolitica dell'\textbf{insulina}. Gli effetti negativi dell'ingestione di carboidrati sulla lipolisi possono persistere per molte ore dopo l'alimentazione.
+
+\begin{definizione}[Indice glicemico]
+Visti gli effetti dell'insulina, l'assunzione di carboidrati a \textbf{basso indice glicemico (LGI)} prima di un allenamento comporta una maggiore disponibilità di FFA e una maggiore ossidazione lipidica rispetto all'assunzione di carboidrati ad alto indice glicemico (HGI), che provocano un picco insulinico più marcato.
+\end{definizione}
+
+\subsection{Adattamento lipidico (train low, compete high)}
+La diminuzione delle scorte di carboidrati endogeni è un fattore limitante le performance negli esercizi di endurance prolungati (>90 min). Forzare l'organismo all'utilizzo dei grassi (\textbf{adattamento lipidico}) può ridurre l'uso del glicogeno e migliorare le performance.
+Questo ha portato allo studio di strategie di allenamento con bassi livelli di carboidrati per poi aumentarli in gara (\textit{train low, compete high}).
+
+Dopo 5 giorni di dieta per l'adattamento lipidico (alto contenuto di grassi e bassi CHO):
+\begin{itemize}
+    \item L'ossidazione dei lipidi risulta aumentata sia al giorno 6 (giorno di ripristino dei carboidrati) sia il giorno successivo;
+    \item Tra le cause: aumento dei TAG intramuscolari e della lipasi HSL;
+    \item L'adattamento lipidico riduce l'uso del glicogeno muscolare, ma non altera l'utilizzo del glucosio ematico.
+\end{itemize}
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item Un esercizio di endurance è un'attività costante della durata da 5 minuti a 4 ore (o più per ultra-endurance).
+    \item Le fonti di energia sono il metabolismo ossidativo di lipidi e carboidrati, provenienti da riserve intra- ed extramuscolari.
+    \item Il bilanciamento tra lipidi e carboidrati dipende da intensità, durata, stato nutrizionale e livello di allenamento.
+    \item All'aumentare dell'intensità c'è una diminuzione dell'utilizzo dei lipidi a favore dei carboidrati, a causa di limitazioni nel trasporto mitocondriale (CPT1, carnitina) e nella disponibilità di FFA.
+    \item All'aumentare della durata, il metabolismo lipidico è favorito dalla deplezione del glicogeno e dalla conseguente inattivazione della PDH.
+    \item Protocolli di adattamento lipidico (\textit{train low}) riducono l'ossidazione dei carboidrati e aumentano l'ossidazione lipidica anche in seguito a reintegrazione dei carboidrati.
+    \item La regolazione metabolica avviene tramite ormoni (adrenalina, insulina) ed effettori allosterici (AMP, Ca\textsuperscript{2+}, Pi) che rispondono alle esigenze energetiche in tempo reale.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 18
+% =========================================================
+
+% =========================================================
+% CAPITOLO 19: Biochimica del gioco del calcio
+% =========================================================
+
+\chapter{Biochimica del gioco del calcio}
+
+\section{Il calcio come esercizio intermittente ad alta intensità}
+Il calcio, analogamente ad altri sport di squadra come rugby e hockey, è caratterizzato da un profilo di attività \textbf{intermittente ad alta intensità} (HIIE, High-Intensity Intermittent Exercise). Durante una partita, fasi di sforzo massimale o sovramassimale (sprint, salti, contrasti) si alternano a periodi di attività a bassa intensità (camminata, jogging) o di riposo completo.
+
+Questa alternanza rende la regolazione metabolica particolarmente complessa, poiché coinvolge simultaneamente:
+\begin{itemize}
+    \item \textbf{Sistemi anaerobici}: fosfocreatina (PCr) e glicolisi anaerobica, per gli sforzi esplosivi;
+    \item \textbf{Sistemi aerobici}: ossidazione di carboidrati e lipidi, per il recupero tra gli sforzi e il mantenimento dell'attività a bassa intensità.
+\end{itemize}
+
+I modelli sperimentali per lo studio del calcio utilizzano protocolli lavoro/riposo che cercano di replicare il profilo metabolico reale, sebbene con alcune limitazioni in termini di specificità.
+
+\begin{definizione}[HIIE]
+Un esercizio \textbf{HIIE} è caratterizzato da ripetuti brevi sforzi ad alta intensità (da pochi secondi a 1-2 minuti) intervallati da periodi di recupero attivo o passivo. Il calcio rappresenta un esempio fisiologico di HIIE prolungato (90 minuti).
+\end{definizione}
+
+\section{Produzione di energia negli sprint ripetuti}
+Studi condotti su modelli di sprint ripetuti (es. 10 sprint massimali di 6 s su cicloergometro, con 30 s di recupero) hanno fornito informazioni fondamentali sul metabolismo muscolare durante attività intermittenti.
+
+\subsection{Declino della potenza e contributo energetico}
+Durante il primo sprint, la potenza media prodotta è massima e il contributo della PCr alla produzione di ATP è prossimo al 50\%. Al decimo sprint si osserva:
+\begin{itemize}
+    \item Una riduzione del 65\% della potenza media prodotta;
+    \item Una diminuzione significativa del contributo della glicolisi anaerobica;
+    \item Un aumento relativo del contributo del metabolismo aerobico.
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\caption{Produzione di ATP durante sprint ripetuti (dati medi)}
+\label{tab:sprint-atp}
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+\textbf{Parametro} & \textbf{1° Sprint} & \textbf{10° Sprint} \\
+\hline
+Produzione ATP & 14,9 mmol/kg/s & 5,3 mmol/kg/s \\
+Contributo PCr & $\approx$ 50\% & Ridotto \\
+Contributo glicolisi & Elevato & Ridotto \\
+Contributo aerobico & Minore & Aumentato \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Analisi dei metaboliti muscolari}
+Biopsie del muscolo vasto laterale prelevate prima e dopo gli sprint hanno rivelato:
+\begin{itemize}
+    \item \textbf{PCr}: il recupero di 30 s non è sufficiente per rigenerare completamente le scorte di fosfocreatina;
+    \item \textbf{Glicogenolisi}: la degradazione del glicogeno è ridotta nel decimo sprint rispetto al primo, nonostante alti livelli di adrenalina che dovrebbero stimolarla;
+    \item \textbf{Lattato}: non si accumula ulteriormente negli sprint finali, indicando un minore flusso glicolitico.
+\end{itemize}
+
+Questi dati suggeriscono che, in esercizi intermittenti prolungati, il \textbf{metabolismo aerobico} diventa progressivamente più importante per sostenere la produzione di ATP.
+
+\section{Regolazione enzimatica durante l'HIIE}
+L'attività degli enzimi chiave del metabolismo glucidico è modulata dinamicamente durante gli sprint ripetuti.
+
+\subsection{Glicogeno fosforilasi}
+La percentuale di glicogeno fosforilasi nella forma attiva (fosforilata, forma \textit{a}) aumenta rapidamente nei primi 15 s del primo sprint, probabilmente in risposta a:
+\begin{itemize}
+    \item Aumento del \(\mathrm{Ca^{2+}}\) citosolico (rilasciato dal reticolo sarcoplasmatico);
+    \item Accumulo di \(\mathrm{P_i}\) (fosfato inorganico) dall'idrolisi dell'ATP;
+    \item Aumento dell'AMP (indicatore di deficit energetico).
+\end{itemize}
+Nei successivi sprint, questa attivazione è attenuata, probabilmente a causa dell'acidificazione intracellulare (\(\mathrm{H^+}\)) che inibisce l'enzima.
+
+\subsection{Piruvato deidrogenasi (PDH)}
+La PDH, enzima che converte il piruvato in acetil-CoA per l'ingresso nel ciclo di Krebs, mostra un profilo di attivazione diverso:
+\begin{itemize}
+    \item Nel primo sprint, l'attività della PDH aumenta progressivamente, raggiungendo il massimo negli ultimi 15 s;
+    \item Nel terzo sprint, l'attivazione è più rapida e sostenuta.
+\end{itemize}
+L'attivazione è favorita dal \(\mathrm{Ca^{2+}}\) (che attiva la PDH fosfatasi) e, paradossalmente, dagli ioni \(\mathrm{H^+}\) che stimolano la defosforilazione attivante.
+
+\begin{nota}[Bilancio piruvato-lattato]
+Nel primo sprint, la velocità di produzione del piruvato supera la capacità della PDH di ossidarlo: il piruvato in eccesso viene convertito in lattato, che si accumula. Negli sprint successivi, la maggiore attività della PDH e la ridotta glicogenolisi prevengono l'accumulo di piruvato e, di conseguenza, di lattato.
+\end{nota}
+
+\section{Effetti del rapporto lavoro/riposo}
+La durata della fase di sforzo e del recupero influenza significativamente la performance e lo stress metabolico.
+
+\begin{table}[h!]
+\centering
+\caption{Effetto della distanza dello sprint sulla performance (recupero fisso: 30 s)}
+\label{tab:sprint-distanza}
+\begin{tabular}{p{0.25\textwidth} p{0.35\textwidth} p{0.35\textwidth}}
+\hline
+\textbf{Distanza} & \textbf{Numero sprint} & \textbf{Effetto sulla performance} \\
+\hline
+15 m & 40 & Nessun calo significativo \\
+30 m & 20 & Calo del 6\% \\
+40 m & 15 & Calo del 12\% \\
+\hline
+\end{tabular}
+\end{table}
+
+Sprint più lunghi (30-40 m) inducono un maggiore stress metabolico, evidenziato da:
+\begin{itemize}
+    \item Aumento di \textbf{acido urico} e \textbf{ipoxantina} plasmatici (metaboliti della degradazione delle purine, indicativi di consumo di ATP e accumulo di AMP);
+    \item Maggiore accumulo di lattato ematico.
+\end{itemize}
+
+Un recupero più lungo riduce lo stress metabolico: dopo uno sprint di 6 s, 30 s di recupero non rigenerano completamente la PCr; dopo uno sprint di 30 s, 4 minuti di recupero permettono un ripristino quasi completo.
+
+\section{Recupero della fosfocreatina e capacità aerobica}
+La rigenerazione della PCr avviene nei mitocondri durante il recupero, utilizzando ATP prodotto dalla fosforilazione ossidativa. Questo processo dipende dall'afflusso di sangue e ossigeno al muscolo.
+
+\begin{definizione}[Implicazioni per l'allenamento]
+Atleti con una \textbf{elevata capacità aerobica} (\(\mathrm{VO_2max}\)) mostrano una più rapida resintesi della PCr tra gli sforzi intermittenti. Questo permette di mantenere prestazioni più elevate per periodi prolungati, ritardando l'affaticamento.
+\end{definizione}
+
+\section{Utilizzo dei substrati energetici nell'HIIE}
+Confrontando esercizi intermittenti ad alta intensità con esercizi continui a intensità media equivalente (stessa spesa energetica totale), si osserva:
+\begin{itemize}
+    \item \textbf{Maggiore ossidazione dei carboidrati} nell'HIIE;
+    \item \textbf{Minore ossidazione dei lipidi} nell'HIIE.
+\end{itemize}
+
+Questo è probabilmente dovuto all'elevato flusso glicolitico che riduce la disponibilità di carnitina libera (sequestrata come acetil-carnitina), limitando l'ingresso degli acidi grassi a catena lunga nei mitocondri tramite CPT1.
+
+\subsection{Ruolo dei lipidi nel calcio}
+Nonostante la predominanza dei carboidrati, i lipidi svolgono un ruolo importante, specialmente nel \textbf{secondo tempo}:
+\begin{itemize}
+    \item Si osserva un aumento degli acidi grassi liberi (FFA) plasmatici, indicativo di aumentata lipolisi nel tessuto adiposo;
+    \item Questo è favorito dalla combinazione di: minore intensità media, aumento delle catecolamine (adrenalina) e diminuzione dell'insulina (per deplezione dei carboidrati).
+\end{itemize}
+
+\section{Effetti dello stato nutrizionale}
+\subsection{Livelli di glicogeno muscolare}
+Bassi livelli iniziali di glicogeno muscolare sono associati a:
+\begin{itemize}
+    \item Aumento della lipolisi (FFA e glicerolo plasmatici elevati);
+    \item Minori livelli di glucosio ematico;
+    \item \textbf{Ridotta percentuale di sforzi ad alta intensità} durante la partita.
+\end{itemize}
+
+Questo evidenzia l'importanza di adeguate riserve di glicogeno per sostenere la performance in sport intermittenti.
+
+\subsection{Assunzione di carboidrati pre-esercizio}
+In condizioni di digiuno, l'ossidazione lipidica è maggiore rispetto all'assunzione di carboidrati prima dell'esercizio. Tuttavia, a differenza degli esercizi continui sottomassimali, \textbf{l'indice glicemico} del pasto pre-esercizio (alto vs. basso) non influenza significativamente:
+\begin{itemize}
+    \item L'ossidazione lipidica;
+    \item La performance fisica nell'HIIE.
+\end{itemize}
+
+Eventuali piccole differenze sono probabilmente annullate dall'assunzione di carboidrati \textit{durante} l'esercizio, pratica comune nel calcio.
+
+\subsection{Assunzione di carboidrati durante l'esercizio}
+L'ingestione di carboidrati (es. maltodestrine al 7,5\%, 1 ml/kg ogni 12 min) durante un esercizio HIIE prolungato:
+\begin{itemize}
+    \item Mantiene elevati i livelli di insulina e glucosio ematico;
+    \item Riduce i livelli di glicerolo e FFA (minore lipolisi);
+    \item \textbf{Aumenta la capacità di sostenere l'esercizio} (es. 158 min vs. 131 min fino all'esaurimento);
+    \item Non altera significativamente l'utilizzo complessivo del glicogeno muscolare.
+\end{itemize}
+
+Il beneficio principale sembra derivare dalla maggiore disponibilità di glucosio ematico, che supporta l'elevata velocità di ossidazione glucidica richiesta negli sforzi intermittenti.
+
+\begin{esempio}[Miglioramento delle abilità tecniche]
+L'integrazione con carboidrati durante l'esercizio migliora le performance in test specifici per il calcio:
+\begin{itemize}
+    \item Agilità: riduzione del tempo di esecuzione;
+    \item Dribbling: maggiore precisione e velocità;
+    \item Precisione del tiro: migliore accuratezza.
+\end{itemize}
+Questi benefici sono attribuibili al mantenimento della funzione neuromuscolare e cognitiva, supportata da adeguati livelli di glucosio.
+\end{esempio}
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item Il calcio è un esercizio \textbf{intermittente ad alta intensità} (HIIE) che richiede l'integrazione di sistemi energetici anaerobici e aerobici.
+    \item La produzione di ATP deriva inizialmente da PCr e glicolisi anaerobica; con il protrarsi dell'esercizio, il contributo aerobico aumenta progressivamente.
+    \item Il recupero della PCr dipende dalla durata del riposo e dalla capacità aerobica dell'atleta.
+    \item L'ossidazione dei carboidrati è predominante nell'HIIE; i lipidi contribuiscono maggiormente nelle fasi tardive e a bassa intensità.
+    \item Adeguati livelli di glicogeno muscolare sono essenziali per sostenere gli sforzi ad alta intensità.
+    \item L'assunzione di carboidrati \textit{durante} l'esercizio migliora la capacità di performance prolungata e le abilità tecniche specifiche, probabilmente tramite il mantenimento della glicemia e della funzione neuromuscolare.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 19
+% =========================================================
+
+% =========================================================
+% CAPITOLO 20: Adattamenti metabolici all'allenamento
+% =========================================================
+
+\chapter{Adattamenti metabolici all'allenamento}
+
+\section{Introduzione e segnali cellulari}
+La ripetizione cronica dell'esercizio fisico induce specifici adattamenti metabolici a livello delle fibre muscolari e dell'intero organismo. Tali adattamenti sono reversibili e dipendono strettamente dal tipo di stimolo (alta intensità vs. endurance), dalla durata e dalla frequenza dell'allenamento.
+Il muscolo scheletrico è un tessuto altamente plastico: lo stress meccanico, metabolico, ossidativo e ipossico derivante dalla contrazione attiva vie di trasduzione del segnale che portano all'aumento dell'espressione e dell'attività di enzimi e proteine specifiche. I principali segnali coinvolti sono:
+\begin{itemize}
+    \item \textbf{Stress meccanico}: accorciamenti e stiramenti ripetuti attivano meccanosensori come canali ionici attivati dallo stiramento (ingresso di \( \mathrm{Na^+} \) e \( \mathrm{Ca^{2+}} \)) e integrine di membrana, che trasducono segnali di crescita e ipertrofia.
+    \item \textbf{Molecole segnale}: ormoni (adrenalina, cortisolo, GH) e fattori di crescita (IGF-I, MGF) promuovono risposte anaboliche, mentre inibitori della crescita come la miostatina vengono soppressi.
+    \item \textbf{Stress metabolico}: l'accumulo di AMP attiva la chinasi AMPK, sensore energetico che, tramite l'attivazione di PGC-1\(\alpha\), promuove la biogenesi mitocondriale e il catabolismo lipidico.
+    \item \textbf{Stress ossidativo}: l'esercizio aumenta moderatamente le specie reattive dell'ossigeno (ROS), che a livelli controllati fungono da molecole di segnalazione attivando vie adattative (NRF2, MAPK).
+    \item \textbf{Stress ipossico}: il rapido consumo di \( \mathrm{O_2} \) nei mitocondri attiva fattori indotti dall'ipossia (HIFs), stimolando l'espressione di geni per GLUT4, mioglobina ed enzimi glicolitici.
+\end{itemize}
+
+\section{Adattamenti all'allenamento ad alta intensità (HIT)}
+L'allenamento ad alta intensità migliora la capacità di svolgere esercizi massimali o sovramassimali, con adattamenti circoscritti principalmente al metabolismo anaerobico e alla struttura contrattile:
+\begin{itemize}
+    \item \textbf{Metabolismo anaerobico}: aumento dell'attività della glicolisi anaerobica e della creatina chinasi (CK); lieve incremento delle riserve di creatina/fosfocreatina (PCr).
+    \item \textbf{Metabolismo glucidico}: modesto aumento delle riserve di glicogeno intramuscolare e miglioramento della capacità di tamponare l'acidosi intracellulare (aumento della carnosina).
+    \item \textbf{Metabolismo proteico e ionico}: aumento del contenuto proteico muscolare e up-regulation della pompa \( \mathrm{Na^+/K^+} \)-ATPasi.
+\end{itemize}
+La pompa \( \mathrm{Na^+/K^+} \)-ATPasi contrasta l'accumulo extracellulare di \( \mathrm{K^+} \) (che depolarizza il sarcolemma riducendo l'eccitabilità), preservando la generazione della forza durante sforzi ripetuti.
+
+\subsection{Ipertrofia muscolare e cellule satellite}
+Uno degli effetti principali del HIT è l'aumento del diametro delle fibre muscolari (\textbf{ipertrofia}), mediato dall'attivazione della via di segnalazione AKT-mTOR. Questa via, stimolata da IGF-I/MGF, amminoacidi (leucina) e stress meccanico, attiva la sintesi proteica necessaria alla costruzione di nuove miofibrille, reticolo sarcoplasmatico e citoscheletro.
+Le \textbf{cellule satellite} (staminali muscolari) giocano un ruolo cruciale: in risposta al danno da esercizio, si attivano, proliferano e possono fondersi con fibre preesistenti, aumentando il numero di nuclei per fibra (\textbf{iperplasia funzionale}). Questo aumento del rapporto sarcoplasma/nuclei precede e supporta l'ipertrofia. Inoltre, si ipotizza l'esistenza di una \textbf{memoria muscolare}: anche dopo periodi di inattività e perdita di massa, i mionuclei aggiunti persistono, accelerando il recupero ipertrofico alla ripresa dell'allenamento.
+
+\section{Adattamenti all'allenamento di endurance (ET)}
+L'ET induce profondi adattamenti fisiologici, tra cui l'aumento del \( \mathrm{VO_2max} \) e lo spostamento della soglia del lattato verso intensità maggiori, indice di un migliorato metabolismo ossidativo.
+
+\subsection{Biogenesi mitocondriale e angiogenesi}
+L'adattamento più evidente è l'aumento della densità mitocondriale (per numero e dimensione), guidato dal co-attivatore trascrizionale PGC-1\(\alpha\), attivato da AMPK e vie MAPK. Parallelamente, lo stress ipossico e metabolico stimola l'\textbf{angiogenesi}, aumentando la capillarizzazione e migliorando l'apporto di \( \mathrm{O_2} \) e nutrienti.
+
+\subsection{Metabolismo dei carboidrati}
+Nei soggetti allenati si osserva un \textbf{risparmio di glicogeno} muscolare durante esercizi sottoposti, dovuto a ridotti livelli di ADP, AMP e \( \mathrm{P_i} \) (attivatori della glicogeno fosforilasi). Questo posticipa la fatica. Conseguentemente, si riducono la produzione di piruvato e lattato e l'attività della PDH.
+Si osserva inoltre un aumento dell'espressione di GLUT4, che non tanto durante l'esercizio, ma soprattutto a riposo/post-esercizio, migliora la captazione di glucosio (sensibilità insulinica) e l'attività della glicogeno sintasi, favorendo un maggiore accumulo di glicogeno.
+
+\subsection{Metabolismo dei lipidi}
+L'ET sposta il metabolismo ossidativo dai carboidrati verso i lipidi. Questo non deriva da un aumento della lipolisi sistemica, ma da:
+\begin{itemize}
+    \item Maggiore assorbimento degli acidi grassi plasmatici, mediato dall'up-regulation dei trasportatori di membrana FABPm e FAT/CD36.
+    \item Maggiore utilizzo dei trigliceridi intramuscolari (IMTG), favorito dall'aumento della lipasi ATGL.
+    \item Aumentata attività di CPT1 e degli enzimi della \(\beta\)-ossidazione e del ciclo di Krebs, che potenziano la capacità ossidativa lipidica.
+\end{itemize}
+
+\subsection{Metabolismo delle proteine}
+L'ET aumenta l'espressione della BCKAD (deidrogenasi degli \(\alpha\)-chetoacidi a catena ramificata), migliorando il potenziale ossidativo dei BCAA. Tuttavia, durante l'esercizio, l'allenamento riduce l'attivazione di BCKAD (probabilmente via aumento della BCKAD chinasi), preservando i BCAA e limitando il catabolismo proteico durante lo sforzo.
+
+\section{Adattamenti all'allenamento intermittente ad alta intensità (HIIT)}
+L'HIIT produce adattamenti sovrapponibili a quelli dell'ET ad alto volume, nonostante la minore durata totale dello stimolo:
+\begin{itemize}
+    \item Riduzione dell'utilizzo di glicogeno e della produzione di lattato.
+    \item Aumento della vascolarizzazione e della biogenesi mitocondriale (via PGC-1\(\alpha\)).
+    \item Potenziamento del metabolismo ossidativo (aumento di GLUT4, FABPm, CD36).
+\end{itemize}
+Inoltre, l'HIIT incrementa specificamente l'espressione dei trasportatori del lattato (MCT) e della pompa \( \mathrm{Na^+/K^+} \)-ATPasi, riducendo l'accumulo plasmatico di \( \mathrm{K^+} \) e migliorando la clearance del lattato.
+
+\section{Disallenamento e atrofia muscolare}
+L'inattività prolungata o l'immobilizzazione causano una rapida perdita degli adattamenti metabolici e una riduzione della massa muscolare (\textbf{atrofia}). Questo processo è mediato dall'attivazione di ligasi ubiquitina-specifiche come \textbf{Atrogin-1} e \textbf{MuRF-1}, che promuovono la degradazione proteica via proteasoma.
+L'atrofia da disuso è fisiologica e reversibile con la ripresa dell'attività. Al contrario, l'atrofia patologica (da denervazione, ischemia o distrofie) porta a morte cellulare e perdita permanente di fibre. In questi casi, l'esercizio fisico adattato rimane utile per rallentare il declino e preservare la funzionalità residua.
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item Gli adattamenti metabolici sono specifici per il tipo di allenamento e reversibili in caso di inattività.
+    \item L'HIT migliora la capacità anaerobica, il tamponamento del pH e induce ipertrofia tramite la via mTOR e il reclutamento delle cellule satellite.
+    \item L'ET potenzia il metabolismo ossidativo tramite biogenesi mitocondriale (PGC-1\(\alpha\)), angiogenesi, risparmio di glicogeno e aumento dell'ossidazione lipidica (tramite trasportatori specifici e CPT1).
+    \item L'HIIT unisce adattamenti ossidativi simili all'ET a miglioramenti nella gestione del lattato e dell'omeostasi ionica (\( \mathrm{Na^+/K^+} \)-ATPasi).
+    \item Il disallenamento attiva vie proteolitiche (Atrogin-1/MuRF-1) causando atrofia, reversibile con la ripresa dell'esercizio se non di natura patologica.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 20
+% =========================================================
+
+% =========================================================
+% CAPITOLO 21: Esercizio fisico e stress ossidativo
+% =========================================================
+
+\chapter{Esercizio fisico e stress ossidativo}
+
+\section{Definizione di stress ossidativo}
+Lo \textbf{stress ossidativo} è una condizione patofisiologica caratterizzata dalla perdita dell'equilibrio (omeostasi) tra la produzione di specie ossidanti, in particolare le \textbf{specie reattive dell'ossigeno} (ROS, Reactive Oxygen Species), e la capacità di difesa antiossidante della cellula. Quando la produzione di ROS supera le capacità di neutralizzazione, si instaura uno squilibrio che può danneggiare le macromolecole biologiche.
+
+\begin{definizione}[Reazioni di ossidoriduzione]
+In una reazione redox:
+\begin{itemize}
+    \item L'\textbf{agente ossidante} acquista elettroni, ossidando la molecola vicina;
+    \item L'\textbf{agente riducente} cede elettroni, riducendo la molecola vicina.
+\end{itemize}
+Le molecole antiossidanti (es. glutatione) agiscono come agenti riducenti, venendo esse stesse ossidate per interrompere le reazioni di ossidazione a catena.
+\end{definizione}
+
+\section{Ossigeno molecolare e ROS}
+L'ossigeno molecolare (\(\mathrm{O_2}\)) costituisce circa il 20\% dell'atmosfera ed è essenziale per la respirazione mitocondriale. Tuttavia, è anche una molecola reattiva con potenziali effetti dannosi (\textit{paradosso dell'ossigeno}).
+
+I ROS sono molecole altamente reattive derivanti dalla \textbf{riduzione parziale} dell'ossigeno. Non tutti i ROS sono radicali liberi (specie con elettrone spaiato), ma tutti possiedono forte potere ossidante.
+
+\begin{table}[h!]
+\centering
+\caption{Principali specie reattive dell'ossigeno}
+\label{tab:ros}
+\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+\hline
+\textbf{Specie} & \textbf{Formula} & \textbf{Tipo} \\
+\hline
+Anione superossido & \(\mathrm{O_2^{\bullet-}}\) & Radicale libero \\
+Perossido di idrogeno & \(\mathrm{H_2O_2}\) & Non radicale \\
+Radicale idrossilico & \(\mathrm{HO^{\bullet}}\) & Radicale libero \\
+\hline
+\end{tabular}
+\end{table}
+
+Nel complesso IV (citocromo c ossidasi) della catena respiratoria, 4 elettroni vengono trasferiti \textit{contemporaneamente} all'\(\mathrm{O_2}\) per formare \(\mathrm{H_2O}\), evitando la produzione di ROS intermedi. Quando questo trasferimento non è coordinato, si generano le specie reattive sopra elencate.
+
+\subsection{Fonti di ROS}
+\begin{itemize}
+    \item \textbf{Endogene} (prodotte dalle cellule):
+    \begin{itemize}
+        \item Mitocondri (fuoriuscita di elettroni dalla catena respiratoria);
+        \item Perossisomi (ossidazione di acidi grassi a catena molto lunga);
+        \item NADPH ossidasi (NOX) del reticolo sarcoplasmatico e dei tubuli T;
+        \item Xantina ossidasi (degradazione delle purine);
+        \item Ossido nitrico sintasi (produzione di NO, una specie reattiva dell'azoto, RNS).
+    \end{itemize}
+    \item \textbf{Esogene} (fattori ambientali):
+    \begin{itemize}
+        \item Radiazioni ionizzanti e UV;
+        \item Farmaci e xenobiotici;
+        \item Inquinamento atmosferico;
+        \item Fumo di tabacco;
+        \item Alimentazione (eccesso di grassi, metalli pesanti).
+    \end{itemize}
+\end{itemize}
+
+\subsection{Bersagli molecolari dei ROS}
+I ROS possono danneggiare tutte le macromolecole biologiche:
+\begin{itemize}
+    \item \textbf{DNA}: ossidazione delle basi, rotture del filamento, mutazioni, accelerazione dell'invecchiamento e rischio oncogenico;
+    \item \textbf{Proteine}: ossidazione di residui amminoacidici (Cys, Met), formazione di ponti disolfuro aberranti, aggregazione, perdita di funzione;
+    \item \textbf{Lipidi}: perossidazione degli acidi grassi polinsaturi di membrana, alterazione della fluidità e della permeabilità, produzione di aldeidi tossiche (es. malondialdeide).
+\end{itemize}
+
+\section{Sistemi di difesa antiossidante}
+Per prevenire o limitare i danni ossidativi, le cellule possiedono sistemi di difesa articolati.
+
+\begin{definizione}[Classificazione degli antiossidanti]
+\begin{itemize}
+    \item \textbf{Esogeni}: assunti con la dieta (vitamine, polifenoli, carotenoidi);
+    \item \textbf{Endogeni}:
+    \begin{itemize}
+        \item \textit{Enzimatici}: proteine che catalizzano la neutralizzazione dei ROS;
+        \item \textit{Non enzimatici}: molecole a basso peso molecolare (tioli, bilirubina, acido urico).
+    \end{itemize}
+\end{itemize}
+\end{definizione}
+
+\subsection{Antiossidanti enzimatici}
+\begin{itemize}
+    \item \textbf{Superossido dismutasi (SOD)}: catalizza la dismutazione dell'anione superossido in ossigeno e perossido di idrogeno:
+    \[
+    \mathrm{2\,O_2^{\bullet-} + 2\,H^+ \xrightarrow{SOD} H_2O_2 + O_2}
+    \]
+    Esistono isoforme citosoliche (Cu/Zn-SOD) e mitocondriali (Mn-SOD).
+    
+    \item \textbf{Catalasi (CAT)}: localizzata nei perossisomi, degrada il perossido di idrogeno:
+    \[
+    \mathrm{2\,H_2O_2 \xrightarrow{CAT} 2\,H_2O + O_2}
+    \]
+    
+    \item \textbf{Glutatione perossidasi (GPx)}: utilizza glutatione ridotto (GSH) per detossificare \(\mathrm{H_2O_2}\) e perossidi lipidici:
+    \[
+    \mathrm{H_2O_2 + 2\,GSH \xrightarrow{GPx} 2\,H_2O + GSSG}
+    \]
+    Il glutatione ossidato (GSSG) viene rigenerato dalla glutatione reduttasi a spese di NADPH.
+\end{itemize}
+
+\subsection{Antiossidanti non enzimatici endogeni}
+\begin{itemize}
+    \item \textbf{Glutatione (GSH)}: tripeptide (Glu-Cys-Gly) con gruppo tiolico reattivo; principale antiossidante intracellulare;
+    \item \textbf{Bilirubina}: prodotto della degradazione dell'eme; a basse concentrazioni protegge i lipidi di membrana dalla perossidazione;
+    \item \textbf{Acido urico}: prodotto finale del metabolismo delle purine; principale antiossidante del plasma (ad alte concentrazioni può precipitare causando gotta).
+\end{itemize}
+
+\subsection{Antiossidanti esogeni (dietari)}
+\begin{itemize}
+    \item \textbf{Vitamina C} (acido ascorbico): antiossidante idrosolubile, rigenera la vitamina E ossidata;
+    \item \textbf{Vitamina E} (tocoferoli): antiossidante liposolubile, protegge le membrane dalla perossidazione lipidica;
+    \item \textbf{Carotenoidi} (es. \(\beta\)-carotene, licopene): scavenger di radicali liberi, proteggono da danni foto-ossidativi;
+    \item \textbf{Polifenoli} (es. resveratrolo, quercetina): attività antiossidante e modulazione di vie di segnalazione.
+\end{itemize}
+
+\section{Esercizio fisico e produzione di ROS}
+Numerosi studi dimostrano che esercizi di endurance o di breve durata ma alta intensità causano un aumento dei marcatori di stress ossidativo nel sangue e nel muscolo. Al contrario, esercizi di breve durata (\(<1\) min) a bassa intensità (\(\approx 30\%\) \(\mathrm{VO_2max}\)) non inducono un aumento significativo.
+
+\begin{nota}[La contrazione muscolare come fonte di ROS]
+La causa principale dell'aumento di ROS durante l'esercizio è la \textbf{contrazione muscolare}, non il metabolismo mitocondriale. I mitocondri contribuiscono in misura minore rispetto ad altre fonti cellulari.
+\end{nota}
+
+\subsection{Principali fonti di ROS durante l'esercizio}
+\begin{itemize}
+    \item \textbf{Reticolo sarcoplasmatico / Tubuli T}: contengono NADPH ossidasi (NOX) che producono anione superossido in risposta alla depolarizzazione e al \(\mathrm{Ca^{2+}}\);
+    \item \textbf{Perossisomi}: la contrazione attiva la xantina ossidasi (XO) durante la degradazione dell'AMP (via delle purine), producendo ROS;
+    \item \textbf{Ossido nitrico sintasi (NOS)}: i muscoli esprimono le isoforme neuronale (nNOS; fibre veloci) ed endoteliale (eNOS). La contrazione aumenta la produzione di ossido nitrico (\(\mathrm{NO}\)), una specie reattiva dell'azoto (RNS) che può reagire con \(\mathrm{O_2^{\bullet-}}\) formando perossinitrito (\(\mathrm{ONOO^-}\)), un potente ossidante.
+\end{itemize}
+
+\section{Effetti dei ROS sulla funzione muscolare}
+\subsection{ROS e forza muscolare}
+Livelli basali di ROS sono necessari al muscolo non affaticato per generare forza ottimale. Esperimenti su fibre isolate mostrano una relazione a campana:
+\begin{itemize}
+    \item \textbf{Bassi ROS} (trattamento con antiossidanti): forza ridotta;
+    \item \textbf{ROS moderati}: aumento della forza;
+    \item \textbf{ROS elevati}: diminuzione della forza e danno cellulare.
+\end{itemize}
+
+\begin{definizione}[Meccanismi di modulazione della forza]
+\begin{itemize}
+    \item \textbf{Effetti positivi}: regolazione dei flussi di \(\mathrm{Ca^{2+}}\) nel reticolo sarcoplasmatico e aumento della sensibilità delle miofibrille alla stimolazione;
+    \item \textbf{Effetti negativi}: inibizione della creatina chinasi e di enzimi glicolitici/mitocondriali chiave.
+\end{itemize}
+\end{definizione}
+
+\subsection{ROS e affaticamento muscolare}
+Studi su muscoli murini stimolati tetanicamente mostrano che la diminuzione della forza è accompagnata da un aumento dei ROS, in particolare dell'anione superossido. L'accumulo eccessivo di ROS contribuisce all'insorgenza della fatica attraverso:
+\begin{itemize}
+    \item Alterazione del rilascio/riassorbimento del \(\mathrm{Ca^{2+}}\);
+    \item Danno ossidativo alle proteine contrattili;
+    \item Inibizione degli enzimi energetici.
+\end{itemize}
+
+\subsection{Danno strutturale e atrofia}
+Se presenti a concentrazioni eccessive, i ROS possono:
+\begin{itemize}
+    \item Aumentare l'espressione delle ubiquitin-ligasi \textbf{Atrogin-1} e \textbf{MuRF-1}, promuovendo la degradazione proteasomale delle miofibrille;
+    \item Inibire le vie di sintesi proteica (es. via AKT-mTOR), sbilanciando la proteostasi verso il catabolismo;
+    \item Danneggiare le \textbf{cellule satellite}, riducendo la capacità rigenerativa del muscolo o spingendole verso differenziamento adiposo.
+\end{itemize}
+
+\section{Adattamenti all'esercizio cronico: l'ormesi}
+L'aumento moderato dello stress ossidativo è uno dei segnali che inducono adattamenti benefici all'esercizio fisico cronico.
+
+\begin{definizione}[Ormesi]
+L'\textbf{ormesi} è il fenomeno per cui l'esposizione cronica a dosi moderate di uno stressore (es. ROS) induce una risposta adattativa benefica, mentre dosi troppo basse o troppo alte hanno effetto nullo o deleterio.
+\end{definizione}
+
+\subsection{Meccanismi di adattamento}
+Un aumento moderato di ROS attiva vie di segnalazione che promuovono la difesa cellulare:
+\begin{itemize}
+    \item \textbf{NRF2} (Nuclear factor erythroid 2-related factor 2): si dissocia da Keap1 in risposta allo stress ossidativo, trasloca nel nucleo e induce l'espressione di geni antiossidanti (SOD, CAT, GPx, enzimi della sintesi del GSH);
+    \item \textbf{MAPK} (Mitogen-Activated Protein Kinases): attivano cascate di fosforilazione che regolano la trascrizione di geni adattativi;
+    \item \textbf{PGC-1\(\alpha\)}: co-attivatore trascrizionale indotto dai ROS, promuove la biogenesi mitocondriale e l'espressione di enzimi antiossidanti, migliorando la capacità ossidativa e la resilienza allo stress.
+\end{itemize}
+
+Se la risposta adattativa riesce a bilanciare la produzione di ROS, si mantiene l'omeostasi redox e la cellula diventa più resistente a stress futuri.
+
+\section{Integrazione antiossidante: benefici e limiti}
+L'utilizzo di integratori antiossidanti (vitamine C/E, N-acetilcisteina) durante l'esercizio ha effetti complessi e dose-dipendenti:
+
+\begin{itemize}
+    \item \textbf{A livelli moderati di ROS}: gli antiossidanti possono \textbf{bloccare l'attivazione} delle vie di segnalazione (NRF2, PGC-1\(\alpha\)) che mediano gli adattamenti all'allenamento, annullando i benefici dell'esercizio cronico;
+    \item \textbf{A livelli elevati di ROS}: gli antiossidanti possono \textbf{proteggere} dalle danni ossidativi eccessivi, ritardare la fatica e migliorare la funzionalità muscolare.
+\end{itemize}
+
+\begin{esempio}[N-acetilcisteina (NAC)]
+Studi su muscoli isolati stimolati continuamente mostrano che la somministrazione di NAC (precursore del glutatione) diminuisce il declino della forza (fatica), suggerendo un ruolo protettivo in condizioni di stress ossidativo acuto e intenso.
+\end{esempio}
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item Lo stress ossidativo è la perdita di equilibrio tra produzione di ROS e difese antiossidanti.
+    \item I ROS sono specie parzialmente ridotte dell'ossigeno con forte potere ossidante, prodotte da fonti endogene (NOX, XO, mitocondri) ed esogene.
+    \item Le cellule possiedono sistemi antiossidanti enzimatici (SOD, CAT, GPx) e non enzimatici (GSH, vitamine).
+    \item L'esercizio fisico ad intensità moderata/alta aumenta la produzione di ROS, principalmente da reticolo sarcoplasmatico e perossisomi.
+    \item Livelli moderati di ROS sono necessari per la forza muscolare e inducono adattamenti benefici (ormesi) tramite NRF2, MAPK e PGC-1\(\alpha\).
+    \item Livelli eccessivi di ROS contribuiscono alla fatica, al danno strutturale e all'atrofia muscolare.
+    \item L'integrazione antiossidante può essere utile in condizioni di stress acuto intenso, ma può interferire con gli adattamenti cronici se usata indiscriminatamente.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 21
+% =========================================================
+
+% =========================================================
+% CAPITOLO 22: Basi biochimiche della fatica
+% =========================================================
+
+\chapter{Basi biochimiche della fatica}
+
+\section{Introduzione e classificazione}
+La \textbf{fatica} può essere definita come una diminuzione delle performance fisiche, associata a un aumento (reale o percepito) della difficoltà nel sostenere un'attività, o come l'incapacità del muscolo di mantenere un determinato livello di forza durante l'esercizio. Lo studio dei suoi meccanismi è complesso a causa della natura multifattoriale del fenomeno.
+L'origine della fatica può essere classificata in due categorie principali:
+\begin{itemize}
+    \item \textbf{Fatica centrale}: origina dal sistema nervoso centrale (cervello e midollo spinale) e si manifesta come una diminuzione dell'attivazione volontaria dei muscoli (ridotta frequenza o sincronizzazione dei motoneuroni).
+    \item \textbf{Fatica periferica}: origina a livello o al di sotto della giunzione neuromuscolare e nel muscolo stesso, caratterizzata da una diminuzione della forza contrattile delle fibre.
+\end{itemize}
+
+\section{Fatica centrale}
+La causa principale della fatica centrale è l'alterazione delle concentrazioni di neurotrasmettitori nel sistema nervoso centrale, in particolare:
+\begin{itemize}
+    \item \textbf{Serotonina}: il suo aumento è associato a sensazioni di letargia e perdita di motivazione.
+    \item \textbf{Dopamina, glutammato e GABA}: le loro fluttuazioni modulano l'attivazione motoria, la percezione dello sforzo e la coordinazione neuromuscolare.
+\end{itemize}
+La fatica centrale è spesso influenzata da fattori metabolici periferici; ad esempio, durante l'esercizio prolungato, l'ossidazione degli amminoacidi a catena ramificata (BCAA) può alterare il rapporto tra triptofano e BCAA nel sangue, favorendo l'ingresso di triptofano nel cervello e la successiva sintesi di serotonina.
+
+\section{Fatica periferica: meccanismi metabolici}
+La fatica periferica deriva da una ridotta efficienza della giunzione neuromuscolare o da alterazioni metaboliche all'interno della fibra muscolare. I principali fattori includono l'accumulo di metaboliti (\(\mathrm{ROS}\), \(\mathrm{P_i}\), \(\mathrm{H^+}\), \(\mathrm{K^+}\)), la deplezione delle riserve di glicogeno, l'accumulo di calore e la disidratazione. Questi fattori compromettono i) la produzione di ATP; ii) la formazione/rottura dei ponti trasversi actina-miosina; iii) l'omeostasi ionica.
+
+\subsection{Ruolo dell'ATP, della fosfocreatina e del fosfato inorganico}
+Durante la fatica, i livelli di \textbf{ATP} intracellulare non scendono mai sotto il 50--60\% dei valori a riposo, valori ben al di sopra della soglia necessaria per la contrazione. Tuttavia, è probabile che si verifichino \textbf{deplezioni localizzate} di ATP in zone ad alto consumo (es. vicino alle triadi, dove operano \(\mathrm{Na^+/K^+}\)-ATPasi ed enzimi glicolitici). Una riduzione locale di ATP potrebbe innescare meccanismi protettivi che limitano il rilascio di \(\mathrm{Ca^{2+}}\) dal reticolo sarcoplasmatico, preservando la cellula dal rigor e dal danno strutturale.
+
+La \textbf{fosfocreatina (PCr)} diminuisce drasticamente durante sforzi massimali, ma la sua disponibilità non sembra essere il fattore limitante diretto per la fatica. Al contrario, il forte accumulo di \textbf{fosfato inorganico (\(\mathrm{P_i}\))} concorre significativamente all'insorgenza della fatica. Il \(\mathrm{P_i}\) può:
+\begin{itemize}
+    \item Ridurre il rilascio di \(\mathrm{Ca^{2+}}\) dal reticolo sarcoplasmatico;
+    \item Diminuire la sensibilità delle miofibrille al \(\mathrm{Ca^{2+}}\);
+    \item Precipitare con il calcio formando fosfato di calcio all'interno del reticolo sarcoplasmatico, riducendo ulteriormente il calcio disponibile per la contrazione.
+\end{itemize}
+Questi effetti sono particolarmente evidenti nelle fibre rapide di tipo IIx.
+
+\subsection{Acidosi metabolica e ioni idrogeno}
+L'accumulo di \textbf{ioni \(\mathrm{H^+}\)} (che abbassa il pH intracellulare fino a \(\approx 6.5\)) è tradizionalmente considerato una causa primaria di fatica. Il pH ridotto inibisce enzimi chiave della produzione anaerobica di energia, come la glicogeno fosforilasi, la creatina chinasi e la PFK-1. Inoltre, gli \(\mathrm{H^+}\) possono interferire con il legame del calcio alla troponina C.
+Tuttavia, il ruolo dell'acidosi è fortemente dipendente dalla temperatura e dal tipo di esercizio. In sport intermittenti come il calcio, dove la temperatura muscolare può raggiungere i \(40^\circ\mathrm{C}\), l'effetto inibitorio del pH basso è attenuato, suggerendo che l'acidosi non sia il principale meccanismo di fatica in questi contesti.
+
+\subsection{Potassio extracellulare e ROS}
+Durante la contrazione, il \(\mathrm{K^+}\) viene rilasciato nello spazio extracellulare. Il suo accumulo depolarizza il sarcolemma, interferendo con la propagazione del potenziale d'azione. Gli individui allenati mostrano un minore accumulo extracellulare di \(\mathrm{K^+}\) grazie a una maggiore espressione e attività della pompa \(\mathrm{Na^+/K^+}\)-ATPasi, indotta dall'allenamento HIIT.
+Le \textbf{specie reattive dell'ossigeno (ROS)} interferiscono con il riassorbimento del \(\mathrm{Ca^{2+}}\) nel reticolo sarcoplasmatico e riducono la sensibilità delle miofibrille al calcio. Inoltre, i ROS possono inibire la \(\mathrm{Na^+/K^+}\)-ATPasi, peggiorando l'accumulo extracellulare di \(\mathrm{K^+}\). La somministrazione di antiossidanti (es. N-acetilcisteina) può contrastare questi effetti e ritardare l'insorgenza della fatica.
+
+\section{Fatica nell'esercizio di endurance}
+Negli esercizi prolungati a intensità costante, il meccanismo predominante è la \textbf{ridotta disponibilità di carboidrati}. L'esaurimento del glicogeno muscolare e la successiva riduzione del glucosio ematico compromettono il rilascio di \(\mathrm{Ca^{2+}}\) dal reticolo sarcoplasmatico e riducono la capacità contrattile.
+\begin{itemize}
+    \item L'assunzione di carboidrati (pre- o intra-esercizio) mantiene la glicemia, ritarda l'esaurimento delle riserve e migliora le prestazioni.
+    \item La deplezione glicogenica aumenta l'ossidazione dei BCAA. La conseguente diminuzione dei BCAA ematici favorisce l'ingresso di triptofano nel cervello, aumentando la sintesi di serotonina e promuovendo la \textbf{fatica centrale} (percezione di fatica, ridotta motivazione).
+\end{itemize}
+Anche la \textbf{disidratazione} gioca un ruolo cruciale: riduce il flusso ematico cutaneo e la sudorazione, compromettendo la dissipazione del calore, aumentando la temperatura corporea e riducendo la disponibilità di \(\mathrm{O_2}\) ai muscoli.
+
+\section{Fatica nell'esercizio intermittente ad alta intensità (HIIE)}
+Gli sport di squadra (es. calcio) alternano fasi ad alta e bassa intensità. La fatica in questi contesti si manifesta in due forme:
+\begin{itemize}
+    \item \textbf{Fatica progressiva}: declino generale delle prestazioni verso la fine della gara.
+    \item \textbf{Fatica temporanea}: riduzione momentanea della capacità di sprint nei minuti immediatamente successivi a uno sforzo massimale.
+\end{itemize}
+L'analisi delle fibre muscolari post-partita mostra un'eterogeneità nella deplezione glicogenica: circa il 50\% delle fibre (specialmente tipo IIx) risulta completamente o quasi svuotato, mentre il restante 50\% conserva riserve. Questo squilibrio spiega la riduzione selettiva delle azioni ad alta intensità nel secondo tempo.
+La \textbf{deplezione di PCr} durante gli sprint ripetuti (con recuperi medi di \(\approx 70\) s) è fortemente associata alla fatica temporanea. La supplementazione con \textbf{creatina} ha dimostrato di attenuare questo fenomeno negli sport intermittenti.
+
+\section{Adattamenti e integrazione}
+L'allenamento specifico induce adattamenti che ritardano l'insorgenza della fatica:
+\begin{itemize}
+    \item \textbf{HIIT e trasporto del lattato}: aumenta l'espressione dei trasportatori \textbf{MCT4} (esporto di lattato/\(\mathrm{H^+}\)) e \textbf{MCT1} (importo da fibre ossidative), migliorando la clearance del lattato e mitigando l'acidosi intracellulare. L'aumento di \(\mathrm{H^+}\) extracellulare favorisce inoltre il rilascio di \(\mathrm{O_2}\) dall'emoglobina (effetto Bohr).
+    \item \textbf{Pompa \(\mathrm{Na^+/K^+}\)-ATPasi}: l'allenamento intermittente ne aumenta la densità e l'attività, migliorando il riassorbimento del \(\mathrm{K^+}\) extracellulare e preservando l'eccitabilità di membrana.
+    \item \textbf{Sistemi antiossidanti endogeni}: l'esposizione cronica a stress ossidativo moderato potenzia le difese cellulari, riducendo l'interferenza dei ROS sulla contrazione.
+\end{itemize}
+
+\section{Sintesi funzionale}
+\begin{itemize}
+    \item La fatica è un fenomeno multifattoriale, classificabile in centrale (SNC) e periferica (muscolo/giunzione neuromuscolare).
+    \item La fatica periferica è guidata da alterazioni metaboliche: accumulo di \(\mathrm{P_i}\), \(\mathrm{H^+}\), \(\mathrm{K^+}\) e ROS; deplezione di PCr e glicogeno.
+    \item L'ATP non si esaurisce mai completamente, ma deplezioni localizzate possono innescare meccanismi protettivi che riducono il rilascio di calcio.
+    \item Negli esercizi di endurance, la carenza di carboidrati e la disidratazione sono i principali limitanti, con ripercussioni sia periferiche che centrali (via serotonina).
+    \item Nell'HIIE, la fatica è eterogenea (deplezione selettiva delle fibre IIx) e presenta una componente temporanea legata al calo di PCr e all'accumulo di \(\mathrm{K^+}\).
+    \item L'allenamento migliora la resistenza alla fatica potenziando le pompe ioniche, i trasportatori di lattato e le difese antiossidanti.
+\end{itemize}
+
+% =========================================================
+% Fine Capitolo 22
+% =========================================================
 
 \end{document}
