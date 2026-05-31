@@ -32,8 +32,8 @@
 % 4. IMPAGINAZIONE E INTERLINEA
 % ==========================================
 \usepackage[
-  inner=25mm, outer=20mm,
-  top=20mm, bottom=20mm,
+  inner=20mm, outer=20mm,
+  top=20mm, bottom=15mm,
   headheight=15pt, footskip=15pt
 ]{geometry}
 \usepackage{setspace}
@@ -715,7 +715,7 @@ Il potenziale d'azione, una volta generato, deve essere trasmesso ad altre cellu
 
 Le cellule coordinano le loro attività attraverso quattro principali modalità di segnalazione:
 
-\begin{description}[leftmargin=1.5em,style=nextline]
+\begin{description}[leftmargin=1em,style=nextline]
   \item[Nervosa] Segnale elettrico che comporta il rilascio di un neurotrasmettitore sulla cellula bersaglio. Tipica del sistema nervoso.
   \item[Endocrina] Segnale chimico: ormoni secreti nel sangue raggiungono cellule bersaglio lontane, dotate di recettori specifici. L'interazione ormone-recettore attiva risposte come sintesi/attivazione di proteine o modulazione di canali ionici.
   \item[Neuroendocrina] Segnale elettrico che induce il rilascio di ormoni nel circolo sanguigno.
@@ -1045,19 +1045,19 @@ Durante l'attività fisica, il sistema nervoso coordina in tempo reale funzioni 
     \textbf{Livello} & \textbf{Adattamento funzionale} \\
     \midrule
     \textbf{Corticale} & 
-    \begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+    \begin{itemize}[leftmargin=1em,noitemsep,topsep=0pt,partopsep=0pt]
       \item Miglioramento del reclutamento motorio e della coordinazione intermuscolare;
       \item Plasticità sinaptica nelle aree motorie (apprendimento del gesto sportivo).
     \end{itemize} \\
     \addlinespace
     \textbf{Spinale} & 
-    \begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+    \begin{itemize}[leftmargin=1em,noitemsep,topsep=0pt,partopsep=0pt]
       \item Modulazione dei riflessi (es. facilitazione del riflesso da stiramento);
       \item Riduzione dell'inibizione presinaptica per ottimizzare l'output motorio.
     \end{itemize} \\
     \addlinespace
     \textbf{Autonomo} & 
-    \begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+    \begin{itemize}[leftmargin=1em,noitemsep,topsep=0pt,partopsep=0pt]
       \item Bilanciamento simpatico/parasimpatico per adattare frequenza cardiaca, pressione e flusso ematico;
       \item Regolazione della sudorazione e del flusso cutaneo per la termoregolazione.
     \end{itemize} \\
@@ -1065,5 +1065,261 @@ Durante l'attività fisica, il sistema nervoso coordina in tempo reale funzioni 
   \end{tabularx}
 \end{table}
 
+% =============================================================================
+% CAPITOLO: SISTEMA NERVOSO SENSORIALE
+% Corso: Fisiologia dell'esercizio fisico
+% =============================================================================
+
+\chapter{Sistema nervoso sensoriale}
+\label{chap:sistema_sensoriale}
+
+% -----------------------------------------------------------------------------
+% 1. SENSAZIONE E PERCEZIONE
+% -----------------------------------------------------------------------------
+\section{Sensazione e percezione}
+\label{sec:sensazione_percezione}
+
+\begin{definizione}
+\textbf{Sensazione}: rilevamento oggettivo di uno stimolo fisico da parte di recettori specifici.\\
+\textbf{Percezione}: interpretazione soggettiva e consapevole dello stimolo da parte della corteccia cerebrale.
+\end{definizione}
+
+La percezione non è una riproduzione passiva della realtà, ma un'elaborazione attiva influenzata dal contesto, dall'esperienza e dalle aspettative cognitive (es. figure reversibili, triangolo di Kanizsa, percezione dimensionale relativa).
+
+% -----------------------------------------------------------------------------
+% 2. CLASSIFICAZIONE DEI SISTEMI SENSORIALI
+% -----------------------------------------------------------------------------
+\section{Classificazione e origine delle informazioni}
+\label{sec:classificazione}
+
+I sistemi sensoriali si specializzano nel rilevare tre parametri fondamentali: presenza di una variazione, entità della variazione e sede dello stimolo.
+
+\begin{description}[leftmargin=1.5em,style=nextline]
+  \item[Esterocettivi] Rilevano stimoli dall'ambiente esterno (sistemi visivo, uditivo, cutaneo, alcuni sensi chimici).
+  \item[Propriocettivi] Rilevano posizione relativa dei segmenti corporei e orientamento nello spazio (fondamentali per coordinazione, postura e controllo motorio).
+  \item[Enterocettivi] Segnalano parametri fisiologici interni (pressione arteriosa, glicemia, pH, distensione viscerale). In genere non raggiungono la coscienza ma guidano risposte autonomiche riflesse.
+\end{description}
+
+Il processo sensoriale segue tre tappe comuni a tutte le modalità:
+\begin{enumerate}
+  \item Stimolo fisico;
+  \item Trasduzione in segnale nervoso (impulso elettrochimico);
+  \item Risposta centrale al messaggio elaborato.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+% 3. FUNZIONI DELLE VIE AFFERENTI
+% -----------------------------------------------------------------------------
+\section{Funzioni delle vie sensoriali}
+\label{sec:funzioni_vie}
+
+Le informazioni periferiche dirette al SNC assolvono tre funzioni principali:
+\begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+  \item Percezione cosciente della sensazione;
+  \item Controllo e correzione del movimento (feedback sensomotorio);
+  \item Regolazione dello stato di veglia e dell'attenzione.
+\end{itemize}
+
+Le informazioni provenienti dai recettori interni regolano autonomamente:
+\begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+  \item Temperatura corporea;
+  \item Pressione arteriosa e frequenze cardiaca/respiratoria;
+  \item Coordinazione di movimenti riflessi e volontari.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+% 4. CODIFICA DELLE CARATTERISTICHE DELLO STIMOLO
+% -----------------------------------------------------------------------------
+\section{Codifica dei parametri sensoriali}
+\label{sec:codifica_stimolo}
+
+I recettori decodificano quattro caratteristiche elementari dello stimolo:
+
+\begin{table}[htbp]
+  \centering
+  \caption{Parametri fondamentali della codifica sensoriale}
+  \label{tab:codifica_sensoriale}
+  \begin{tabularx}{\textwidth}{l X}
+    \toprule
+    \textbf{Parametro} & \textbf{Meccanismo di codifica} \\
+    \midrule
+    \textbf{Modalità (Qualità)} & Determinata dal tipo di recettore e dalla via nervosa attivata. Ogni fibra trasmette una specifica qualità sensoriale. \\
+    \addlinespace
+    \textbf{Intensità} & Codificata dalla frequenza dei potenziali d'azione e dal numero di recettori reclutati. La \textit{soglia sensoriale} minima varia in base a contesto, fatica e adattamento. \\
+    \addlinespace
+    \textbf{Durata} & Relazione tra persistenza dello stimolo e risposta neurale. Se lo stimolo è prolungato, la percezione diminuisce per \textit{accomodazione}. \\
+    \addlinespace
+    \textbf{Localizzazione} & Capacità di discriminare la sede esatta e la distanza minima tra due stimoli simultanei (\textit{soglia dei due punti}). Dipende dalla densità recettoriale e dalla mappa corticale. \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{concetto}
+\textbf{Legge di Müller} e \textbf{stimolo adeguato}: ogni recettore è massimamente sensibile a un tipo specifico di energia fisica. Lo stimolo che lo attiva con la minima intensità è detto \textit{stimolo adeguato}.
+\end{concetto}
+
+% -----------------------------------------------------------------------------
+% 5. TRASDUZIONE E ADATTAMENTO RECETTORIALE
+% -----------------------------------------------------------------------------
+\section{Trasduzione e adattamento recettoriale}
+\label{sec:trasduzione_adattamento}
+
+\subsection{Meccanismo di trasduzione}
+La trasduzione converte energia fisica in segnale elettrochimico. Nei \textbf{meccanocettori}, la deformazione fisica della membrana provoca l'apertura di canali ionici meccano-sensibili, generando un \textbf{potenziale recettoriale} graduato. Se supera la soglia, innesca potenziali d'azione a frequenza proporzionale all'intensità dello stimolo.
+
+\subsection{Adattamento (accomodazione)}
+\begin{definizione}
+\textbf{Adattamento recettoriale}: riduzione progressiva della frequenza di scarica nonostante la persistenza di uno stimolo costante.
+\end{definizione}
+
+\begin{table}[htbp]
+  \centering
+  \caption{Classificazione funzionale dei recettori in base all'adattamento}
+  \label{tab:recettori_adattamento}
+  \begin{tabularx}{\textwidth}{l X}
+    \toprule
+    \textbf{Tipo} & \textbf{Caratteristiche e funzioni} \\
+    \midrule
+    \textbf{Fasici (rapidi)} & 
+    \begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+      \item Rispondono intensamente all'inizio dello stimolo, poi si adattano rapidamente;
+      \item Ideali per rilevare \textit{variazioni} e cambiamenti ambientali (es. tatto leggero, pressione, olfatto).
+    \end{itemize} \\
+    \addlinespace
+    \textbf{Tonici (lenti)} & 
+    \begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+      \item Mantengono la frequenza di scarica per tutta la durata dello stimolo;
+      \item Fondamentali per monitoraggio continuo, postura e protezione tissutale (es. nocicettori, propriocettori, barocettori).
+    \end{itemize} \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{remark}
+L'adattamento non è un limite funzionale, ma un filtro evolutivo che permette al SNC di ignorare stimoli costanti e irrilevanti, concentrando le risorse attentive e metaboliche sui cambiamenti ambientali o sulle potenziali minacce.
+\end{remark}
+
+% =============================================================================
+% CAPITOLO: SENSIBILITÀ SOMATICA
+% Corso: Fisiologia dell'esercizio fisico
+% =============================================================================
+
+\chapter{Sensibilità somatica}
+\label{chap:sensibilita_somatica}
+
+% -----------------------------------------------------------------------------
+% 1. DEFINIZIONE E FUNZIONI
+% -----------------------------------------------------------------------------
+\section{Definizione e funzioni della sensibilità somatica}
+\label{sec:funzioni_somatica}
+
+\begin{definizione}
+\textbf{Sensibilità somatica}: capacità del sistema nervoso di rilevare la sede, l'intensità e la natura degli stimoli che raggiungono il corpo dall'ambiente esterno (\textit{esterocettiva}) o da tessuti profondi e segmenti corporei (\textit{propriocettiva}), nonché la posizione reciproca delle parti del corpo.
+\end{definizione}
+
+Questa modalità sensoriale è fondamentale per:
+\begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+  \item La percezione cosciente dell'ambiente e dello stato corporeo;
+  \item Il controllo e la correzione fine del movimento (feedback sensomotorio);
+  \item La regolazione posturale e la coordinazione durante l'attività fisica.
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+% 2. ARCHITETTURA DEI NEURONI SENSORIALI
+% -----------------------------------------------------------------------------
+\section{Architettura dei neuroni afferenti}
+\label{sec:architettura_neuroni}
+
+I recettori della sensibilità somatica non sono cellule isolate, ma \textbf{terminazioni nervose specializzate} di neuroni afferenti primari (pseudo-unipolari). La loro organizzazione anatomica segue uno schema preciso:
+
+\begin{itemize}
+  \item \textbf{Soma}: localizzato nei gangli spinali (radici dorsali) o nei gangli sensoriali dei nervi cranici;
+  \item \textbf{Assone a T}: si biforca in due branche distinte:
+  \begin{description}[leftmargin=1.5em,style=nextline]
+    \item[Branca periferica] Costituisce la componente sensitiva dei nervi spinali/cranici e termina specializzandosi come trasduttore nella cute, nei muscoli e nelle articolazioni;
+    \item[Branca centrale] Penetra nel midollo spinale attraverso le radici posteriori o nei nuclei dei nervi cranici, trasmettendo l'informazione ai livelli superiori del SNC.
+  \end{description}
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+% 3. CAMPO RECETTIVO E CONSAPEVOLEZZA SPAZIALE
+% -----------------------------------------------------------------------------
+\section{Campo recettivo e consapevolezza spaziale}
+\label{sec:campo_recettivo}
+
+\begin{definizione}
+\textbf{Campo recettivo}: area specifica di tessuto innervata dalle terminazioni di un singolo neurone sensoriale. La stimolazione di questa area induce una variazione delle proprietà elettrochimiche del neurone, manifestata come modifica della frequenza di scarica.
+\end{definizione}
+
+La distribuzione spaziale dei neuroni attivati da uno stimolo fornisce al SNC le informazioni necessarie per ricostruire la sede e le caratteristiche dello stimolo. La consapevolezza spaziale si articola in tre capacità percettive fondamentali:
+
+\begin{description}[leftmargin=1.5em,style=nextline]
+  \item[Localizzazione] Capacità di identificare la sede esatta della stimolazione sul corpo o la fonte nello spazio esterno;
+  \item[Discriminazione dimensionale] Capacità di valutare dimensioni, forma e contorno degli oggetti;
+  \item[Discriminazione fine] Capacità di rilevare dettagli minimi e variazioni sottili dello stimolo o dell'ambiente.
+\end{description}
+
+\begin{concetto}
+La percezione della sede dipende strettamente dalla \textbf{densità e disposizione dei campi recettivi}. Ogni recettore risponde solo a stimoli all'interno del proprio campo; uno stimolo diffuso attiva simultaneamente recettori adiacenti, permettendo la ricostruzione spaziale dell'evento.
+\end{concetto}
+
+% -----------------------------------------------------------------------------
+% 4. DISCRIMINAZIONE E INIBIZIONE LATERALE
+% -----------------------------------------------------------------------------
+\section{Meccanismi di elaborazione: discriminazione e inibizione laterale}
+\label{sec:elaborazione_centrale}
+
+La risoluzione spaziale del sistema somatico è ottimizzata dal fenomeno della \textbf{discriminazione tra due punti} (soglia dei due punti), che misura la distanza minima alla quale due stimoli simultanei vengono percepiti come distinti.
+
+\begin{figure}[htbp]
+  \centering
+  % \includegraphics[width=0.7\textwidth]{discriminazione_due_punti.pdf}
+  \caption{Rappresentazione concettuale della soglia dei due punti: attivazione di campi recettivi sovrapposti vs. distinti.}
+  \label{fig:soglia_due_punti}
+\end{figure}
+
+Il meccanismo neurofisiologico alla base di questa acutezza è l'\textbf{inibizione laterale}:
+
+\begin{concetto}
+\textbf{Inibizione laterale}: processo mediante il quale un neurone sensoriale fortemente attivato da uno stimolo inibisce, tramite interneuroni, l'attività dei neuroni adiacenti che rispondono a stimoli più deboli o marginali.
+\end{concetto}
+
+Questo meccanismo:
+\begin{itemize}[leftmargin=1.2em,noitemsep,topsep=0pt,partopsep=0pt]
+  \item Aumenta il \textbf{contrasto} tra il centro dello stimolo e la periferia;
+  \item Migliora la \textbf{precisione topografica} della percezione;
+  \item Permette al SNC di focalizzare le risorse neurali sulle informazioni più rilevanti, filtrando il ``rumore'' di fondo.
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+  % \includegraphics[width=0.75\textwidth]{inibizione_laterale.pdf}
+  \caption{Schema dell'inibizione laterale: il neurone centrale (fortemente stimolato) inibisce i vicini tramite interneuroni, affinando il segnale.}
+  \label{fig:inibizione_laterale}
+\end{figure}
+
+% -----------------------------------------------------------------------------
+% 5. VIE DI TRASMISSIONE E ORGANIZZAZIONE CORTICALE
+% -----------------------------------------------------------------------------
+\section{Vie di trasmissione e rappresentazione corticale}
+\label{sec:vie_corteccia}
+
+Le informazioni somestesiche ascendono verso la corteccia cerebrale attraverso vie dedicate (es. via lemniscale e spinotalamica), organizzate in modo gerarchico e topografico.
+
+\subsection{Aree corticali somestesiche}
+La corteccia somestesica primaria (\textbf{S1}) e secondaria (\textbf{S2}) ricevono e integrano i segnali provenienti dalla periferia. L'organizzazione corticale non è casuale, ma segue una precisa \textbf{mappa somatotopica}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.65\textwidth]{mappa_somatototipica.png}
+  \caption{Mappa somatotopica della superficie corporea sulla corteccia postcentrale (omuncolo sensitivo).}
+  \label{fig:mappa_somatotopica}
+\end{figure}
+
+\begin{remark}
+Nella mappa somatotopica, le regioni corporee con maggiore densità recettoriale e minore campo recettivo (es. mani, labbra, lingua) occupano un'area corticale sproporzionatamente ampia. Questa organizzazione riflette l'importanza funzionale della discriminazione fine in tali distretti, fondamentale per l'esecuzione di gesti tecnici complessi nello sport.
+\end{remark}
+
+La trasmissione gerarchica (I neurone $\rightarrow$ II neurone $\rightarrow$ talamo $\rightarrow$ corteccia) garantisce che l'informazione venga progressivamente filtrata, integrata e resa consapevole, permettendo risposte motorie e comportamentali adattate al contesto esterno e interno.
 
 \end{document}
