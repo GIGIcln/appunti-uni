@@ -1,0 +1,91 @@
+% =============================================================================
+% DISPENSE DI ANATOMIA UMANA (curriculum calcio)
+% =============================================================================
+\documentclass[11pt, twoside, openany]{book}
+
+% --- Lingua e codifica ---
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% --- Margini e layout ---
+\usepackage[
+  inner=20mm, outer=13mm, top=16mm, bottom=13mm,
+  headsep=4mm, footskip=6mm,
+  bindingoffset=4mm, includeheadfoot
+]{geometry}
+\setlength{\headheight}{15pt}
+
+% --- Spaziatura e tipografia ---
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\usepackage[protrusion=true, expansion=true, babel=true]{microtype}
+
+% --- Riduzione spazio prima dei capitoli (deve stare prima di hyperref) ---
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter\quad}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-60pt}{6pt}
+
+% --- Link e segnalibri PDF ---
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+% --- Intestazioni e piè di pagina ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\renewcommand{\chaptermark}[1]{\markboth{Cap.~\thechapter:\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+% --- Matematica e grafica ---
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% --- Tabelle ---
+\usepackage{booktabs}
+\usepackage{array}
+
+% --- Liste personalizzate ---
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt}
+\setlist[enumerate]{noitemsep, topsep=2pt}
+
+
+% --- Metadati ---
+\title{Dispense di Anatomia Umana\\[0.3em]\large curriculum calcio}
+\author{Prof.ssa Simona Mrakic Sposta}
+\date{A.A. 2025/2026}
+
+% =============================================================================
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+% =============================================================================
+% CAPITOLI — aggiungere \input{capitoli/nome_file} man mano
+% =============================================================================
+
+\input{capitoli/01_cenni_storia_anatomia}
+% \input{capitoli/02_...}
+
+\end{document}
