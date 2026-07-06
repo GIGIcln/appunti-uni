@@ -16,6 +16,7 @@
   bindingoffset=4mm, includeheadfoot
 ]{geometry}
 \setlength{\headheight}{15pt}
+\raggedbottom
 
 % --- Spaziatura e tipografia ---
 \usepackage{setspace}
@@ -55,10 +56,12 @@
 % --- Matematica e grafica ---
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{float}
 
 % --- Tabelle ---
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{tabularx}
 
 % --- Liste personalizzate ---
 \usepackage{enumitem}
@@ -86,6 +89,8 @@
 % =============================================================================
 
 \input{capitoli/01_cenni_storia_anatomia}
-% \input{capitoli/02_...}
+\input{capitoli/02_generalita_anatomia}
+\input{capitoli/03_tessuto_epiteliale}
+\input{capitoli/04_tessuto_connettivo}
 
 \end{document}
