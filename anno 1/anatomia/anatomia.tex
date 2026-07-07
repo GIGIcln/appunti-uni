@@ -57,6 +57,18 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{xcolor}
+
+% --- Stile neutro per le figure tratte dalle slide del docente ---
+\definecolor{imgframe}{gray}{0.75}
+\newcommand{\immagine}[4][\textwidth]{%
+  \begin{figure}[H]
+    \centering
+    \fcolorbox{imgframe}{white}{\includegraphics[width=#1]{#2}}
+    \caption{#3}
+    \label{#4}
+  \end{figure}%
+}
 
 % --- Tabelle ---
 \usepackage{booktabs}
@@ -92,5 +104,11 @@
 \input{capitoli/02_generalita_anatomia}
 \input{capitoli/03_tessuto_epiteliale}
 \input{capitoli/04_tessuto_connettivo}
+\input{capitoli/05_tessuto_connettivo_specializzato}
+\input{capitoli/06_tessuto_muscolare}
+\input{capitoli/07_tessuto_nervoso}
+\input{capitoli/08_apparato_scheletrico_1}
+\input{capitoli/09_apparato_scheletrico_2}
+\input{capitoli/10_apparato_muscolo_scheletrico}
 
 \end{document}
