@@ -1,7 +1,10 @@
 % =============================================================================
-% DISPENSE DI ANATOMIA UMANA (curriculum calcio)
+% TEMPLATE DISPENSE UNIVERSITARIE — VARIANTE SCHEMATICA / OUTLINE
+% Stile "da appunti": definizioni con i due punti, liste annidate,
+% sotto-titoli in grassetto, alberi di classificazione (forest).
+% Ricalca lo stile delle dispense di biologia scritte a mano dallo studente.
 % =============================================================================
-\documentclass[11pt, twoside, openany]{book}
+\documentclass[11pt, oneside, openany]{book}
 
 % --- Lingua e codifica ---
 \usepackage[italian]{babel}
@@ -9,11 +12,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 
-% --- Margini e layout ---
+% --- Margini e layout (ottimizzato per lettura a schermo, non per la stampa) ---
+% Margini minimi, pagina singola (niente rilegatura né margini specchiati).
 \usepackage[
-  inner=20mm, outer=13mm, top=16mm, bottom=13mm,
-  headsep=4mm, footskip=6mm,
-  bindingoffset=4mm, includeheadfoot
+  margin=12mm, headsep=3mm, footskip=6mm,
+  includeheadfoot
 ]{geometry}
 \setlength{\headheight}{15pt}
 \raggedbottom
@@ -25,12 +28,13 @@
 \setlength{\parskip}{4pt}
 \usepackage[protrusion=true, expansion=true, babel=true]{microtype}
 
-% --- Riduzione spazio prima dei capitoli (deve stare prima di hyperref) ---
+% --- Titoli capitolo (deve stare prima di hyperref) ---
 \usepackage{titlesec}
 \titleformat{\chapter}[block]
   {\normalfont\Huge\bfseries}
   {\thechapter\quad}{0pt}{}
 \titlespacing*{\chapter}{0pt}{-60pt}{6pt}
+% Intestazioni di sezione: nere, standard (niente colori).
 
 % --- Link e segnalibri PDF ---
 \usepackage[hidelinks]{hyperref}
@@ -40,8 +44,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE]{\leftmark}
-\fancyhead[RO]{\rightmark}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -55,31 +59,42 @@
 
 % --- Matematica e grafica ---
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{float}
-\usepackage{xcolor}
-
-% --- Stile neutro per le figure tratte dalle slide del docente ---
-\definecolor{imgframe}{gray}{0.75}
-\newcommand{\immagine}[4][\textwidth]{%
-  \begin{figure}[H]
-    \centering
-    \fcolorbox{imgframe}{white}{\includegraphics[width=#1]{#2}}
-    \caption{#3}
-    \label{#4}
-  \end{figure}%
-}
 
 % --- Tabelle ---
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{multirow}
 
-% --- Liste personalizzate ---
+% --- Liste annidate (strumento principale dello stile schematico) ---
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep, topsep=2pt}
 \setlist[enumerate]{noitemsep, topsep=2pt}
+% Nidificazione di default: enumerate 1. -> (a) -> i. ; itemize • -> – -> *
 
+% --- Due colonne per liste lunghe parallele ---
+\usepackage{multicol}
+
+% =============================================================================
+% COMANDI DI STILE SCHEMATICO
+% =============================================================================
+% Sotto-titolo in grassetto, non numerato, su riga propria (es. "Struttura", "DNA").
+\newcommand{\rubrica}[1]{\par\addvspace{4pt}\noindent\textbf{#1}\par\nobreak}
+
+% Alberi di classificazione: minimali, solo testo + rami (nessun box).
+% Uso: \begin{center}\begin{forest} classalbero [Radice [A][B]] \end{forest}\end{center}
+\usepackage{forest}
+\forestset{
+  classalbero/.style={
+    for tree={
+      grow'=east, parent anchor=east, child anchor=west,
+      font=\footnotesize, anchor=west, align=center, edge={-},
+      l sep=8mm, s sep=2mm, inner sep=1pt,
+    }
+  }
+}
 
 % --- Metadati ---
 \title{Dispense di Anatomia Umana\\[0.3em]\large curriculum calcio}
@@ -116,3 +131,17 @@
 \input{capitoli/14_apparato_digerente_2}
 
 \end{document}
+
+% =============================================================================
+% PROMEMORIA STILE SCHEMATICO (vedi CONVENZIONI.md, §7)
+% =============================================================================
+% - Definizioni:      \textbf{Termine}: spiegazione sintetica;   (due punti, non "=")
+% - Sotto-titoli:     \rubrica{Struttura}  -> grassetto a riga propria, non numerato
+% - Liste annidate:   enumerate 1. -> (a) -> i. ; itemize • -> – ; sono lo strumento base
+% - Enfasi:           grassetto = termine chiave; \textit{corsivo} = termine secondario
+% - Processo/catena:  $molecole \rightarrow cellule \rightarrow tessuti \rightarrow organi$
+% - Diametro:         $\phi$ 7,5\,$\mu$m      (misure e formule in math mode)
+% - Formule:          $O_2$, $Na^+$, $H_2O$, $C_6H_{12}O_6$, $10^{-9}s$
+% - Albero:           \begin{center}\begin{forest} classalbero [Radice [A][B]] \end{forest}\end{center}
+% - Due colonne:      \begin{multicols}{2} ... \end{multicols}   (liste lunghe)
+% - Tabelle:          a griglia (\hline + |) e con parsimonia; preferire le liste annidate
