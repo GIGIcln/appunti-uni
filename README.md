@@ -7,22 +7,23 @@ Repository sincronizzata per gestire appunti universitari in LaTeX tra Windows e
 appunti-uni/
 ├── .gitignore
 ├── README.md
-├── anatomia/
-│ ├── .gitkeep
-│ └── template.tex
-├── psicologia/
-├── teoria-metodologia/
-├── fisica/
-├── performance/
-├── medicina/
-├── impianti-sportivi/
-├── fisiologia/
-├── nutrizione/
-└── teoria-tecnica-didattica/
-├── .gitkeep
-└── template.tex
+├── template.tex          ← template master (classe book), da copiare per un nuovo corso
+├── backup.sh
+├── anno 1/
+│ ├── anatomia/           ← dispensa modulare (anatomia.tex + capitoli/)
+│ ├── biochimica/         ← main.tex
+│ ├── biologia/           ← biologia.tex
+│ ├── statistica/
+│ ├── fisica/             ┐
+│ ├── psicologia/         ├ cartelle con solo .gitkeep (da avviare)
+│ └── teoria-metodologia/ ┘
+└── anno 2/
+  ├── fisiologia/         ← main.tex
+  ├── doping/  inglese/  medicina/  nutrizione/
+  └── performance/  impianti-sportivi/  teoria-tecnica-didattica/
 ```
-- Ogni cartella corso contiene un `.gitkeep` (per essere tracciata da Git anche se vuota) e un `template.tex` pronto all'uso.
+- Esiste **un unico template master** (`template.tex`, classe `book`): copialo nella cartella del corso quando inizi a scrivere.
+- Ogni cartella corso contiene un `.gitkeep` per essere tracciata da Git anche se vuota.
 - I file di compilazione LaTeX (`.pdf`, `.aux`, `.log`, `.synctex.gz`, ecc.) sono automaticamente ignorati.
 
 ## 🚀 Setup Rapido (Nuovo dispositivo o reinstallazione)
