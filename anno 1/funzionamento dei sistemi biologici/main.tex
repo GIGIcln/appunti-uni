@@ -1,0 +1,139 @@
+% =============================================================================
+% DISPENSA — Funzionamento dei sistemi biologici
+% Corso strutturato in 4 capitoli, ciascuno composto da piu' lezioni.
+% Ogni lezione e' un file \section dentro la cartella del capitolo,
+% incluso qui sotto con \input nel capitolo corrispondente.
+% Stile: template-schematico.tex (definizioni con i due punti, liste annidate).
+% =============================================================================
+\documentclass[11pt, oneside, openany]{book}
+
+% --- Lingua e codifica ---
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% --- Margini e layout (ottimizzato per lettura a schermo, non per la stampa) ---
+\usepackage[
+  margin=12mm, headsep=3mm, footskip=6mm,
+  includeheadfoot
+]{geometry}
+\setlength{\headheight}{15pt}
+\raggedbottom
+
+% --- Spaziatura e tipografia ---
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\usepackage[protrusion=true, expansion=true, babel=true]{microtype}
+
+% --- Titoli capitolo (deve stare prima di hyperref) ---
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter\quad}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-60pt}{6pt}
+
+% --- Link e segnalibri PDF ---
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+% --- Intestazioni e piè di pagina ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\renewcommand{\chaptermark}[1]{\markboth{Cap.~\thechapter:\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+% --- Matematica e grafica ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% --- Tabelle ---
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% --- Liste annidate (strumento principale dello stile schematico) ---
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt}
+\setlist[enumerate]{noitemsep, topsep=2pt}
+
+% --- Due colonne per liste lunghe parallele ---
+\usepackage{multicol}
+
+% =============================================================================
+% COMANDI DI STILE SCHEMATICO
+% =============================================================================
+% Sotto-titolo in grassetto, non numerato, su riga propria (es. "Struttura", "DNA").
+\newcommand{\rubrica}[1]{\par\addvspace{4pt}\noindent\textbf{#1}\par\nobreak}
+
+% Alberi di classificazione: minimali, solo testo + rami (nessun box).
+\usepackage{forest}
+\forestset{
+  classalbero/.style={
+    for tree={
+      grow'=east, parent anchor=east, child anchor=west,
+      font=\footnotesize, anchor=west, align=center, edge={-},
+      l sep=8mm, s sep=2mm, inner sep=1pt,
+    }
+  }
+}
+
+% --- Metadati ---
+\title{Funzionamento dei sistemi biologici}
+\author{Prof. Michela Montorsi}
+\date{A.A. 2024/2025}
+
+% =============================================================================
+\begin{document}
+
+\frontmatter                 % numerazione romana (i, ii, ...) per titolo e indice
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\mainmatter                  % la numerazione delle pagine riparte da 1
+
+% =============================================================================
+% CAPITOLO 1 — Organismi viventi
+% =============================================================================
+\chapter{Organismi viventi}
+\input{01_organismi_viventi/01_biologia}
+
+% =============================================================================
+% CAPITOLO 2 — Biologia cellulare
+% =============================================================================
+\chapter{Biologia cellulare}
+% \input{02_biologia_cellulare/01_...}
+
+% =============================================================================
+% CAPITOLO 3 — Ciclo cellulare e genetica
+% =============================================================================
+\chapter{Ciclo cellulare e genetica}
+% \input{03_ciclo_cellulare_e_genetica/01_...}
+
+% =============================================================================
+% CAPITOLO 4 — Istologia
+% =============================================================================
+\chapter{Istologia}
+% \input{04_istologia/01_...}
+
+\end{document}
