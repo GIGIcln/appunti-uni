@@ -7,21 +7,28 @@ Repository sincronizzata per gestire appunti universitari in LaTeX tra Windows e
 appunti-uni/
 ├── .gitignore
 ├── README.md
-├── template.tex          ← template master (classe book), da copiare per un nuovo corso
+├── template-schematico.tex   ← template preferito (classe book), da copiare come main.tex
+├── template.tex              ← template a prosa discorsiva
 ├── backup.sh
 ├── anno 1/
-│ ├── anatomia/           ← dispensa modulare (anatomia.tex + capitoli/)
-│ ├── biochimica/         ← main.tex
-│ ├── biologia/           ← biologia.tex
-│ ├── statistica/
-│ ├── fisica/             ┐
-│ ├── psicologia/         ├ cartelle con solo .gitkeep (da avviare)
-│ └── teoria-metodologia/ ┘
+│ ├── Anatomia umana (curriculum calcio)/
+│ ├── Elementi di fisica e biomeccanica applicata al calcio/
+│ ├── Fondamenti di biochimica applicata al calcio/
+│ ├── Funzionamento dei sistemi biologici/
+│ ├── Inglese tecnico/
+│ ├── Psicologia applicata al calcio/
+│ ├── Statistica - scouting, match analysis ed elaborazione dati/
+│ └── Teoria e metodologia dell'allenamento applicata al calcio/
 └── anno 2/
-  ├── fisiologia/         ← main.tex
-  ├── doping/  inglese/  medicina/  nutrizione/
-  └── performance/  impianti-sportivi/  teoria-tecnica-didattica/
+  ├── Doping - prevenzione e controllo/
+  ├── Fisiologia dell'esercizio fisico/
+  ├── Impianti sportivi - norme di prevenzione e gestione/
+  ├── Nutrizione umana e controllo ormonale/
+  ├── Principi di medicina dello sport/
+  ├── Teoria, tecnica e didattica del calcio/
+  └── Valutazione funzionale e studio della performance del calciatore/
 ```
+> I nomi delle cartelle materia sono **identici** a quelli del vault Obsidian, così il flusso slide → `.tex` → nota resta allineato tra i due sistemi.
 - Esiste **un unico template master** (`template.tex`, classe `book`): copialo nella cartella del corso quando inizi a scrivere.
 - Ogni cartella corso contiene un `.gitkeep` per essere tracciata da Git anche se vuota.
 - I file di compilazione LaTeX (`.pdf`, `.aux`, `.log`, `.synctex.gz`, ecc.) sono automaticamente ignorati.
