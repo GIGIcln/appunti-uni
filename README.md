@@ -115,9 +115,6 @@ di convenzioni fisse, raccolte in [`CONVENZIONI.md`](CONVENZIONI.md):
 - **due template comuni**: [`template-schematico.tex`](template-schematico.tex), usato di
   default, e [`template.tex`](template.tex) per la prosa discorsiva.
 
-Il processo completo — dalle slide al capitolo `.tex` fino alla nota Markdown — è descritto
-in [`docs/processo-slide-tex-md.md`](docs/processo-slide-tex-md.md).
-
 ## 📁 Struttura
 
 ```
@@ -129,8 +126,8 @@ appunti-uni/
 ├── anno 2/<materia>/
 ├── template-schematico.tex    # template di default (classe book)
 ├── template.tex               # variante a prosa discorsiva
-├── CONVENZIONI.md                  # convenzioni di trascrizione
-└── docs/                      # setup, workflow, processo di lavorazione
+├── CONVENZIONI.md             # regole di trascrizione e di stile
+└── docs/                      # setup e workflow di lavoro
 ```
 
 ## ⚙️ Compilare in locale
