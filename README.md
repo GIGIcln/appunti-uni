@@ -18,7 +18,7 @@ telegrafica e ripassabile.
 | **Anatomia umana** *(curriculum calcio)* | 1 | 152 | 23 | [📄 PDF](anno%201/Anatomia%20umana%20%28curriculum%20calcio%29/anatomia.pdf) | [`.tex`](anno%201/Anatomia%20umana%20%28curriculum%20calcio%29/) |
 | **Funzionamento dei sistemi biologici** | 1 | 103 | 4 | [📄 PDF](anno%201/Funzionamento%20dei%20sistemi%20biologici/main.pdf) | [`.tex`](anno%201/Funzionamento%20dei%20sistemi%20biologici/) |
 | **Fondamenti di biochimica applicata al calcio** | 1 | 93 | 22 | [📄 PDF](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/main.pdf) | [`.tex`](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/) |
-| **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 23 | 4 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/main.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
+| **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 29 | 5 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/main.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
 | **Doping - prevenzione e controllo** 🚧 *in corso* | 2 | 13 | 3 | [📄 PDF](anno%202/Doping%20-%20prevenzione%20e%20controllo/main.pdf) | [`.tex`](anno%202/Doping%20-%20prevenzione%20e%20controllo/) |
 
 > Le altre materie del piano di studi hanno la cartella già pronta in repo, ma la dispensa
@@ -98,6 +98,7 @@ telegrafica e ripassabile.
 2. L'eccitabilità cellulare
 3. La trasmissione sinaptica
 4. Organizzazione del sistema nervoso
+5. Sistema nervoso sensoriale
 
 </details>
 
