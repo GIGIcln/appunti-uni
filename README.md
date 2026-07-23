@@ -104,7 +104,7 @@ telegrafica e ripassabile.
 ## 🛠 Come sono fatte
 
 Ogni dispensa nasce dalle lezioni del corso e viene riscritta in LaTeX seguendo un insieme
-di convenzioni fisse, raccolte in [`CONVENZIONI.md`](CONVENZIONI.md):
+di convenzioni fisse:
 
 - **fedeltà al contenuto**: si trascrive quello che è stato spiegato a lezione, senza
   aggiungere nozioni prese da altre fonti;
@@ -112,23 +112,21 @@ di convenzioni fisse, raccolte in [`CONVENZIONI.md`](CONVENZIONI.md):
   catene di processo con `→`, formule in *math mode*;
 - **niente immagini**: le figure delle lezioni sono descritte a parole, così il PDF resta
   leggero e interamente testuale (quindi ricercabile);
-- **due template comuni**: [`template-schematico.tex`](template-schematico.tex), usato di
-  default, e [`template.tex`](template.tex) per la prosa discorsiva.
+- **un template comune** per tutte le materie, così le dispense restano coerenti tra loro.
 
 ## 📁 Struttura
 
 ```
 appunti-uni/
-├── anno 1/<materia>/          # una cartella per materia
-│   ├── main.tex               #   preambolo, metadati e \input dei capitoli
-│   ├── main.pdf               #   dispensa compilata (il prodotto finale)
-│   └── capitoli/NN_nome.tex   #   un file per capitolo, ordinato dal prefisso
-├── anno 2/<materia>/
-├── template-schematico.tex    # template di default (classe book)
-├── template.tex               # variante a prosa discorsiva
-├── CONVENZIONI.md             # regole di trascrizione e di stile
-└── docs/                      # setup e workflow di lavoro
+├── anno 1/<materia>/
+│   ├── main.tex               # preambolo, metadati e \input dei capitoli
+│   ├── main.pdf               # dispensa compilata (il prodotto finale)
+│   └── capitoli/NN_nome.tex   # un file per capitolo, ordinato dal prefisso
+└── anno 2/<materia>/
 ```
+
+Una cartella per materia, con il nome per esteso. Le materie ancora senza dispensa hanno la
+cartella già pronta ma vuota.
 
 ## ⚙️ Compilare in locale
 
@@ -138,8 +136,7 @@ Serve una distribuzione LaTeX (MacTeX, TeX Live o MiKTeX). Dalla cartella della 
 pdflatex main.tex && pdflatex main.tex
 ```
 
-Due passate: la seconda risolve indice e riferimenti incrociati. Setup completo e workflow
-di sincronizzazione in [`docs/setup-e-workflow.md`](docs/setup-e-workflow.md).
+Due passate: la seconda risolve indice e riferimenti incrociati.
 
 ---
 
