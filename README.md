@@ -19,6 +19,7 @@ telegrafica e ripassabile.
 | **Funzionamento dei sistemi biologici** | 1 | 103 | 4 | [📄 PDF](anno%201/Funzionamento%20dei%20sistemi%20biologici/main.pdf) | [`.tex`](anno%201/Funzionamento%20dei%20sistemi%20biologici/) |
 | **Fondamenti di biochimica applicata al calcio** | 1 | 93 | 22 | [📄 PDF](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/main.pdf) | [`.tex`](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/) |
 | **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 18 | 3 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/main.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
+| **Doping - prevenzione e controllo** 🚧 *in corso* | 2 | 4 | 1 | [📄 PDF](anno%202/Doping%20-%20prevenzione%20e%20controllo/main.pdf) | [`.tex`](anno%202/Doping%20-%20prevenzione%20e%20controllo/) |
 
 > Le altre materie del piano di studi hanno la cartella già pronta in repo, ma la dispensa
 > non è ancora scritta: compariranno in questa tabella quando ci sarà qualcosa da leggere.
@@ -96,6 +97,13 @@ telegrafica e ripassabile.
 1. L'omeostasi
 2. L'eccitabilità cellulare
 3. La trasmissione sinaptica
+
+</details>
+
+<details>
+<summary><b>Doping - prevenzione e controllo</b> — capitoli scritti finora</summary>
+
+1. Le fonti del diritto internazionale in materia di doping
 
 </details>
 
