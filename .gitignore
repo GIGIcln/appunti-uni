@@ -1,0 +1,23 @@
+*.aux
+*.log
+*.pdf
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.xdv
+.DS_Store
+Thumbs.db
+
+# Eccezione: le dispense compilate vanno versionate (il PDF è il prodotto finale).
+# Restano ignorate le slide dei docenti in slide/ e ogni altro PDF di lavoro.
+!**/main.pdf
+!**/anatomia.pdf
+
+# Materiale di lavoro delle lezioni: registrazioni e trascrizioni grezze
+audio-lezioni/
