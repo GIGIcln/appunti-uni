@@ -1,0 +1,138 @@
+% =============================================================================
+% TEMPLATE DISPENSE UNIVERSITARIE — VARIANTE SCHEMATICA / OUTLINE
+% Stile "da appunti": definizioni con i due punti, liste annidate,
+% sotto-titoli in grassetto, alberi di classificazione (forest).
+% Ricalca lo stile delle dispense di biologia scritte a mano dallo studente.
+% =============================================================================
+\documentclass[11pt, oneside, openany]{book}
+
+% --- Lingua e codifica ---
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% --- Margini e layout (ottimizzato per lettura a schermo, non per la stampa) ---
+% Margini minimi, pagina singola (niente rilegatura né margini specchiati).
+\usepackage[
+  margin=12mm, headsep=3mm, footskip=6mm,
+  includeheadfoot
+]{geometry}
+\setlength{\headheight}{15pt}
+\raggedbottom
+
+% --- Spaziatura e tipografia ---
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\usepackage[protrusion=true, expansion=true, babel=true]{microtype}
+
+% --- Titoli capitolo (deve stare prima di hyperref) ---
+\usepackage{titlesec}
+\titleformat{\chapter}[block]
+  {\normalfont\Huge\bfseries}
+  {\thechapter\quad}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-60pt}{6pt}
+% Intestazioni di sezione: nere, standard (niente colori).
+
+% --- Link e segnalibri PDF ---
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+
+% --- Intestazioni e piè di pagina ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+\renewcommand{\chaptermark}[1]{\markboth{Cap.~\thechapter:\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+
+% --- Matematica e grafica ---
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+% --- Tabelle ---
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% --- Liste annidate (strumento principale dello stile schematico) ---
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt}
+\setlist[enumerate]{noitemsep, topsep=2pt}
+% Nidificazione di default: enumerate 1. -> (a) -> i. ; itemize • -> – -> *
+
+% --- Due colonne per liste lunghe parallele ---
+\usepackage{multicol}
+
+% =============================================================================
+% COMANDI DI STILE SCHEMATICO
+% =============================================================================
+% Sotto-titolo in grassetto, non numerato, su riga propria (es. "Struttura", "DNA").
+\newcommand{\rubrica}[1]{\par\addvspace{4pt}\noindent\textbf{#1}\par\nobreak}
+
+% Alberi di classificazione: minimali, solo testo + rami (nessun box).
+% Uso: \begin{center}\begin{forest} classalbero [Radice [A][B]] \end{forest}\end{center}
+\usepackage{forest}
+\forestset{
+  classalbero/.style={
+    for tree={
+      grow'=east, parent anchor=east, child anchor=west,
+      font=\footnotesize, anchor=west, align=center, edge={-},
+      l sep=8mm, s sep=2mm, inner sep=1pt,
+    }
+  }
+}
+
+% --- Metadati --- (sostituire con i dati del corso)
+\title{Dispense di \underline{Valutazione funzionale}\\ \underline{e studio della performance del calciatore}}
+\author{}
+\date{A.A. 2025/2026}
+
+% =============================================================================
+\begin{document}
+
+\frontmatter                 % numerazione romana (i, ii, ...) per titolo e indice
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\mainmatter                  % la numerazione delle pagine riparte da 1
+
+% =============================================================================
+% CAPITOLI — aggiungere \input{capitoli/nome_file} man mano
+% =============================================================================
+
+\input{capitoli/01_il_sistema_neuromuscolare}
+
+\end{document}
+
+% =============================================================================
+% PROMEMORIA STILE SCHEMATICO (vedi CONVENZIONI.md, §7)
+% =============================================================================
+% - Definizioni:      \textbf{Termine}: spiegazione sintetica;   (due punti, non "=")
+% - Sotto-titoli:     \rubrica{Struttura}  -> grassetto a riga propria, non numerato
+% - Liste annidate:   enumerate 1. -> (a) -> i. ; itemize • -> – ; sono lo strumento base
+% - Enfasi:           grassetto = termine chiave; \textit{corsivo} = termine secondario
+% - Processo/catena:  $molecole \rightarrow cellule \rightarrow tessuti \rightarrow organi$
+% - Diametro:         $\phi$ 7,5\,$\mu$m      (misure e formule in math mode)
+% - Formule:          $O_2$, $Na^+$, $H_2O$, $C_6H_{12}O_6$, $10^{-9}s$
+% - Albero:           \begin{center}\begin{forest} classalbero [Radice [A][B]] \end{forest}\end{center}
+% - Due colonne:      \begin{multicols}{2} ... \end{multicols}   (liste lunghe)
+% - Tabelle:          a griglia (\hline + |) e con parsimonia; preferire le liste annidate
