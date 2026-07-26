@@ -20,7 +20,7 @@ telegrafica e ripassabile.
 | **Fondamenti di biochimica applicata al calcio** | 1 | 93 | 22 | [📄 PDF](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/main.pdf) | [`.tex`](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/) |
 | **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 30 | 5 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/main.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
 | **Doping - prevenzione e controllo** 🚧 *in corso* | 2 | 13 | 3 | [📄 PDF](anno%202/Doping%20-%20prevenzione%20e%20controllo/main.pdf) | [`.tex`](anno%202/Doping%20-%20prevenzione%20e%20controllo/) |
-| **Valutazione funzionale e studio della performance del calciatore** 🚧 *in corso* | 2 | 52 | 6 | [📄 PDF](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/main.pdf) | [`.tex`](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/) |
+| **Valutazione funzionale e studio della performance del calciatore** 🚧 *in corso* | 2 | 61 | 7 | [📄 PDF](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/main.pdf) | [`.tex`](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/) |
 
 > Le altre materie del piano di studi hanno la cartella già pronta in repo, ma la dispensa
 > non è ancora scritta: compariranno in questa tabella quando ci sarà qualcosa da leggere.
