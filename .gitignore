@@ -19,6 +19,10 @@ Thumbs.db
 !**/main.pdf
 !**/anatomia.pdf
 
-# Materiale di lavoro delle lezioni: registrazioni e trascrizioni grezze
-audio-lezioni/
-trascrizioni/
+# Materiale di lavoro delle lezioni: slide dei docenti, registrazioni e trascrizioni.
+# I file veri stanno in ../materiale-lezioni/; qui dentro sono symlink, quindi i pattern
+# vanno scritti SENZA la barra finale (con la barra git cerca una directory e il symlink
+# gli sfuggirebbe, finendo tracciato).
+slide
+audio-lezioni
+trascrizioni
