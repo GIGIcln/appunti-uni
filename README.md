@@ -16,12 +16,12 @@ telegrafica e ripassabile.
 | Materia | Anno | Pagine | Capitoli | | |
 |---|:--:|:--:|:--:|:--:|:--:|
 | **Anatomia umana** *(curriculum calcio)* | 1 | 152 | 23 | [📄 PDF](anno%201/Anatomia%20umana%20%28curriculum%20calcio%29/anatomia.pdf) | [`.tex`](anno%201/Anatomia%20umana%20%28curriculum%20calcio%29/) |
-| **Funzionamento dei sistemi biologici** | 1 | 103 | 4 | [📄 PDF](anno%201/Funzionamento%20dei%20sistemi%20biologici/main.pdf) | [`.tex`](anno%201/Funzionamento%20dei%20sistemi%20biologici/) |
-| **Fondamenti di biochimica applicata al calcio** | 1 | 93 | 22 | [📄 PDF](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/main.pdf) | [`.tex`](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/) |
-| **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 30 | 5 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/main.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
-| **Doping - prevenzione e controllo** 🚧 *in corso* | 2 | 13 | 3 | [📄 PDF](anno%202/Doping%20-%20prevenzione%20e%20controllo/main.pdf) | [`.tex`](anno%202/Doping%20-%20prevenzione%20e%20controllo/) |
-| **Valutazione funzionale e studio della performance del calciatore** 🚧 *in corso* | 2 | 236 | 22 | [📄 PDF](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/main.pdf) | [`.tex`](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/) |
-| **Impianti sportivi - norme di prevenzione e gestione** 🚧 *in corso* | 2 | 33 | 5 | [📄 PDF](anno%202/Impianti%20sportivi%20-%20norme%20di%20prevenzione%20e%20gestione/main.pdf) | [`.tex`](anno%202/Impianti%20sportivi%20-%20norme%20di%20prevenzione%20e%20gestione/) |
+| **Funzionamento dei sistemi biologici** | 1 | 103 | 4 | [📄 PDF](anno%201/Funzionamento%20dei%20sistemi%20biologici/sistemi-biologici.pdf) | [`.tex`](anno%201/Funzionamento%20dei%20sistemi%20biologici/) |
+| **Fondamenti di biochimica applicata al calcio** | 1 | 93 | 22 | [📄 PDF](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/biochimica.pdf) | [`.tex`](anno%201/Fondamenti%20di%20biochimica%20applicata%20al%20calcio/) |
+| **Fisiologia dell'esercizio fisico** 🚧 *in corso* | 2 | 30 | 5 | [📄 PDF](anno%202/Fisiologia%20dell%27esercizio%20fisico/fisiologia.pdf) | [`.tex`](anno%202/Fisiologia%20dell%27esercizio%20fisico/) |
+| **Doping - prevenzione e controllo** 🚧 *in corso* | 2 | 13 | 3 | [📄 PDF](anno%202/Doping%20-%20prevenzione%20e%20controllo/doping.pdf) | [`.tex`](anno%202/Doping%20-%20prevenzione%20e%20controllo/) |
+| **Valutazione funzionale e studio della performance del calciatore** 🚧 *in corso* | 2 | 236 | 22 | [📄 PDF](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/valutazione-funzionale.pdf) | [`.tex`](anno%202/Valutazione%20funzionale%20e%20studio%20della%20performance%20del%20calciatore/) |
+| **Impianti sportivi - norme di prevenzione e gestione** 🚧 *in corso* | 2 | 33 | 5 | [📄 PDF](anno%202/Impianti%20sportivi%20-%20norme%20di%20prevenzione%20e%20gestione/impianti-sportivi.pdf) | [`.tex`](anno%202/Impianti%20sportivi%20-%20norme%20di%20prevenzione%20e%20gestione/) |
 
 > Le altre materie del piano di studi hanno la cartella già pronta in repo, ma la dispensa
 > non è ancora scritta: compariranno in questa tabella quando ci sarà qualcosa da leggere.
@@ -46,21 +46,23 @@ di convenzioni fisse:
 ```
 appunti-uni/
 ├── anno 1/<materia>/
-│   ├── main.tex               # preambolo, metadati e \input dei capitoli
-│   ├── main.pdf               # dispensa compilata (il prodotto finale)
+│   ├── <sigla>.tex            # preambolo, metadati e \input dei capitoli
+│   ├── <sigla>.pdf            # dispensa compilata (il prodotto finale)
 │   └── capitoli/NN_nome.tex   # un file per capitolo, ordinato dal prefisso
 └── anno 2/<materia>/
 ```
 
-Una cartella per materia, con il nome per esteso. Le materie ancora senza dispensa hanno la
-cartella già pronta ma vuota.
+Una cartella per materia, con il nome per esteso. Il file principale porta invece il **nome
+abbreviato** della materia (`anatomia.tex`, `valutazione-funzionale.tex`, `doping.tex`…),
+così i PDF restano riconoscibili una volta scaricati. Le materie ancora senza dispensa hanno
+la cartella già pronta ma vuota.
 
 ## ⚙️ Compilare in locale
 
 Serve una distribuzione LaTeX (MacTeX, TeX Live o MiKTeX). Dalla cartella della materia:
 
 ```bash
-pdflatex main.tex && pdflatex main.tex
+pdflatex <sigla>.tex && pdflatex <sigla>.tex
 ```
 
 Due passate: la seconda risolve indice e riferimenti incrociati.

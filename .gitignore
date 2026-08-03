@@ -15,9 +15,24 @@
 Thumbs.db
 
 # Eccezione: le dispense compilate vanno versionate (il PDF è il prodotto finale).
+# Ogni corso ha un solo file principale, che porta il nome abbreviato del corso:
+# aggiungere qui la riga corrispondente quando nasce una dispensa nuova.
 # Restano ignorate le slide dei docenti in slide/ e ogni altro PDF di lavoro.
-!**/main.pdf
 !**/anatomia.pdf
+!**/biochimica.pdf
+!**/biomeccanica.pdf
+!**/inglese.pdf
+!**/metodologia-allenamento.pdf
+!**/psicologia.pdf
+!**/sistemi-biologici.pdf
+!**/statistica.pdf
+!**/doping.pdf
+!**/fisiologia.pdf
+!**/impianti-sportivi.pdf
+!**/medicina-sport.pdf
+!**/nutrizione.pdf
+!**/tecnica-didattica-calcio.pdf
+!**/valutazione-funzionale.pdf
 
 # Materiale di lavoro delle lezioni: slide dei docenti, registrazioni e trascrizioni.
 # I file veri stanno in ../materiale-lezioni/; qui dentro sono symlink, quindi i pattern
